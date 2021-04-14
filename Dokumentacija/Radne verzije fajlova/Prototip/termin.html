@@ -30,18 +30,49 @@
         <div class="row" id="main">
             <div class="col-12 col-md-2 remove-padding" id="levi-deo">
                 <ul class="breadcrumb remove-margin" id="putokaz">
-                    <li class="breadcrumb-item"><a href="admin.html">Администратор</a></li>
+                    <li class="breadcrumb-item"><a href="sestra.html">Медицинска сестра</a></li>
+                    <li class="breadcrumb-item"><a href="vakcinacija_validacija.html">Валидација вакцинације</a></li>
+                    <li class="breadcrumb-item"><a href="termin.html">Изабрани термин</a></li>
                 </ul>
-                <nav class="nav flex-column" id="vertikalni-meni">
-                    <a href="vakcina_nova.html" class="nav-link active">Уношење новог типа вакцине</a>
-                </nav>
-                <nav class="nav flex-column" id="vertikalni-meni">
-                    <a href="vakcina_pristigla.html" class="nav-link active">Унос пристиглих количина вакцина</a>
-                </nav>
                 <img src="assets/logo.png" id="logo2" alt="logo">
             </div>
-            <div class="col-12 col-md-8" id="glavni-sadrzaj">
-                <p>Ваше име је: &lt;овде ставити име и презиме&gt;</p>
+            <div class="col-12 col-md-8 remove-padding" id="glavni-sadrzaj">
+                <p style="font-weight: bold;">Термин у 10:00</p>
+                <table class="table">
+                    <caption>Пацијенти</caption>
+                    <thead class="thead-dark">
+                        <th>Име</th>
+                        <th>ЈМБГ</th>
+                        <th></th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Марко Станковић</td>
+                            <td>000020323022</td>
+                            <td>
+                                <button class="btn btn-success">Дошао</button>
+                                <button class="btn btn-warning">Није дошао</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Недим Јукић</td>
+                            <td>000020323022</td>
+                            <td>
+                                <button class="btn btn-success">Дошао</button>
+                                <button class="btn btn-warning">Није дошао</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Никола Милосављевић</td>
+                            <td>000020323022</td>
+                            <td>
+                                <button class="btn btn-success">Дошао</button>
+                                <button class="btn btn-warning">Није дошао</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="col-12 col-md-2 remove-padding text-center" id="baneri">
                 <a href="https://www.pfizer.com/">

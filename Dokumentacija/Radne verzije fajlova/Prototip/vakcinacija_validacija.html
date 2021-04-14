@@ -30,18 +30,26 @@
         <div class="row" id="main">
             <div class="col-12 col-md-2 remove-padding" id="levi-deo">
                 <ul class="breadcrumb remove-margin" id="putokaz">
-                    <li class="breadcrumb-item"><a href="admin.html">Администратор</a></li>
+                    <li class="breadcrumb-item"><a href="sestra.html">Медицинска сестра</a></li>
+                    <li class="breadcrumb-item"><a href="vakcinacija_validacija.html">Валидација вакцинације</a></li>
                 </ul>
-                <nav class="nav flex-column" id="vertikalni-meni">
-                    <a href="vakcina_nova.html" class="nav-link active">Уношење новог типа вакцине</a>
-                </nav>
-                <nav class="nav flex-column" id="vertikalni-meni">
-                    <a href="vakcina_pristigla.html" class="nav-link active">Унос пристиглих количина вакцина</a>
-                </nav>
                 <img src="assets/logo.png" id="logo2" alt="logo">
             </div>
-            <div class="col-12 col-md-8" id="glavni-sadrzaj">
-                <p>Ваше име је: &lt;овде ставити име и презиме&gt;</p>
+            <div class="col-12 col-md-8 remove-padding" id="glavni-sadrzaj">
+                <p style="font-weight: bold;">Данашњи термини</p>
+                <form action='termin.html'>
+                    <div class="form-group">
+                        <label for="termin">Изабери термин</label>
+                        <select id="termin" class="form-control" name="termin">
+                            <option>10:00</option>
+                            <option>10:10</option>
+                            <option>10:20</option>
+                            <option>10:30</option>
+                            <option>10:40</option>
+                        </select>
+                    </div>
+                    <button id="see_schedule" class="btn btn-success">Види све пацијенте у овом термину</button>
+                </form>
             </div>
             <div class="col-12 col-md-2 remove-padding text-center" id="baneri">
                 <a href="https://www.pfizer.com/">
