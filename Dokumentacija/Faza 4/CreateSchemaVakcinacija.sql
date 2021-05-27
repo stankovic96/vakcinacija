@@ -8,24 +8,24 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema vakcinacija
 -- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `mydb` ;
+DROP SCHEMA IF EXISTS `vakcinacija` ;
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema vakcinacija
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
+CREATE SCHEMA IF NOT EXISTS `vakcinacija` DEFAULT CHARACTER SET utf8 ;
 SHOW WARNINGS;
-USE `mydb` ;
+USE `vakcinacija` ;
 
 -- -----------------------------------------------------
--- Table `mydb`.`Mesto`
+-- Table `vakcinacija`.`Mesto`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Mesto` ;
+DROP TABLE IF EXISTS `vakcinacija`.`Mesto` ;
 
 SHOW WARNINGS;
-CREATE TABLE IF NOT EXISTS `mydb`.`Mesto` (
+CREATE TABLE IF NOT EXISTS `vakcinacija`.`Mesto` (
   `idMesta` INT NOT NULL AUTO_INCREMENT,
   `Naziv` VARCHAR(100) NULL DEFAULT NULL,
   `Opis` TEXT NULL DEFAULT NULL,
@@ -37,12 +37,12 @@ DEFAULT CHARACTER SET = utf8;
 SHOW WARNINGS;
 
 -- -----------------------------------------------------
--- Table `mydb`.`TipVakcine`
+-- Table `vakcinacija`.`TipVakcine`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`TipVakcine` ;
+DROP TABLE IF EXISTS `vakcinacija`.`TipVakcine` ;
 
 SHOW WARNINGS;
-CREATE TABLE IF NOT EXISTS `mydb`.`TipVakcine` (
+CREATE TABLE IF NOT EXISTS `vakcinacija`.`TipVakcine` (
   `idTipVakcine` INT NOT NULL AUTO_INCREMENT,
   `Naziv` VARCHAR(45) NULL DEFAULT NULL,
   `Opis` LONGTEXT CHARACTER SET 'utf8' NULL DEFAULT NULL COMMENT '	',
@@ -56,12 +56,12 @@ DEFAULT CHARACTER SET = utf8;
 SHOW WARNINGS;
 
 -- -----------------------------------------------------
--- Table `mydb`.`ZdravstveniRadnici`
+-- Table `vakcinacija`.`ZdravstveniRadnici`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`ZdravstveniRadnici` ;
+DROP TABLE IF EXISTS `vakcinacija`.`ZdravstveniRadnici` ;
 
 SHOW WARNINGS;
-CREATE TABLE IF NOT EXISTS `mydb`.`ZdravstveniRadnici` (
+CREATE TABLE IF NOT EXISTS `vakcinacija`.`ZdravstveniRadnici` (
   `idZdravstveniRadnik` INT NOT NULL,
   `JMBG` VARCHAR(45) NULL DEFAULT NULL,
   `Ime` VARCHAR(45) NULL DEFAULT NULL,
@@ -79,12 +79,12 @@ DEFAULT CHARACTER SET = utf8;
 SHOW WARNINGS;
 
 -- -----------------------------------------------------
--- Table `mydb`.`Gradjanin`
+-- Table `vakcinacija`.`Gradjanin`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Gradjanin` ;
+DROP TABLE IF EXISTS `vakcinacija`.`Gradjanin` ;
 
 SHOW WARNINGS;
-CREATE TABLE IF NOT EXISTS `mydb`.`Gradjanin` (
+CREATE TABLE IF NOT EXISTS `vakcinacija`.`Gradjanin` (
   `JMBG` CHAR(8) NOT NULL,
   `Ime` VARCHAR(50) NULL DEFAULT NULL,
   `Prezime` VARCHAR(50) NULL DEFAULT NULL,
@@ -112,28 +112,28 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Gradjanin` (
   UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE,
   CONSTRAINT `fk_Gradjanin_Mesto1`
     FOREIGN KEY (`IdMesta`)
-    REFERENCES `mydb`.`Mesto` (`idMesta`),
+    REFERENCES `vakcinacija`.`Mesto` (`idMesta`),
   CONSTRAINT `fk_Gradjanin_TipVakcine`
     FOREIGN KEY (`IdTipVakcine`)
-    REFERENCES `mydb`.`TipVakcine` (`idTipVakcine`),
+    REFERENCES `vakcinacija`.`TipVakcine` (`idTipVakcine`),
   CONSTRAINT `fk_Gradjanin_ZdravstveniRadnici1`
     FOREIGN KEY (`IdSestraT1`)
-    REFERENCES `mydb`.`ZdravstveniRadnici` (`idZdravstveniRadnik`),
+    REFERENCES `vakcinacija`.`ZdravstveniRadnici` (`idZdravstveniRadnik`),
   CONSTRAINT `fk_Gradjanin_ZdravstveniRadnici2`
     FOREIGN KEY (`IdSestraT2`)
-    REFERENCES `mydb`.`ZdravstveniRadnici` (`idZdravstveniRadnik`))
+    REFERENCES `vakcinacija`.`ZdravstveniRadnici` (`idZdravstveniRadnik`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
 SHOW WARNINGS;
 
 -- -----------------------------------------------------
--- Table `mydb`.`IzvestajLekara`
+-- Table `vakcinacija`.`IzvestajLekara`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`IzvestajLekara` ;
+DROP TABLE IF EXISTS `vakcinacija`.`IzvestajLekara` ;
 
 SHOW WARNINGS;
-CREATE TABLE IF NOT EXISTS `mydb`.`IzvestajLekara` (
+CREATE TABLE IF NOT EXISTS `vakcinacija`.`IzvestajLekara` (
   `idIzvestaja` INT NOT NULL,
   `IdGradjanin` CHAR(8) NOT NULL,
   `Diagnoza` LONGTEXT NULL DEFAULT NULL,
@@ -143,22 +143,22 @@ CREATE TABLE IF NOT EXISTS `mydb`.`IzvestajLekara` (
   INDEX `fk_IzvestajLekara_TipVakcine1_idx` (`IdTipVakcine` ASC) VISIBLE,
   CONSTRAINT `fk_IzvestajLekara_Gradjanin1`
     FOREIGN KEY (`IdGradjanin`)
-    REFERENCES `mydb`.`Gradjanin` (`JMBG`),
+    REFERENCES `vakcinacija`.`Gradjanin` (`JMBG`),
   CONSTRAINT `fk_IzvestajLekara_TipVakcine1`
     FOREIGN KEY (`IdTipVakcine`)
-    REFERENCES `mydb`.`TipVakcine` (`idTipVakcine`))
+    REFERENCES `vakcinacija`.`TipVakcine` (`idTipVakcine`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
 SHOW WARNINGS;
 
 -- -----------------------------------------------------
--- Table `mydb`.`NezeljeneReakcije`
+-- Table `vakcinacija`.`NezeljeneReakcije`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`NezeljeneReakcije` ;
+DROP TABLE IF EXISTS `vakcinacija`.`NezeljeneReakcije` ;
 
 SHOW WARNINGS;
-CREATE TABLE IF NOT EXISTS `mydb`.`NezeljeneReakcije` (
+CREATE TABLE IF NOT EXISTS `vakcinacija`.`NezeljeneReakcije` (
   `idNezeljeneReakcije` INT NOT NULL,
   `Naziv` VARCHAR(45) NULL DEFAULT NULL,
   `Opis` LONGTEXT NULL DEFAULT NULL,
@@ -169,12 +169,12 @@ DEFAULT CHARACTER SET = utf8;
 SHOW WARNINGS;
 
 -- -----------------------------------------------------
--- Table `mydb`.`IzvestajLekaraImaNezeljeneReakcije`
+-- Table `vakcinacija`.`IzvestajLekaraImaNezeljeneReakcije`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`IzvestajLekaraImaNezeljeneReakcije` ;
+DROP TABLE IF EXISTS `vakcinacija`.`IzvestajLekaraImaNezeljeneReakcije` ;
 
 SHOW WARNINGS;
-CREATE TABLE IF NOT EXISTS `mydb`.`IzvestajLekaraImaNezeljeneReakcije` (
+CREATE TABLE IF NOT EXISTS `vakcinacija`.`IzvestajLekaraImaNezeljeneReakcije` (
   `IzvestajLekara_idIzvestaja` INT NOT NULL,
   `NezeljeneReakcije_idNezeljeneReakcije` INT NOT NULL,
   PRIMARY KEY (`IzvestajLekara_idIzvestaja`, `NezeljeneReakcije_idNezeljeneReakcije`),
@@ -182,22 +182,22 @@ CREATE TABLE IF NOT EXISTS `mydb`.`IzvestajLekaraImaNezeljeneReakcije` (
   INDEX `fk_IzvestajLekara_has_NezeljeneReakcije_IzvestajLekara1_idx` (`IzvestajLekara_idIzvestaja` ASC) VISIBLE,
   CONSTRAINT `fk_IzvestajLekara_has_NezeljeneReakcije_IzvestajLekara1`
     FOREIGN KEY (`IzvestajLekara_idIzvestaja`)
-    REFERENCES `mydb`.`IzvestajLekara` (`idIzvestaja`),
+    REFERENCES `vakcinacija`.`IzvestajLekara` (`idIzvestaja`),
   CONSTRAINT `fk_IzvestajLekara_has_NezeljeneReakcije_NezeljeneReakcije1`
     FOREIGN KEY (`NezeljeneReakcije_idNezeljeneReakcije`)
-    REFERENCES `mydb`.`NezeljeneReakcije` (`idNezeljeneReakcije`))
+    REFERENCES `vakcinacija`.`NezeljeneReakcije` (`idNezeljeneReakcije`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
 SHOW WARNINGS;
 
 -- -----------------------------------------------------
--- Table `mydb`.`MestoRezervisanoPoDanu`
+-- Table `vakcinacija`.`MestoRezervisanoPoDanu`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`MestoRezervisanoPoDanu` ;
+DROP TABLE IF EXISTS `vakcinacija`.`MestoRezervisanoPoDanu` ;
 
 SHOW WARNINGS;
-CREATE TABLE IF NOT EXISTS `mydb`.`MestoRezervisanoPoDanu` (
+CREATE TABLE IF NOT EXISTS `vakcinacija`.`MestoRezervisanoPoDanu` (
   `idMestoRezervisanoPoDanu` INT NOT NULL,
   `Datum` DATE NULL DEFAULT NULL,
   `BrojRezervisanih` INT NULL DEFAULT NULL,
@@ -206,19 +206,19 @@ CREATE TABLE IF NOT EXISTS `mydb`.`MestoRezervisanoPoDanu` (
   INDEX `fk_MestoRezervisanoPoDanu_Mesto1_idx` (`IdMesta` ASC) VISIBLE,
   CONSTRAINT `fk_MestoRezervisanoPoDanu_Mesto1`
     FOREIGN KEY (`IdMesta`)
-    REFERENCES `mydb`.`Mesto` (`idMesta`))
+    REFERENCES `vakcinacija`.`Mesto` (`idMesta`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
 SHOW WARNINGS;
 
 -- -----------------------------------------------------
--- Table `mydb`.`PristigleVakcine`
+-- Table `vakcinacija`.`PristigleVakcine`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`PristigleVakcine` ;
+DROP TABLE IF EXISTS `vakcinacija`.`PristigleVakcine` ;
 
 SHOW WARNINGS;
-CREATE TABLE IF NOT EXISTS `mydb`.`PristigleVakcine` (
+CREATE TABLE IF NOT EXISTS `vakcinacija`.`PristigleVakcine` (
   `idPristigleVakcine` INT NOT NULL,
   `RaspolozivaKolicina` INT NULL DEFAULT NULL,
   `RezervisanaKolicina` INT NULL DEFAULT NULL,
@@ -228,19 +228,19 @@ CREATE TABLE IF NOT EXISTS `mydb`.`PristigleVakcine` (
   INDEX `fk_PristigleVakcine_TipVakcine1_idx` (`IdTipVakcine` ASC) VISIBLE,
   CONSTRAINT `fk_PristigleVakcine_TipVakcine1`
     FOREIGN KEY (`IdTipVakcine`)
-    REFERENCES `mydb`.`TipVakcine` (`idTipVakcine`))
+    REFERENCES `vakcinacija`.`TipVakcine` (`idTipVakcine`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
 SHOW WARNINGS;
 
 -- -----------------------------------------------------
--- Table `mydb`.`Admin`
+-- Table `vakcinacija`.`Admin`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Admin` ;
+DROP TABLE IF EXISTS `vakcinacija`.`Admin` ;
 
 SHOW WARNINGS;
-CREATE TABLE IF NOT EXISTS `mydb`.`Admin` (
+CREATE TABLE IF NOT EXISTS `vakcinacija`.`Admin` (
   `idAdmin` INT NOT NULL,
   `email` VARCHAR(45) NULL,
   `password` VARCHAR(512) NULL,
