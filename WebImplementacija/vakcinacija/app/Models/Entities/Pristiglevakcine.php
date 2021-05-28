@@ -53,4 +53,110 @@ class Pristiglevakcine
     private $idtipvakcine;
 
 
+
+    /**
+     * Get idpristiglevakcine.
+     *
+     * @return int
+     */
+    public function getIdpristiglevakcine()
+    {
+        return $this->idpristiglevakcine;
+    }
+
+    /**
+     * Set raspolozivakolicina.
+     *
+     * @param int|null $raspolozivakolicina
+     *
+     * @return Pristiglevakcine
+     */
+    public function setRaspolozivakolicina($raspolozivakolicina = null)
+    {
+        $this->raspolozivakolicina = $raspolozivakolicina;
+
+        return $this;
+    }
+
+    /**
+     * Get raspolozivakolicina.
+     *
+     * @return int|null
+     */
+    public function getRaspolozivakolicina()
+    {
+        return $this->raspolozivakolicina;
+    }
+
+    /**
+     * Set rezervisanakolicina.
+     *
+     * @param int|null $rezervisanakolicina
+     *
+     * @return Pristiglevakcine
+     */
+    public function setRezervisanakolicina($rezervisanakolicina = null)
+    {
+        $this->rezervisanakolicina = $rezervisanakolicina;
+
+        return $this;
+    }
+
+    /**
+     * Get rezervisanakolicina.
+     *
+     * @return int|null
+     */
+    public function getRezervisanakolicina()
+    {
+        return $this->rezervisanakolicina;
+    }
+
+    /**
+     * Set rokupotrebe.
+     *
+     * @param \DateTime|null $rokupotrebe
+     *
+     * @return Pristiglevakcine
+     */
+    public function setRokupotrebe($rokupotrebe = null)
+    {
+        $this->rokupotrebe = $rokupotrebe;
+
+        return $this;
+    }
+
+    /**
+     * Get rokupotrebe.
+     *
+     * @return \DateTime|null
+     */
+    public function getRokupotrebe()
+    {
+        return $this->rokupotrebe;
+    }
+
+    /**
+     * Set idtipvakcine.
+     *
+     * @param \App\Models\Entities\Tipvakcine|null $idtipvakcine
+     *
+     * @return Pristiglevakcine
+     */
+    public function setIdtipvakcine(\App\Models\Entities\Tipvakcine $idtipvakcine = null)
+    {
+        $this->idtipvakcine = $idtipvakcine;
+
+        return $this;
+    }
+
+    /**
+     * Get idtipvakcine.
+     *
+     * @return \App\Models\Entities\Tipvakcine|null
+     */
+    public function getIdtipvakcine()
+    {
+        return $this->idtipvakcine;
+    }
 }

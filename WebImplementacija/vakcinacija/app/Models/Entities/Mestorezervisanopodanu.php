@@ -46,4 +46,86 @@ class Mestorezervisanopodanu
     private $idmesta;
 
 
+
+    /**
+     * Get idmestorezervisanopodanu.
+     *
+     * @return int
+     */
+    public function getIdmestorezervisanopodanu()
+    {
+        return $this->idmestorezervisanopodanu;
+    }
+
+    /**
+     * Set datum.
+     *
+     * @param \DateTime|null $datum
+     *
+     * @return Mestorezervisanopodanu
+     */
+    public function setDatum($datum = null)
+    {
+        $this->datum = $datum;
+
+        return $this;
+    }
+
+    /**
+     * Get datum.
+     *
+     * @return \DateTime|null
+     */
+    public function getDatum()
+    {
+        return $this->datum;
+    }
+
+    /**
+     * Set brojrezervisanih.
+     *
+     * @param int|null $brojrezervisanih
+     *
+     * @return Mestorezervisanopodanu
+     */
+    public function setBrojrezervisanih($brojrezervisanih = null)
+    {
+        $this->brojrezervisanih = $brojrezervisanih;
+
+        return $this;
+    }
+
+    /**
+     * Get brojrezervisanih.
+     *
+     * @return int|null
+     */
+    public function getBrojrezervisanih()
+    {
+        return $this->brojrezervisanih;
+    }
+
+    /**
+     * Set idmesta.
+     *
+     * @param \App\Models\Entities\Mesto|null $idmesta
+     *
+     * @return Mestorezervisanopodanu
+     */
+    public function setIdmesta(\App\Models\Entities\Mesto $idmesta = null)
+    {
+        $this->idmesta = $idmesta;
+
+        return $this;
+    }
+
+    /**
+     * Get idmesta.
+     *
+     * @return \App\Models\Entities\Mesto|null
+     */
+    public function getIdmesta()
+    {
+        return $this->idmesta;
+    }
 }

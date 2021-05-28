@@ -62,4 +62,158 @@ class Mesto
 
     }
 
+
+    /**
+     * Get idmesta.
+     *
+     * @return int
+     */
+    public function getIdmesta()
+    {
+        return $this->idmesta;
+    }
+
+    /**
+     * Set naziv.
+     *
+     * @param string|null $naziv
+     *
+     * @return Mesto
+     */
+    public function setNaziv($naziv = null)
+    {
+        $this->naziv = $naziv;
+
+        return $this;
+    }
+
+    /**
+     * Get naziv.
+     *
+     * @return string|null
+     */
+    public function getNaziv()
+    {
+        return $this->naziv;
+    }
+
+    /**
+     * Set opis.
+     *
+     * @param string|null $opis
+     *
+     * @return Mesto
+     */
+    public function setOpis($opis = null)
+    {
+        $this->opis = $opis;
+
+        return $this;
+    }
+
+    /**
+     * Get opis.
+     *
+     * @return string|null
+     */
+    public function getOpis()
+    {
+        return $this->opis;
+    }
+
+    /**
+     * Set dnevnakolicina.
+     *
+     * @param int|null $dnevnakolicina
+     *
+     * @return Mesto
+     */
+    public function setDnevnakolicina($dnevnakolicina = null)
+    {
+        $this->dnevnakolicina = $dnevnakolicina;
+
+        return $this;
+    }
+
+    /**
+     * Get dnevnakolicina.
+     *
+     * @return int|null
+     */
+    public function getDnevnakolicina()
+    {
+        return $this->dnevnakolicina;
+    }
+
+    /**
+     * Add gradjanini.
+     *
+     * @param \App\Models\Entities\Gradjanin $gradjanini
+     *
+     * @return Mesto
+     */
+    public function addGradjanini(\App\Models\Entities\Gradjanin $gradjanini)
+    {
+        $this->gradjanini[] = $gradjanini;
+
+        return $this;
+    }
+
+    /**
+     * Remove gradjanini.
+     *
+     * @param \App\Models\Entities\Gradjanin $gradjanini
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeGradjanini(\App\Models\Entities\Gradjanin $gradjanini)
+    {
+        return $this->gradjanini->removeElement($gradjanini);
+    }
+
+    /**
+     * Get gradjanini.
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getGradjanini()
+    {
+        return $this->gradjanini;
+    }
+
+    /**
+     * Add vakcinacijaPoDanu.
+     *
+     * @param \App\Models\Entities\Mestorezervisanopodanu $vakcinacijaPoDanu
+     *
+     * @return Mesto
+     */
+    public function addVakcinacijaPoDanu(\App\Models\Entities\Mestorezervisanopodanu $vakcinacijaPoDanu)
+    {
+        $this->VakcinacijaPoDanu[] = $vakcinacijaPoDanu;
+
+        return $this;
+    }
+
+    /**
+     * Remove vakcinacijaPoDanu.
+     *
+     * @param \App\Models\Entities\Mestorezervisanopodanu $vakcinacijaPoDanu
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeVakcinacijaPoDanu(\App\Models\Entities\Mestorezervisanopodanu $vakcinacijaPoDanu)
+    {
+        return $this->VakcinacijaPoDanu->removeElement($vakcinacijaPoDanu);
+    }
+
+    /**
+     * Get vakcinacijaPoDanu.
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getVakcinacijaPoDanu()
+    {
+        return $this->VakcinacijaPoDanu;
+    }
 }

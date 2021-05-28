@@ -76,7 +76,7 @@ class Izvestajlekara
     /**
      * @var \Doctrine\Common\Collections\Collection
      *
-     * @ORM\OneToMany(targetEntity="App\Models\Entities\Nezeljenereakcije" mappedBy="idnezeljenereakcije")
+     * @ORM\OneToMany(targetEntity="App\Models\Entities\Nezeljenereakcije",mappedBy="idnezeljenereakcije")
      */
     private $idnezeljenereakcije;
 
@@ -88,4 +88,182 @@ class Izvestajlekara
         $this->nezeljenereakcijeIdnezeljenereakcije = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
+
+    /**
+     * Get idizvestaja.
+     *
+     * @return int
+     */
+    public function getIdizvestaja()
+    {
+        return $this->idizvestaja;
+    }
+
+    /**
+     * Set diagnoza.
+     *
+     * @param string|null $diagnoza
+     *
+     * @return Izvestajlekara
+     */
+    public function setDiagnoza($diagnoza = null)
+    {
+        $this->diagnoza = $diagnoza;
+
+        return $this;
+    }
+
+    /**
+     * Get diagnoza.
+     *
+     * @return string|null
+     */
+    public function getDiagnoza()
+    {
+        return $this->diagnoza;
+    }
+
+    /**
+     * Set idgradjanin.
+     *
+     * @param \App\Models\Entities\Gradjanin|null $idgradjanin
+     *
+     * @return Izvestajlekara
+     */
+    public function setIdgradjanin(\App\Models\Entities\Gradjanin $idgradjanin = null)
+    {
+        $this->idgradjanin = $idgradjanin;
+
+        return $this;
+    }
+
+    /**
+     * Get idgradjanin.
+     *
+     * @return \App\Models\Entities\Gradjanin|null
+     */
+    public function getIdgradjanin()
+    {
+        return $this->idgradjanin;
+    }
+
+    /**
+     * Set idtipvakcine.
+     *
+     * @param \App\Models\Entities\Tipvakcine|null $idtipvakcine
+     *
+     * @return Izvestajlekara
+     */
+    public function setIdtipvakcine(\App\Models\Entities\Tipvakcine $idtipvakcine = null)
+    {
+        $this->idtipvakcine = $idtipvakcine;
+
+        return $this;
+    }
+
+    /**
+     * Get idtipvakcine.
+     *
+     * @return \App\Models\Entities\Tipvakcine|null
+     */
+    public function getIdtipvakcine()
+    {
+        return $this->idtipvakcine;
+    }
+
+    /**
+     * Set idlekara.
+     *
+     * @param \App\Models\Entities\Zdravstveniradnici|null $idlekara
+     *
+     * @return Izvestajlekara
+     */
+    public function setIdlekara(\App\Models\Entities\Zdravstveniradnici $idlekara = null)
+    {
+        $this->idlekara = $idlekara;
+
+        return $this;
+    }
+
+    /**
+     * Get idlekara.
+     *
+     * @return \App\Models\Entities\Zdravstveniradnici|null
+     */
+    public function getIdlekara()
+    {
+        return $this->idlekara;
+    }
+
+    /**
+     * Add nezeljenereakcijeIdnezeljenereakcije.
+     *
+     * @param \App\Models\Entities\Nezeljenereakcije $nezeljenereakcijeIdnezeljenereakcije
+     *
+     * @return Izvestajlekara
+     */
+    public function addNezeljenereakcijeIdnezeljenereakcije(\App\Models\Entities\Nezeljenereakcije $nezeljenereakcijeIdnezeljenereakcije)
+    {
+        $this->nezeljenereakcijeIdnezeljenereakcije[] = $nezeljenereakcijeIdnezeljenereakcije;
+
+        return $this;
+    }
+
+    /**
+     * Remove nezeljenereakcijeIdnezeljenereakcije.
+     *
+     * @param \App\Models\Entities\Nezeljenereakcije $nezeljenereakcijeIdnezeljenereakcije
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeNezeljenereakcijeIdnezeljenereakcije(\App\Models\Entities\Nezeljenereakcije $nezeljenereakcijeIdnezeljenereakcije)
+    {
+        return $this->nezeljenereakcijeIdnezeljenereakcije->removeElement($nezeljenereakcijeIdnezeljenereakcije);
+    }
+
+    /**
+     * Get nezeljenereakcijeIdnezeljenereakcije.
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getNezeljenereakcijeIdnezeljenereakcije()
+    {
+        return $this->nezeljenereakcijeIdnezeljenereakcije;
+    }
+
+    /**
+     * Add idnezeljenereakcije.
+     *
+     * @param \App\Models\Entities\Nezeljenereakcije $idnezeljenereakcije
+     *
+     * @return Izvestajlekara
+     */
+    public function addIdnezeljenereakcije(\App\Models\Entities\Nezeljenereakcije $idnezeljenereakcije)
+    {
+        $this->idnezeljenereakcije[] = $idnezeljenereakcije;
+
+        return $this;
+    }
+
+    /**
+     * Remove idnezeljenereakcije.
+     *
+     * @param \App\Models\Entities\Nezeljenereakcije $idnezeljenereakcije
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeIdnezeljenereakcije(\App\Models\Entities\Nezeljenereakcije $idnezeljenereakcije)
+    {
+        return $this->idnezeljenereakcije->removeElement($idnezeljenereakcije);
+    }
+
+    /**
+     * Get idnezeljenereakcije.
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getIdnezeljenereakcije()
+    {
+        return $this->idnezeljenereakcije;
+    }
 }

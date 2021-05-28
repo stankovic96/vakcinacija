@@ -73,4 +73,206 @@ class Tipvakcine
         $this->izvestaji = new \Doctrine\Common\Collections\ArrayCollection();
         $this->pristigleKolicine = new \Doctrine\Common\Collections\ArrayCollection();
     }
+
+    /**
+     * Get idtipvakcine.
+     *
+     * @return int
+     */
+    public function getIdtipvakcine()
+    {
+        return $this->idtipvakcine;
+    }
+
+    /**
+     * Set naziv.
+     *
+     * @param string|null $naziv
+     *
+     * @return Tipvakcine
+     */
+    public function setNaziv($naziv = null)
+    {
+        $this->naziv = $naziv;
+
+        return $this;
+    }
+
+    /**
+     * Get naziv.
+     *
+     * @return string|null
+     */
+    public function getNaziv()
+    {
+        return $this->naziv;
+    }
+
+    /**
+     * Set opis.
+     *
+     * @param string|null $opis
+     *
+     * @return Tipvakcine
+     */
+    public function setOpis($opis = null)
+    {
+        $this->opis = $opis;
+
+        return $this;
+    }
+
+    /**
+     * Get opis.
+     *
+     * @return string|null
+     */
+    public function getOpis()
+    {
+        return $this->opis;
+    }
+
+    /**
+     * Set vremedodrugevakcinacije.
+     *
+     * @param int|null $vremedodrugevakcinacije
+     *
+     * @return Tipvakcine
+     */
+    public function setVremedodrugevakcinacije($vremedodrugevakcinacije = null)
+    {
+        $this->vremedodrugevakcinacije = $vremedodrugevakcinacije;
+
+        return $this;
+    }
+
+    /**
+     * Get vremedodrugevakcinacije.
+     *
+     * @return int|null
+     */
+    public function getVremedodrugevakcinacije()
+    {
+        return $this->vremedodrugevakcinacije;
+    }
+
+    /**
+     * Set kolicinavakcinisanih.
+     *
+     * @param int|null $kolicinavakcinisanih
+     *
+     * @return Tipvakcine
+     */
+    public function setKolicinavakcinisanih($kolicinavakcinisanih = null)
+    {
+        $this->kolicinavakcinisanih = $kolicinavakcinisanih;
+
+        return $this;
+    }
+
+    /**
+     * Get kolicinavakcinisanih.
+     *
+     * @return int|null
+     */
+    public function getKolicinavakcinisanih()
+    {
+        return $this->kolicinavakcinisanih;
+    }
+
+    /**
+     * Set brojnezeljenih.
+     *
+     * @param int|null $brojnezeljenih
+     *
+     * @return Tipvakcine
+     */
+    public function setBrojnezeljenih($brojnezeljenih = null)
+    {
+        $this->brojnezeljenih = $brojnezeljenih;
+
+        return $this;
+    }
+
+    /**
+     * Get brojnezeljenih.
+     *
+     * @return int|null
+     */
+    public function getBrojnezeljenih()
+    {
+        return $this->brojnezeljenih;
+    }
+
+    /**
+     * Add izvestaji.
+     *
+     * @param \App\Models\Entities\Izvestajlekara $izvestaji
+     *
+     * @return Tipvakcine
+     */
+    public function addIzvestaji(\App\Models\Entities\Izvestajlekara $izvestaji)
+    {
+        $this->izvestaji[] = $izvestaji;
+
+        return $this;
+    }
+
+    /**
+     * Remove izvestaji.
+     *
+     * @param \App\Models\Entities\Izvestajlekara $izvestaji
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeIzvestaji(\App\Models\Entities\Izvestajlekara $izvestaji)
+    {
+        return $this->izvestaji->removeElement($izvestaji);
+    }
+
+    /**
+     * Get izvestaji.
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getIzvestaji()
+    {
+        return $this->izvestaji;
+    }
+
+    /**
+     * Add pristigleKolicine.
+     *
+     * @param \App\Models\Entities\Pristiglevakcine $pristigleKolicine
+     *
+     * @return Tipvakcine
+     */
+    public function addPristigleKolicine(\App\Models\Entities\Pristiglevakcine $pristigleKolicine)
+    {
+        $this->pristigleKolicine[] = $pristigleKolicine;
+
+        return $this;
+    }
+
+    /**
+     * Remove pristigleKolicine.
+     *
+     * @param \App\Models\Entities\Pristiglevakcine $pristigleKolicine
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removePristigleKolicine(\App\Models\Entities\Pristiglevakcine $pristigleKolicine)
+    {
+        return $this->pristigleKolicine->removeElement($pristigleKolicine);
+    }
+
+    /**
+     * Get pristigleKolicine.
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getPristigleKolicine()
+    {
+        return $this->pristigleKolicine;
+    }
 }
