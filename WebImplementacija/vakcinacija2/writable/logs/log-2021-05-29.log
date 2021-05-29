@@ -1,0 +1,260 @@
+CRITICAL - 2021-05-29 10:19:40 --> Invalid file: weelcome_message.php
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('weelcome_messag...')
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('weelcome_messag...', Array, true)
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Home.php(9): view('weelcome_messag...')
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#8 {main}
+CRITICAL - 2021-05-29 10:20:12 --> Invalid file: weelcome_message.php
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('weelcome_messag...')
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('weelcome_messag...', Array, true)
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Home.php(9): view('weelcome_messag...')
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#8 {main}
+CRITICAL - 2021-05-29 10:20:13 --> Invalid file: weelcome_message.php
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('weelcome_messag...')
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('weelcome_messag...', Array, true)
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Home.php(9): view('weelcome_messag...')
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#8 {main}
+CRITICAL - 2021-05-29 10:20:30 --> Invalid file: weelcome_message.php
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('weelcome_messag...')
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('weelcome_messag...', Array, true)
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Home.php(9): view('weelcome_messag...')
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#8 {main}
+CRITICAL - 2021-05-29 10:46:44 --> Trying to get property 'em' of non-object
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\cli-config.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\wamp64\\www\\v...', 30, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine.php(58): require('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine(4): include('C:\\wamp64\\www\\v...')
+#3 {main}
+CRITICAL - 2021-05-29 10:46:52 --> Trying to get property 'em' of non-object
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\cli-config.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\wamp64\\www\\v...', 30, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine.php(58): require('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine(4): include('C:\\wamp64\\www\\v...')
+#3 {main}
+CRITICAL - 2021-05-29 10:48:13 --> Trying to get property 'em' of non-object
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\cli-config.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\wamp64\\www\\v...', 30, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine.php(58): require('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine(4): include('C:\\wamp64\\www\\v...')
+#3 {main}
+CRITICAL - 2021-05-29 10:51:07 --> Trying to get property 'em' of non-object
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\cli-config.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\wamp64\\www\\v...', 30, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine.php(58): require('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine(4): include('C:\\wamp64\\www\\v...')
+#3 {main}
+CRITICAL - 2021-05-29 10:51:30 --> Trying to get property 'em' of non-object
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\cli-config.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\wamp64\\www\\v...', 30, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine.php(58): require('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine(4): include('C:\\wamp64\\www\\v...')
+#3 {main}
+CRITICAL - 2021-05-29 10:53:03 --> Trying to get property 'em' of non-object
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\cli-config.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\wamp64\\www\\v...', 30, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine.php(58): require('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine(4): include('C:\\wamp64\\www\\v...')
+#3 {main}
+CRITICAL - 2021-05-29 10:56:45 --> Trying to get property 'em' of non-object
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\cli-config.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\wamp64\\www\\v...', 30, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine.php(58): require('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine(4): include('C:\\wamp64\\www\\v...')
+#3 {main}
+CRITICAL - 2021-05-29 10:57:42 --> Trying to get property 'em' of non-object
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\cli-config.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\wamp64\\www\\v...', 30, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine.php(58): require('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine(4): include('C:\\wamp64\\www\\v...')
+#3 {main}
+CRITICAL - 2021-05-29 10:57:46 --> Trying to get property 'em' of non-object
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\cli-config.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\wamp64\\www\\v...', 30, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine.php(58): require('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine(4): include('C:\\wamp64\\www\\v...')
+#3 {main}
+CRITICAL - 2021-05-29 10:58:21 --> Trying to get property 'em' of non-object
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\cli-config.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\wamp64\\www\\v...', 30, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine.php(58): require('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine(4): include('C:\\wamp64\\www\\v...')
+#3 {main}
+CRITICAL - 2021-05-29 10:58:27 --> Trying to get property 'em' of non-object
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\cli-config.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\wamp64\\www\\v...', 30, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine.php(58): require('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine(4): include('C:\\wamp64\\www\\v...')
+#3 {main}
+CRITICAL - 2021-05-29 10:59:56 --> Trying to get property 'em' of non-object
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\cli-config.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\wamp64\\www\\v...', 30, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine.php(58): require('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine(4): include('C:\\wamp64\\www\\v...')
+#3 {main}
+CRITICAL - 2021-05-29 10:59:58 --> Trying to get property 'em' of non-object
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\cli-config.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\wamp64\\www\\v...', 30, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine.php(58): require('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine(4): include('C:\\wamp64\\www\\v...')
+#3 {main}
+CRITICAL - 2021-05-29 11:00:26 --> Trying to get property 'em' of non-object
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\cli-config.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\wamp64\\www\\v...', 30, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine.php(58): require('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine(4): include('C:\\wamp64\\www\\v...')
+#3 {main}
+CRITICAL - 2021-05-29 11:00:44 --> Trying to get property 'em' of non-object
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\cli-config.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\wamp64\\www\\v...', 30, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine.php(58): require('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine(4): include('C:\\wamp64\\www\\v...')
+#3 {main}
+CRITICAL - 2021-05-29 11:00:45 --> Trying to get property 'em' of non-object
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\cli-config.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\wamp64\\www\\v...', 30, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine.php(58): require('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\bin\doctrine(4): include('C:\\wamp64\\www\\v...')
+#3 {main}
+CRITICAL - 2021-05-29 11:22:15 --> Invalid file: weelcome_message.php
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('weelcome_messag...')
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('weelcome_messag...', Array, true)
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Home.php(9): view('weelcome_messag...')
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#8 {main}
+CRITICAL - 2021-05-29 11:35:44 --> Invalid file: prototip/admin.html
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prototip/admin....')
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('prototip/admin....', Array, true)
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Home.php(9): view('prototip/admin....')
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#8 {main}
+CRITICAL - 2021-05-29 11:36:17 --> Invalid file: prototip/admin.html
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prototip/admin....')
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('prototip/admin....', Array, true)
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Home.php(9): view('prototip/admin....')
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#8 {main}
+CRITICAL - 2021-05-29 11:36:18 --> Invalid file: prototip/admin.html
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prototip/admin....')
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('prototip/admin....', Array, true)
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Home.php(9): view('prototip/admin....')
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#8 {main}
+CRITICAL - 2021-05-29 11:36:19 --> Invalid file: prototip/admin.html
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prototip/admin....')
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('prototip/admin....', Array, true)
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Home.php(9): view('prototip/admin....')
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#8 {main}
+CRITICAL - 2021-05-29 11:36:19 --> Invalid file: prototip/admin.html
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prototip/admin....')
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('prototip/admin....', Array, true)
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Home.php(9): view('prototip/admin....')
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#8 {main}
+CRITICAL - 2021-05-29 11:36:19 --> Invalid file: prototip/admin.html
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prototip/admin....')
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('prototip/admin....', Array, true)
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Home.php(9): view('prototip/admin....')
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#8 {main}
+CRITICAL - 2021-05-29 11:42:18 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('prototip/admin....', Array, true)
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Home.php(9): view('prototip/admin....')
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#8 {main}
+CRITICAL - 2021-05-29 12:21:40 --> Undefined property: App\Controllers\Home::$load
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Home.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 9, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-05-29 12:22:15 --> Undefined property: App\Controllers\Home::$load
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Home.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 9, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-05-29 12:23:45 --> Undefined property: App\Controllers\Home::$load
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Home.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 9, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-05-29 12:23:46 --> Undefined property: App\Controllers\Home::$load
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Home.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 9, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-05-29 12:23:47 --> Undefined property: App\Controllers\Home::$load
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Home.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 9, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-05-29 12:27:32 --> Invalid file: prototip/admin.php
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prototip/admin....')
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('prototip/admin....', Array, true)
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Home.php(9): view('prototip/admin....')
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#8 {main}
+CRITICAL - 2021-05-29 12:28:09 --> Invalid file: admin.php
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin.php')
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('admin.php', Array, true)
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Home.php(9): view('admin.php')
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#8 {main}
