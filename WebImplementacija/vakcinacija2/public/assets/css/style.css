@@ -1,0 +1,136 @@
+.nav{
+    float: right;
+}
+
+.breadcrumb{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+#logo1{
+    max-height: 40px;
+}
+
+#company-name{
+    font-size: 30px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main{
+    min-height: 90vh;
+}
+
+#logo2{
+    width: 30%;
+}
+
+#levi-deo, #putokaz{
+    background-color: rgb(175, 173, 209);
+    font-size: small;
+}
+
+#vertikalni-meni{
+    width: 70%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+#header{
+    background-color: rgba(50, 44, 54, 0.986);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 6vh;
+}
+
+#header a.active{
+    color: rgb(159, 150, 194);
+}
+
+#header .dropdown-menu a{
+    color: turquoise;
+}
+
+.remove-padding{
+    padding: 0;
+}
+
+.remove-margin{
+    margin: 0;
+}
+
+#footer{
+    min-height: 4vh;
+    background-color: rgba(50, 44, 54, 0.986);
+    color: white;
+}
+
+#jezik{
+    float: right;
+    font-size: 1.5vh;
+    padding-top: 1.8vh;
+}
+
+#baneri a img{
+    width: 80%;
+    padding: 10%;
+    border: 1px dotted rgba(50, 44, 54, 0.986);
+    margin-top: 5%;
+}
+
+#baneri a img:hover, .tabela td img:hover{
+    border: 2px dotted rgba(50, 44, 54, 0.986);
+}
+
+.tabela img{
+    max-width: 100%;
+    border: 1px dotted rgba(50, 44, 54, 0.986);
+}
+
+.tabela a{
+    color: rgba(50, 44, 54, 0.986);
+}
+
+.add-padding{
+    padding: 3% 5%;
+}
+
+.leva-strana{
+    width: 20%;
+    margin: 0;
+    float: left;
+    padding-top: 5%;
+    padding-left: 0.5%;
+}
+
+.desna-strana{
+    width: 80%;
+    margin: 0;
+    float: right;
+}
+
+#kinds{
+    padding-left: 5%;
+    color:rgb(28, 113, 119);
+}
+
+#telo a{
+    color:rgba(50, 44, 54, 0.986);
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+}
+
+#video{
+    width: 100%;
+    height: 100%;
+}
