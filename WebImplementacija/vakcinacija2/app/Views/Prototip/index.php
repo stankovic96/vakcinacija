@@ -20,8 +20,9 @@
             </div>
             <div class="col-8">
                 <nav class="nav">
-                    <a href="index.html" class="nav-link active">Почетна</a>
-                    <a href="registracija.html" class="nav-link">Регистрација</a>
+                    <a href="#" class="nav-link active">Почетна</a>
+<!--                    <a href="registracija.html" class="nav-link">Registracija</a>-->
+                    <?= anchor("Gost/registracija", "Registracija", 'class = "nav-link"') ?>
                     <a href="prijava.html" class="nav-link">Пријава</a>
                     <a href="opisi.html" class="nav-link">О вакцинама</a>
                     <a href="statistika.html" class="nav-link">Статистика</a>

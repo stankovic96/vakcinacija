@@ -1,0 +1,121 @@
+CRITICAL - 2021-05-31 07:10:36 --> Invalid file: Prototip/prototip/registracija.php
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Prototip/protot...')
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/protot...', Array, true)
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gost.php(15): view('Prototip/protot...', Array)
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gost.php(25): App\Controllers\Gost->prikaz('prototip/regist...', Array)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gost->registracija()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gost))
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#9 {main}
+CRITICAL - 2021-05-31 08:00:38 --> Undefined variable: gradovi
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Views\Prototip\registracija.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\v...', 86, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/regist...', Array, true)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gost.php(15): view('Prototip/regist...', Array)
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gost.php(111): App\Controllers\Gost->prikaz('registracija.ph...', Array)
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gost->registracijaSubmit()
+#7 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gost))
+#8 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#11 {main}
+CRITICAL - 2021-05-31 08:31:54 --> Class 'App\Controllers\Entites\Mesto' does not exist
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\persistence\lib\Doctrine\Persistence\Mapping\RuntimeReflectionService.php(38): Doctrine\Persistence\Mapping\MappingException::nonExistingClass('App\\Controllers...')
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\persistence\lib\Doctrine\Persistence\Mapping\AbstractClassMetadataFactory.php(326): Doctrine\Persistence\Mapping\RuntimeReflectionService->getParentClasses('App\\Controllers...')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\persistence\lib\Doctrine\Persistence\Mapping\AbstractClassMetadataFactory.php(360): Doctrine\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses('App\\Controllers...')
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\Mapping\ClassMetadataFactory.php(85): Doctrine\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata('App\\Controllers...')
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\persistence\lib\Doctrine\Persistence\Mapping\AbstractClassMetadataFactory.php(251): Doctrine\ORM\Mapping\ClassMetadataFactory->loadMetadata('App\\Controllers...')
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\EntityManager.php(293): Doctrine\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor('App\\Controllers...')
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\Repository\DefaultRepositoryFactory.php(45): Doctrine\ORM\EntityManager->getClassMetadata('App\\Controllers...')
+#7 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\EntityManager.php(768): Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository(Object(Doctrine\ORM\EntityManager), 'App\\Controllers...')
+#8 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gost.php(115): Doctrine\ORM\EntityManager->getRepository('App\\Controllers...')
+#9 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gost->registracijaSubmit()
+#10 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gost))
+#11 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#13 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#14 {main}
+CRITICAL - 2021-05-31 08:32:11 --> Unrecognized field: Naziv
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\Persisters\Entity\BasicEntityPersister.php(1715): Doctrine\ORM\ORMException::unrecognizedField('Naziv')
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\Persisters\Entity\BasicEntityPersister.php(1590): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->getSelectConditionStatementColumnSQL('Naziv', NULL)
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\Persisters\Entity\BasicEntityPersister.php(1735): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->getSelectConditionStatementSQL('Naziv', 'Beograd', NULL)
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\Persisters\Entity\BasicEntityPersister.php(1072): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->getSelectConditionSQL(Array, NULL)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\Persisters\Entity\BasicEntityPersister.php(894): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->getSelectSQL(Array, NULL, NULL, NULL, NULL, NULL)
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\EntityRepository.php(217): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->loadAll(Array, NULL, NULL, NULL)
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gost.php(116): Doctrine\ORM\EntityRepository->findBy(Array)
+#7 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gost->registracijaSubmit()
+#8 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gost))
+#9 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#12 {main}
+CRITICAL - 2021-05-31 08:33:05 --> Call to a member function getId() on array
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gost->registracijaSubmit()
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gost))
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#5 {main}
+CRITICAL - 2021-05-31 08:33:25 --> Call to a member function getIdMesta() on array
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gost->registracijaSubmit()
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gost))
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#5 {main}
+CRITICAL - 2021-05-31 08:35:13 --> Undefined variable: idMesta
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gost.php(120): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\v...', 120, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gost->registracijaSubmit()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gost))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-05-31 12:42:03 --> Argument 1 passed to App\Models\Entities\Gradjanin::setIdmesta() must be an instance of App\Models\Entities\Mesto or null, int given, called in C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gost.php on line 130
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gost.php(130): App\Models\Entities\Gradjanin->setIdmesta(1)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gost->registracijaSubmit()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gost))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-05-31 12:46:02 --> Undefined variable: thigs
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gost.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\v...', 122, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gost->registracijaSubmit()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gost))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-05-31 12:46:02 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-31 12:48:19 --> Invalid file: Prototip/prijava.phh
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Prototip/prijav...')
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/prijav...', Array, true)
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gost.php(23): view('Prototip/prijav...', Array)
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gost.php(141): App\Controllers\Gost->prikaz('prijava.phh', Array)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gost->prijava()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gost))
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#9 {main}
+CRITICAL - 2021-05-31 13:08:13 --> Cannot access private property App\Models\Entities\Gradjanin::$jmbg
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gost->registracijaSubmit()
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gost))
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#5 {main}
+CRITICAL - 2021-05-31 14:56:46 --> syntax error, unexpected '$this' (T_VARIABLE)
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Gost/registraci...')
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(812): CodeIgniter\Router\Router->handle('Gost/registraci...')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(392): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}

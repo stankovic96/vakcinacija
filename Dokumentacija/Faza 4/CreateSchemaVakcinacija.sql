@@ -36,6 +36,11 @@ DEFAULT CHARACTER SET = utf8;
 
 SHOW WARNINGS;
 
+INSERT INTO `mesto` (`idMesta`, `Naziv`, `Opis`, `DnevnaKolicina`) VALUES
+(1, 'Beograd', NULL, NULL),
+(2, 'Smederevo', NULL, NULL),
+(3, 'Novi Pazar', NULL, NULL);
+
 -- -----------------------------------------------------
 -- Table `vakcinacija`.`TipVakcine`
 -- -----------------------------------------------------
@@ -85,7 +90,8 @@ DROP TABLE IF EXISTS `vakcinacija`.`Gradjanin` ;
 
 SHOW WARNINGS;
 CREATE TABLE IF NOT EXISTS `vakcinacija`.`Gradjanin` (
-  `JMBG` CHAR(13) NOT NULL,
+  `idGradjanin` INT NOT NULL AUTO_INCREMENT,
+  `JMBG` CHAR(13) NULL DEFAULT NULL,
   `Ime` VARCHAR(50) NULL DEFAULT NULL,
   `Prezime` VARCHAR(50) NULL DEFAULT NULL,
   `BrojTelefona` VARCHAR(45) NULL DEFAULT NULL,
@@ -104,7 +110,7 @@ CREATE TABLE IF NOT EXISTS `vakcinacija`.`Gradjanin` (
   `IdMesta` INT NULL DEFAULT NULL,
   `email` VARCHAR(100) NULL,
   `password` VARCHAR(512) NULL,
-  PRIMARY KEY (`JMBG`),
+  PRIMARY KEY (`idGradjanin`),
   INDEX `fk_Gradjanin_TipVakcine_idx` (`IdTipVakcine` ASC) VISIBLE,
   INDEX `fk_Gradjanin_ZdravstveniRadnici1_idx` (`IdSestraT1` ASC) VISIBLE,
   INDEX `fk_Gradjanin_ZdravstveniRadnici2_idx` (`IdSestraT2` ASC) VISIBLE,
@@ -125,6 +131,10 @@ CREATE TABLE IF NOT EXISTS `vakcinacija`.`Gradjanin` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
+INSERT INTO `gradjanin` (`idGradjanin`, `JMBG`, `Ime`, `Prezime`, `BrojTelefona`, `Adresa`, `Prijava`, `IdTipVakcine`, `StatusPrijave`, `TerminT1`, `DatumT1`, `StatusT1`, `TerminT2`, `DatumT2`, `StatusT2`, `IdSestraT1`, `IdSestraT2`, `IdMesta`, `email`, `password`) VALUES
+(1, '2903001783953', 'Amar', 'Celic', '0611231236', 'Stevana Nemanje 5', 1, NULL, 'Nije Zakazan', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 'amarcelic@gmail.com', 'amarcelic'),
+(2, '1406999783953', 'Nedim', 'Jukic', '0616090711', 'Dubrovacka 406', NULL, NULL, 'Nije Zakazan', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 3, 'nedim1jukic@gmail.com', 'nedim123');
+
 SHOW WARNINGS;
 
 -- -----------------------------------------------------
@@ -135,7 +145,7 @@ DROP TABLE IF EXISTS `vakcinacija`.`IzvestajLekara` ;
 SHOW WARNINGS;
 CREATE TABLE IF NOT EXISTS `vakcinacija`.`IzvestajLekara` (
   `idIzvestaja` INT NOT NULL,
-  `IdGradjanin` CHAR(8) NOT NULL,
+  `IdGradjanin` INT NOT NULL,
   `Diagnoza` LONGTEXT NULL DEFAULT NULL,
   `IdTipVakcine` INT NOT NULL,
   PRIMARY KEY (`idIzvestaja`),
@@ -143,7 +153,7 @@ CREATE TABLE IF NOT EXISTS `vakcinacija`.`IzvestajLekara` (
   INDEX `fk_IzvestajLekara_TipVakcine1_idx` (`IdTipVakcine` ASC) VISIBLE,
   CONSTRAINT `fk_IzvestajLekara_Gradjanin1`
     FOREIGN KEY (`IdGradjanin`)
-    REFERENCES `vakcinacija`.`Gradjanin` (`JMBG`),
+    REFERENCES `vakcinacija`.`Gradjanin` (`idGradjanin`),
   CONSTRAINT `fk_IzvestajLekara_TipVakcine1`
     FOREIGN KEY (`IdTipVakcine`)
     REFERENCES `vakcinacija`.`TipVakcine` (`idTipVakcine`))

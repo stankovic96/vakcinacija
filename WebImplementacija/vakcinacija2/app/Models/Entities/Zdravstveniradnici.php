@@ -24,7 +24,7 @@ class Zdravstveniradnici
     /**
      * @var string|null
      *
-     * @ORM\Column(name="JMBG", type="string", length=45, nullable=true)
+     * @ORM\Column(name="JMBG", type="string", length=13, nullable=true)
      */
     private $jmbg;
 

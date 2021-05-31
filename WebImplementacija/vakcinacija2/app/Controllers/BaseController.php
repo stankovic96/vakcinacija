@@ -20,6 +20,8 @@ use Psr\Log\LoggerInterface;
  * For security be sure to declare any new methods as protected or private.
  */
 
+use App\Models\Entities;
+
 class BaseController extends Controller
 {
 	/**
@@ -28,7 +30,8 @@ class BaseController extends Controller
 	 * @var IncomingRequest|CLIRequest
 	 */
 	protected $request;
-
+        
+        
 	/**
 	 * An array of helpers to be loaded automatically upon
 	 * class instantiation. These helpers will be available
@@ -54,5 +57,8 @@ class BaseController extends Controller
 		// Preload any models, libraries, etc, here.
 		//--------------------------------------------------------------------
 		// E.g.: $this->session = \Config\Services::session();
+                
+                $this->session = session();
+                $this->doctrine=\Config\Services::doctrine();
 	}
 }

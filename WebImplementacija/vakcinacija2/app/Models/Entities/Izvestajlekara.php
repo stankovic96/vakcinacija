@@ -33,7 +33,7 @@ class Izvestajlekara
      *
      * @ORM\ManyToOne(targetEntity="App\Models\Entities\Gradjanin")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="IdGradjanin", referencedColumnName="JMBG")
+     *   @ORM\JoinColumn(name="IdGradjanin", referencedColumnName="idGradjanin")
      * })
      */
     private $idgradjanin;

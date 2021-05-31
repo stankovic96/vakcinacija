@@ -12,12 +12,20 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Gradjanin
 {
+    
+     /**
+     * @var int
+     *
+     * @ORM\Column(name="idGradjanin", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idGradjanin;
+    
     /**
      * @var string
      *
-     * @ORM\Column(name="JMBG", type="string", length=8, nullable=false, options={"fixed"=true})
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @ORM\Column(name="JMBG", type="string", length=13, nullable=true)
      */
     private $jmbg;
 
@@ -169,7 +177,20 @@ class Gradjanin
     {
         $this->izvestaji = new \Doctrine\Common\Collections\ArrayCollection();
     }
+    
+     /**
+     * Set jmbg.
+     *
+     * @param string|null jmbg
+     *
+     * @return Gradjanin
+     */
+    public function setJmbg($jmbg = null)
+    {
+        $this->jmbg = $jmbg;
 
+        return $this;
+    }
 
     /**
      * Get jmbg.
@@ -180,7 +201,7 @@ class Gradjanin
     {
         return $this->jmbg;
     }
-
+    
     /**
      * Set ime.
      *

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Views/Prototip/registracija.php</file>
+            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/BaseController.php</file>
+            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Config/Database.php</file>
+            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Config/Services.php</file>
+            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Models/Repositories/GradjaninRepository.php</file>
+            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Gost.php</file>
+            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Models/Entities/Gradjanin.php</file>
+            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/.env</file>
+        </group>
+    </open-files>
+</project-private>
