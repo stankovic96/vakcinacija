@@ -254,6 +254,8 @@ CREATE TABLE IF NOT EXISTS `vakcinacija`.`Admin` (
   `idAdmin` INT NOT NULL,
   `email` VARCHAR(45) NULL,
   `password` VARCHAR(512) NULL,
+  `ime` VARCHAR(45) NULL,
+  `prezime` VARCHAR(45) NULL,
   PRIMARY KEY (`idAdmin`))
 ENGINE = InnoDB;
 

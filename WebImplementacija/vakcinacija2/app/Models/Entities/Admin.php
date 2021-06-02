@@ -34,7 +34,20 @@ class Admin
      * @ORM\Column(name="password", type="string", length=512, nullable=true)
      */
     private $password;
-
+    
+    /**
+     * @var string|null
+     *
+     * @ORM\Column(name="ime", type="string", length=45, nullable=true)
+     */
+    private $ime;
+    
+    /**
+     * @var string|null
+     *
+     * @ORM\Column(name="prezime", type="string", length=45, nullable=true)
+     */
+    private $prezime;
 
 
     /**
@@ -42,7 +55,7 @@ class Admin
      *
      * @return int
      */
-    public function getIdadmin()
+    public function getId()
     {
         return $this->idadmin;
     }
@@ -93,5 +106,57 @@ class Admin
     public function getPassword()
     {
         return $this->password;
+    }
+    
+     /**
+     * Set ime.
+     *
+     * @param string|null $ime
+     *
+     * @return Admin
+     */
+    public function setIme($ime = null)
+    {
+        $this->ime = $ime;
+
+        return $this;
+    }
+
+    /**
+     * Get ime.
+     *
+     * @return string|null
+     */
+    public function getIme()
+    {
+        return $this->ime;
+    }
+    
+    /**
+     * Set prezime.
+     *
+     * @param string|null $prezime
+     *
+     * @return Admin
+     */
+    public function setPrezime($prezime = null)
+    {
+        $this->prezime = $prezime;
+
+        return $this;
+    }
+
+    /**
+     * Get prezime..
+     *
+     * @return string|null
+     */
+    public function getPrezime()
+    {
+        return $this->prezime;
+    }
+    
+    public function getTip(){
+        return "Admin";
     }
 }

@@ -19,10 +19,11 @@
             </div>
             <div class="col-8">
                 <nav class="nav">
-                    <a href="index.html" class="nav-link">Почетна</a>
-                    <a href="index.html" class="nav-link">Одјава</a>
-                    <a href="opisi.html" class="nav-link">О вакцинама</a>
-                    <a href="statistika.html" class="nav-link">Статистика</a>
+                    <a href="index.html" class="nav-link">Početna</a>
+                    <!--<a href="index.html" class="nav-link">Odjava</a>-->
+                    <?= anchor("Admin/odjava", "Odjava", 'class = "nav-link"') ?>
+                    <a href="opisi.html" class="nav-link">O vakcinama</a>
+                    <a href="statistika.html" class="nav-link">Statistika</a>
                 </nav>
             </div>
         </div>
@@ -40,7 +41,7 @@
                 <img src="<?php echo base_url("assets/slike/logo.png")?>" id="logo2" alt="logo">
             </div>
             <div class="col-12 col-md-8" id="glavni-sadrzaj">
-                <p>Ваше име је: &lt;овде ставити име и презиме&gt;</p>
+                <p>Admin: <?php echo $ime." ".$prezime;?></p>
             </div>
             <div class="col-12 col-md-2 remove-padding text-center" id="baneri">
                 <a href="https://www.pfizer.com/">

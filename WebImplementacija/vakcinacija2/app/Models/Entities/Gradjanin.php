@@ -13,7 +13,7 @@ use Doctrine\ORM\Mapping as ORM;
 class Gradjanin
 {
     
-     /**
+    /**
      * @var int
      *
      * @ORM\Column(name="idGradjanin", type="integer", nullable=false)
@@ -176,6 +176,17 @@ class Gradjanin
     public function __construct()
     {
         $this->izvestaji = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+    
+    /**
+     * Get idGradjanin.
+     *
+     * @return int
+     */
+    
+    public function getId()
+    {
+        return $this->idGradjanin;
     }
     
      /**
@@ -668,5 +679,9 @@ class Gradjanin
     public function getIzvestaji()
     {
         return $this->izvestaji;
+    }
+    
+    public function getTip(){
+        return "Gradjanin";
     }
 }

@@ -30,9 +30,8 @@ class Gost extends BaseController
 
     public function registracijaSubmit(){
         //$this->load->library('form_validation');
-        $validation =  \Config\Services::validation();
-        $validation->reset();
-        $validation->setRules([
+        $this->validation->reset();
+        $this->validation->setRules([
             'lozinka' => 'required|min_length[8]',
             'potvrda' => 'required',
             'jmbg' => 'required|min_length[13]|max_length[13]',
@@ -74,8 +73,8 @@ class Gost extends BaseController
         ]);
         
         
-        if(!$validation->withRequest($this->request)->run()){
-           return $this->prikaz('registracija.php', ["greske" => $validation->getErrors()]);
+        if(!$this->validation->withRequest($this->request)->run()){
+           return $this->prikaz('registracija.php', ["greske" => $this->validation->getErrors()]);
         }
         
         $lozinka = $this->request->getVar('lozinka');
@@ -134,12 +133,110 @@ class Gost extends BaseController
 
         $this->doctrine->em->persist($gradjanin);
         $this->doctrine->em->flush();
-        
-        echo "idemo".$gradjanin->getJmbg();
+
         return redirect()->to(site_url("Gost/prijava"));
     }
     
     public function prijava(){
         return $this->prikaz("prijava.php", []);
+        //return redirect()->to(site_url("Gost/prikazPrijave"));
+    }
+    
+    public function prikazPrijave(){
+        return $this->prikaz("prijava.php", []);
+    }
+    
+    public function prijavaSubmit(){
+        $this->validation->reset();
+        $this->validation->setRules([
+            'lozinka' => 'required',
+            'email' => 'required'
+        ],
+        [   // Errors
+            'lozinka' => [
+                'required' => 'Ovo polje je obavezno',
+            ],
+            'email' =>[
+                'required' => 'Ovo polje je obavezno',
+            ]
+        ]);
+        
+        
+        if(!$this->validation->withRequest($this->request)->run()){
+           return $this->prikaz('prijava.php', ["greske" => $this->validation->getErrors()]);
+        }
+        
+        $tip = $this->request->getVar('tip');
+        if($tip == "Izaberite tip"){
+            return $this->prikaz('prijava.php', ["greske" => ['tip' => "Izaberite odgovarajuci tip"]]);
+        }
+        
+        $mail = $this->request->getVar('email');
+        $lozinka = $this->request->getVar('lozinka');
+        
+        $gradjanin;
+        $rezultat;
+        if($tip == "Gradjanin"){
+            $gradjanin = $this->doctrine->em->getRepository(Entities\Gradjanin::class)
+                    ->findBy(['email' => $mail]);
+            $rezultat = $this->provera($gradjanin, $lozinka, "Gradjanin");
+        }
+        else if($tip == "Admin"){
+            $gradjanin = $this->doctrine->em->getRepository(Entities\Admin::class)
+                    ->findBy(['email' => $mail]);
+            $rezultat = $this->provera($gradjanin, $lozinka, "Admin");
+        }
+        else if($tip == "Lekar"){
+            $gradjanin = $this->doctrine->em->getRepository(Entities\Zdravstveniradnici::class)
+                    ->findBy(['email' => $mail]);
+            $rezultat = $this->provera($gradjanin, $lozinka, "ZdravstveniRadnik");
+            
+            if($gradjanin[0]->getTip() != "Lekar")
+                $rezultat = 2;
+        }
+        else if($tip == "Sestra"){
+            $gradjanin = $this->doctrine->em->getRepository(Entities\Zdravstveniradnici::class)
+                    ->findBy(['email' => $mail]);
+            $rezultat = $this->provera($gradjanin, $lozinka, "ZdravstveniRadnik");
+            if($gradjanin[0]->getTip() != "Sestra")
+                $rezultat = 2;
+        }
+        else{
+            return $this->prikaz('prijava.php', ["greske" => ['tip' => "Izaberite odgovarajuci tip"]]);
+        }
+        
+        if($rezultat == 2){
+            return $this->prikaz('prijava.php', ["greske" => ['lozinka' => "Lozinka nije tacna za izabrani tip korisnika"]]);
+        }
+        if($rezultat == 3){
+            return $this->prikaz('prijava.php', ["greske" => ['email' => "Email nije tacan za izabrani tip korisnika"]]);
+        }
+
+        
+        $korisnik = $gradjanin[0];
+        
+        if($this->session->has('korisnik')){
+            echo 'POSTOJI';
+            return redirect()->to(site_url("$tip"));
+        }
+        
+        if($rezultat == 1){
+            $this->session->set('korisnik', $korisnik);
+            return redirect()->to(site_url("$tip"));
+        }
+    }
+    
+    private function provera($gradjanin, $lozinka, $tip){
+        if(count($gradjanin) == 1){
+            if($lozinka == $gradjanin[0]->getPassword()){
+               return 1;
+            }
+            else{
+                return 2;
+            }
+        }
+        else{
+            return 3;
+        }
     }
 }

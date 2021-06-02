@@ -58,7 +58,15 @@ class BaseController extends Controller
 		//--------------------------------------------------------------------
 		// E.g.: $this->session = \Config\Services::session();
                 
-                $this->session = session();
+                $this->session = \Config\Services::session();
                 $this->doctrine=\Config\Services::doctrine();
+                $this->validation =  \Config\Services::validation();
 	}
+        
+        public function odjava(){
+            $this->session->stop();
+            $this->session->destroy();
+            
+            return redirect()->to(site_url('/'));
+        }
 }

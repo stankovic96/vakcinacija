@@ -1,0 +1,347 @@
+CRITICAL - 2021-06-01 07:04:32 --> Call to undefined function App\Controllers\provera()
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gost->prijavaSubmit()
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gost))
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#5 {main}
+CRITICAL - 2021-06-01 07:09:26 --> Call to undefined function App\Controllers\provera()
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gost->prijavaSubmit()
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gost))
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#5 {main}
+CRITICAL - 2021-06-01 07:09:49 --> Call to undefined function App\Controllers\provera()
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gost->prijavaSubmit()
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gost))
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#5 {main}
+CRITICAL - 2021-06-01 07:09:49 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 08:14:04 --> Too few arguments to function App\Controllers\Gradjanin::index(), 0 passed in C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 931 and exactly 1 expected
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gradjanin->index()
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gradjanin))
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#5 {main}
+CRITICAL - 2021-06-01 08:14:23 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 62918656 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 08:15:46 --> Array to string conversion
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gost.php(202): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\wamp64\\www\\v...', 202, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gost.php(176): App\Controllers\Gost->provera(Array, 'nedim123', 'Gradjanin')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gost->prijavaSubmit()
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gost))
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#7 {main}
+CRITICAL - 2021-06-01 08:15:46 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 08:16:13 --> Array to string conversion
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gost.php(202): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\wamp64\\www\\v...', 202, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gost.php(176): App\Controllers\Gost->provera(Array, 'nedim123', 'Gradjanin')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gost->prijavaSubmit()
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gost))
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#7 {main}
+CRITICAL - 2021-06-01 08:16:13 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 08:24:10 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 08:24:50 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 08:25:24 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 08:25:52 --> Undefined variable: ime
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Views\Prototip\gradjanin.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\v...', 42, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/gradja...', Array, true)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gradjanin.php(19): view('Prototip/gradja...', Array)
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gradjanin.php(9): App\Controllers\Gradjanin->prikaz('gradjanin.php', Array)
+#6 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gradjanin->index()
+#7 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gradjanin))
+#8 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#11 {main}
+CRITICAL - 2021-06-01 08:31:11 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 08:32:39 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 08:35:24 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 08:48:38 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 08:57:26 --> Call to a member function getIme() on null
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gradjanin.php(9): App\Controllers\Gradjanin->prikaz('gradjanin.php', Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gradjanin->index()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gradjanin))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-01 08:59:55 --> Call to undefined method App\Controllers\Gost::prover()
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gost->prijavaSubmit()
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gost))
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#5 {main}
+CRITICAL - 2021-06-01 08:59:56 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 62918656 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 09:00:55 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 09:01:44 --> Too few arguments to function App\Controllers\Admin::index(), 0 passed in C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 931 and exactly 1 expected
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Admin->index()
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#5 {main}
+CRITICAL - 2021-06-01 09:01:59 --> Too few arguments to function App\Controllers\Admin::index(), 0 passed in C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 931 and exactly 1 expected
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Admin->index()
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#5 {main}
+CRITICAL - 2021-06-01 09:07:53 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 62918656 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 09:08:35 --> Call to a member function getIme() on null
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gradjanin.php(9): App\Controllers\Gradjanin->prikaz('gradjanin.php', Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gradjanin->index()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gradjanin))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-01 09:08:56 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 09:13:42 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 62918656 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 09:14:20 --> Call to a member function getIme() on null
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gradjanin.php(9): App\Controllers\Gradjanin->prikaz('gradjanin.php', Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gradjanin->index()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gradjanin))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-01 09:14:36 --> Call to a member function getIme() on null
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gradjanin.php(9): App\Controllers\Gradjanin->prikaz('gradjanin.php', Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gradjanin->index()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gradjanin))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-01 09:14:57 --> Call to a member function getIme() on null
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gradjanin.php(9): App\Controllers\Gradjanin->prikaz('gradjanin.php', Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gradjanin->index()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gradjanin))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-01 09:15:15 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 09:17:51 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 09:35:03 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 62918656 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 09:46:33 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 62918656 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 09:47:04 --> Call to a member function getIme() on null
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gradjanin.php(9): App\Controllers\Gradjanin->prikaz('gradjanin.php', Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gradjanin->index()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gradjanin))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-01 09:47:27 --> Call to a member function getIme() on null
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gradjanin.php(9): App\Controllers\Gradjanin->prikaz('gradjanin.php', Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gradjanin->index()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gradjanin))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-01 09:48:10 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 09:49:59 --> Call to a member function getIme() on null
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gradjanin.php(9): App\Controllers\Gradjanin->prikaz('gradjanin.php', Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gradjanin->index()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gradjanin))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-01 09:50:28 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 09:51:58 --> Call to a member function getIme() on null
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gradjanin.php(9): App\Controllers\Gradjanin->prikaz('gradjanin.php', Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gradjanin->index()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gradjanin))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-01 09:52:51 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 09:55:41 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 09:57:49 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 10:01:58 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 62918656 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 10:06:04 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 62918656 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 10:26:00 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 62918656 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 15:12:07 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 62918656 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 15:26:53 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 62918656 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 15:38:38 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 15:43:17 --> syntax error, unexpected 'if' (T_IF), expecting ',' or ';'
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Gost/prijava')
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(812): CodeIgniter\Router\Router->handle('Gost/prijava')
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(392): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-01 15:44:42 --> Call to a member function getIme() on null
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gradjanin.php(9): App\Controllers\Gradjanin->prikaz('gradjanin.php', Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gradjanin->index()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gradjanin))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-01 15:45:05 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 15:45:36 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 16:10:09 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 62918656 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 16:13:59 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 16:27:59 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 16:30:00 --> Call to a member function get() on null
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Admin.php(9): App\Controllers\Admin->prikaz('admin.php', Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Admin->index()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-01 16:31:03 --> Call to a member function get() on null
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Admin.php(9): App\Controllers\Admin->prikaz('admin.php', Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Admin->index()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-01 16:32:05 --> Call to a member function get() on null
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Admin.php(9): App\Controllers\Admin->prikaz('admin.php', Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Admin->index()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-01 17:29:08 --> Call to a member function getIme() on null
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gradjanin.php(9): App\Controllers\Gradjanin->prikaz('gradjanin.php', Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gradjanin->index()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gradjanin))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-01 17:37:01 --> Undefined variable: config
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\BaseController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\v...', 61, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-01 17:37:05 --> Undefined variable: config
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\BaseController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\v...', 61, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-01 17:37:27 --> Undefined variable: session
+#0 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Gost.php(213): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\v...', 213, Array)
+#1 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Gost->prijavaSubmit()
+#2 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gost))
+#3 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-01 17:37:27 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 62918656 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 17:38:13 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 17:49:39 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 17:51:23 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 62918656 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-01 18:25:18 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 62918656 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

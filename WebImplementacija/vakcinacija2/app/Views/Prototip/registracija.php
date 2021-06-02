@@ -22,7 +22,8 @@
                 <nav class="nav">
                     <a href="index.php" class="nav-link">Početna</a>
                     <a href="#" class="nav-link active">Registracija</a>
-                    <a href="prijava.html" class="nav-link">Prijava</a>
+                    <!--<a href="prijava.html" class="nav-link">Prijava</a>-->
+                    <?= anchor("Gost/prijava", "Prijava", 'class = "nav-link"') ?>
                     <a href="opisi.html" class="nav-link">O vakcinama</a>
                     <a href="statistika.html" class="nav-link">Statistika</a>
                 </nav>

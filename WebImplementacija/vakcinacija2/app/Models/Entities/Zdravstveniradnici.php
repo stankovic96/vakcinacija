@@ -214,7 +214,7 @@ class Zdravstveniradnici
      *
      * @return string|null
      */
-    public function getTipradnika()
+    public function getTip()
     {
         return $this->tipradnika;
     }
