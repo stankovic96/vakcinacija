@@ -81,6 +81,11 @@ CREATE TABLE IF NOT EXISTS `vakcinacija`.`ZdravstveniRadnici` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
+INSERT INTO `zdravstveniradnici` (`idZdravstveniRadnik`, `JMBG`, `Ime`, `Prezime`, `Licenca`, `TipRadnika`, `Specijalizacija`, `email`, `password`) VALUES
+(1, '1234567891234', 'Ivana', 'Peric', '22000', 'Sestra', 'Nema', 'ivana@gmail.com', 'ivana123'),
+(2, '1234567894321', 'Tamara', 'Jovic', '22444', 'Lekar', 'Opsta medicina', 'tamara@gmail.com', 'tamara123');
+
+
 SHOW WARNINGS;
 
 -- -----------------------------------------------------
@@ -258,6 +263,9 @@ CREATE TABLE IF NOT EXISTS `vakcinacija`.`Admin` (
   `prezime` VARCHAR(45) NULL,
   PRIMARY KEY (`idAdmin`))
 ENGINE = InnoDB;
+
+INSERT INTO `admin` (`idAdmin`, `email`, `password`, `ime`, `prezime`) VALUES
+(1, 'marko@gmail.com', 'marko123', 'Marko', 'Stankovic');
 
 SHOW WARNINGS;
 
