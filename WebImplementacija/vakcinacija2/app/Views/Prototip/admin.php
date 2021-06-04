@@ -19,11 +19,9 @@
             </div>
             <div class="col-8">
                 <nav class="nav">
-                    <a href="index.html" class="nav-link">Početna</a>
-                    <!--<a href="index.html" class="nav-link">Odjava</a>-->
+                    <?= anchor("/", "Pocetna", 'class = "nav-link"') ?>
                     <?= anchor("Admin/odjava", "Odjava", 'class = "nav-link"') ?>
                     <?= anchor("Admin/Opisi", "O vakcinama", 'class = "nav-link"') ?>
-                    <!--                <a href="statistika.html" class="nav-link">Statistika</a>-->
                     <?= anchor("Admin/Statistika", "Statistika Vakcina", 'class = "nav-link"') ?>
                 </nav>
             </div>
@@ -31,10 +29,9 @@
         <div class="row" id="main">
             <div class="col-12 col-md-2 remove-padding" id="levi-deo">
                 <ul class="breadcrumb remove-margin" id="putokaz">
-                    <li class="breadcrumb-item"><a href="admin.php">Администратор</a></li>
+                    <li class="breadcrumb-item"><?= anchor("/", "Administrator", 'class = "nav-link"') ?></li>
                 </ul>
                 <nav class="nav flex-column" id="vertikalni-meni">
-                    <!--<a href="vakcina_nova.html" class="nav-link active">Уношење новог типа вакцине</a>-->
                     <?= anchor("Admin/NovaVakcina", "Unosenje novog tipa vakcine", 'class = "nav-link"') ?>
                 </nav>
                 <nav class="nav flex-column" id="vertikalni-meni">

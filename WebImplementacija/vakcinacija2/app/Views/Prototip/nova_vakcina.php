@@ -19,12 +19,9 @@
         </div>
         <div class="col-8">
             <nav class="nav">
-                <a href="index.html" class="nav-link">Početna</a>
-                <!--<a href="index.html" class="nav-link">Odjava</a>-->
+                <?= anchor("/", "Pocetna", 'class = "nav-link"') ?>
                 <?= anchor("Admin/odjava", "Odjava", 'class = "nav-link"') ?>
-<!--                <a href="opisi.html" class="nav-link">O vakcinama</a>-->
                 <?= anchor("Admin/Opisi", "O vakcinama", 'class = "nav-link"') ?>
-<!--                <a href="statistika.html" class="nav-link">Statistika</a>-->
                 <?= anchor("Admin/Statistika", "Statistika vakcina", 'class = "nav-link"') ?>
 
             </nav>
