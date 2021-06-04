@@ -39,7 +39,7 @@
                 <img src="<?php echo base_url("assets/slike/logo.png")?>" id="logo2" alt="logo">
             </div>
             <div class="col-12 col-md-8 remove-padding" id="glavni-sadrzaj">
-                <p>Lekar: <?php echo $ime." ".$prezime;?> </p>
+                <p>Lekar: <?php echo $korisnik->getIme()." ".$korisnik->getPrezime();?> </p>
             </div>
             <div class="col-12 col-md-2 remove-padding text-center" id="baneri">
                 <a href="https://www.pfizer.com/">

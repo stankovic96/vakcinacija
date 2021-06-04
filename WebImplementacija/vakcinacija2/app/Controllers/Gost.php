@@ -11,14 +11,14 @@ class Gost extends BaseController
     }
     
     protected function prikaz($page, $data){
-        $gradovi = $this->doctrine->em->getRepository(Entities\Mesto::class)->findAll();
-        $nazivi = [];
-        foreach($gradovi as $grad)
-        {
-            $nazivi[] = $grad->getNaziv();
-        }
+//        $gradovi = $this->doctrine->em->getRepository(Entities\Mesto::class)->findAll();
+//        $nazivi = [];
+//        foreach($gradovi as $grad)
+//        {
+//            $nazivi[] = $grad->getNaziv();
+//        }
         $data['controller'] = 'Gost';
-        $data['gradovi'] = $nazivi;
+//        $data['gradovi'] = $nazivi;
         
         echo view("Prototip/$page", $data);
     }
@@ -37,7 +37,7 @@ class Gost extends BaseController
             'jmbg' => 'required|min_length[13]|max_length[13]',
             'ime' => 'required',
             'prezime' => 'required',
-            'mesto' => 'required',
+            //'mesto' => 'required',
             'adresa' => 'required',
             'email' => 'required|valid_email'
         ],
@@ -64,9 +64,9 @@ class Gost extends BaseController
                 'required' => 'Ovo polje je obavezno',
                 'valid_email' => 'E-mail nije validan'
             ],
-            'mesto' =>[
-                'required' => 'Ovo polje je obavezno'
-            ],
+//            'mesto' =>[
+//                'required' => 'Ovo polje je obavezno'
+//            ],
             'adresa' =>[
                 'required' => 'Ovo polje je obavezno'
             ]
@@ -101,24 +101,24 @@ class Gost extends BaseController
             return $this->prikaz('registracija.php', ["greske" => ["email" => "Korisnik sa ovim mejlom je vec registrovan"]]);
         }
         
-        if($this->request->getVar('mesto') == "Izaberite mesto"){
-            return $this->prikaz('registracija.php', ["greske" => ["mesto" => "Izaberite odgovarajuce mesto"]]);
-        }
-        
-        $mesta = $this->doctrine->em->getRepository(Entities\Mesto::class)->
-                findBy(['naziv' => $this->request->getVar('mesto')]);
-        
-        $idMesta;
-        
-        if(count($mesta) == 0){
-            return $this->prikaz('registracija.php', ["greske" => ["mesto" => "Izabernao mesto ne postoji"]]);
-        }
-        foreach($mesta as $mesto){
-            $idMesta = $mesto->getIdMesta();
-            break;
-        }
-        
-        $mesto = $this->doctrine->em->getRepository(Entities\Mesto::class)->find($idMesta);
+//        if($this->request->getVar('mesto') == "Izaberite mesto"){
+//            return $this->prikaz('registracija.php', ["greske" => ["mesto" => "Izaberite odgovarajuce mesto"]]);
+//        }
+//        
+//        $mesta = $this->doctrine->em->getRepository(Entities\Mesto::class)->
+//                findBy(['naziv' => $this->request->getVar('mesto')]);
+//        
+//        $idMesta;
+//        
+//        if(count($mesta) == 0){
+//            return $this->prikaz('registracija.php', ["greske" => ["mesto" => "Izabernao mesto ne postoji"]]);
+//        }
+//        foreach($mesta as $mesto){
+//            $idMesta = $mesto->getIdMesta();
+//            break;
+//        }
+//        
+//        $mesto = $this->doctrine->em->getRepository(Entities\Mesto::class)->find($idMesta);
         
         $gradjanin = new Entities\Gradjanin();
         $gradjanin->setIme($this->request->getVar('ime'));
@@ -127,7 +127,7 @@ class Gost extends BaseController
         $gradjanin->setEmail($this->request->getVar('email'));
         $gradjanin->setPassword( $this->request->getVar('lozinka'));
         $gradjanin->setBrojtelefona($this->request->getVar('broj'));
-        $gradjanin->setIdmesta($mesto);
+   //     $gradjanin->setIdmesta($mesto);
         $gradjanin->setStatusprijave("Nije Zakazan");
         $gradjanin->setJmbg($this->request->getVar('jmbg'));
 
@@ -191,14 +191,14 @@ class Gost extends BaseController
                     ->findBy(['email' => $mail]);
             $rezultat = $this->provera($gradjanin, $lozinka, "ZdravstveniRadnik");
             
-            if($gradjanin[0]->getTip() != "Lekar")
+            if($rezultat == 1 && $gradjanin[0]->getTip() != "Lekar")
                 $rezultat = 2;
         }
         else if($tip == "Sestra"){
             $gradjanin = $this->doctrine->em->getRepository(Entities\Zdravstveniradnici::class)
                     ->findBy(['email' => $mail]);
             $rezultat = $this->provera($gradjanin, $lozinka, "ZdravstveniRadnik");
-            if($gradjanin[0]->getTip() != "Sestra")
+            if($rezultat ==1 && $gradjanin[0]->getTip() != "Sestra")
                 $rezultat = 2;
         }
         else{
@@ -214,14 +214,10 @@ class Gost extends BaseController
 
         
         $korisnik = $gradjanin[0];
-        
-        if($this->session->has('korisnik')){
-            echo 'POSTOJI';
-            return redirect()->to(site_url("$tip"));
-        }
-        
+
         if($rezultat == 1){
-            $this->session->set('korisnik', $korisnik);
+            $this->session->set('tip', $tip);
+            $this->session->set('id', $korisnik->getId());
             return redirect()->to(site_url("$tip"));
         }
     }

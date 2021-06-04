@@ -9,9 +9,10 @@ class GostFilter implements FilterInterface
     public function before(RequestInterface $request, $arguments = NULL)
     {
         $session=session();
-        if($session->has('korisnik')){
-            $korisnik = $session->get('korisnik');
-            return redirect()->to(site_url($korisnik->getTip()));
+        if($session->has('id')){
+            $tip = $session->get('tip');
+            if($tip != null)
+            return redirect()->to(site_url($tip));
         }
     }
 

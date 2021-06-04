@@ -94,7 +94,7 @@ class Zdravstveniradnici
      *
      * @return int
      */
-    public function getIdzdravstveniradnik()
+    public function getId()
     {
         return $this->idzdravstveniradnik;
     }

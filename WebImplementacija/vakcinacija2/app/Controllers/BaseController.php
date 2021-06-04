@@ -30,7 +30,7 @@ class BaseController extends Controller
 	 * @var IncomingRequest|CLIRequest
 	 */
 	protected $request;
-        
+        public static $prijava = 0;
         
 	/**
 	 * An array of helpers to be loaded automatically upon

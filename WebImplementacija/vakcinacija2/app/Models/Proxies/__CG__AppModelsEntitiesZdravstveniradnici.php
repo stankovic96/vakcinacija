@@ -179,16 +179,12 @@ class Zdravstveniradnici extends \App\Models\Entities\Zdravstveniradnici impleme
     /**
      * {@inheritDoc}
      */
-    public function getIdzdravstveniradnik()
+    public function getId()
     {
-        if ($this->__isInitialized__ === false) {
-            return (int)  parent::getIdzdravstveniradnik();
-        }
 
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getId', []);
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdzdravstveniradnik', []);
-
-        return parent::getIdzdravstveniradnik();
+        return parent::getId();
     }
 
     /**
@@ -293,12 +289,12 @@ class Zdravstveniradnici extends \App\Models\Entities\Zdravstveniradnici impleme
     /**
      * {@inheritDoc}
      */
-    public function getTipradnika()
+    public function getTip()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getTipradnika', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getTip', []);
 
-        return parent::getTipradnika();
+        return parent::getTip();
     }
 
     /**

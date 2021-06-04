@@ -1,23 +1,92 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\Entities;
 
+ini_set('memory_limit','2000M');
 class Gradjanin extends BaseController
 {
 	public function index()
 	{
-            $this->prikaz('gradjanin.php', []);
+            return $this->prikaz('gradjanin.php', []);
 	}
         
         public function prikaz($page, $data){
             $data['controller'] = "Gradjanin";
             
-            $korisnik = $this->session->get('korisnik');
-            $data['ime'] = $korisnik->getIme();
-            $data['prezime'] = $korisnik->getPrezime();
-            
-//            $data['ime'] = "nedim";
-//            $data['prezime'] = "jukic";
+            $data["korisnik"] = $this->doctrine->em->getRepository(Entities\Gradjanin::class)
+                    ->find($this->session->get("id"));
+
             echo view("Prototip/$page", $data);
+        }
+        
+        public function prijavaVakcina()
+        {
+            $gradjanin = $this->doctrine->em->getRepository(Entities\Gradjanin::class)
+                                    ->find($this->session->get('id'));
+            
+            if($gradjanin->getStatusprijave() == "Zakazan"){
+                return $this->prikaz('gradjanin.php', ['greske' =>['prijava' => 'Nije moguće prijaviti se više puta!']]);
+            }
+            
+            $naziviVakcine = [];
+            
+            $vakcine = $this->doctrine->em->getRepository(Entities\Tipvakcine::class)->findAll();
+                    
+            if($vakcine != null)
+                foreach($vakcine as $vakcina){
+                    $naziviVakcine[] = $vakcina->getNaziv();
+                }
+            else{
+                $naziviVakcine[] = "Ne postoji niti jedna vakcina u ponudi";
+            }
+            
+            $gradovi = $this->doctrine->em->getRepository(Entities\Mesto::class)->findAll();
+            $nazivi = [];
+            
+            if($gradovi != null){
+                foreach($gradovi as $grad)
+                    {
+                        $nazivi[] = $grad->getNaziv();
+                    }
+            }
+            else{
+                $naiziv[] = "Ne postoji grad u kojem se moze primiti vakcina";
+            }
+            return $this->prikaz("vakcinacija_prijava.php", ["vakcine" => $naziviVakcine, "gradovi" => $nazivi]);
+        }
+        
+        public function prijavaVakcinasubmit()
+        {
+            $tip = $this->request->getVar('vakcina');
+            $bolest = $this->request->getVar('bolest');
+            $mesto = $this->request->getVar('mesto');
+            
+            
+            //PROVERA DA LI IMA DOSTUPINIH VAKCINA
+            
+            
+            $gradjanin = $this->doctrine->em->getRepository(Entities\Gradjanin::class)
+                    ->find($this->session->get('id'));
+            
+
+            $mest = $this->doctrine->em->getRepository(Entities\Mesto::class)->
+                    findOneBy(['naziv' => $mesto]);
+            
+            $mest->addGradjanini($gradjanin);
+            
+            $vakcine = $this->doctrine->em->getRepository(Entities\Tipvakcine::class)
+                    ->findBy(['naziv' => $tip]);
+            $idVakcine = $vakcine[0]->getIdtipvakcine();
+            
+            $gradjanin->setIdtipvakcine($this->doctrine->em->getRepository(Entities\Tipvakcine::class)->find($idVakcine));
+            $gradjanin->setStatusprijave('Zakazan');
+            $gradjanin->setDatumt1(new \DateTime("+1 week"));
+            $gradjanin->setTermint1(true);
+            
+            $this->doctrine->em->flush();
+            
+           // return $this->prikaz('gradjanin.php', []);
+            return redirect()->to(site_url("Gradjanin"));
         }
 }

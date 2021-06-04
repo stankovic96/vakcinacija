@@ -20,12 +20,12 @@ class Gradjanin
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $idGradjanin;
-    
+    private $idgradjanin;
+
     /**
-     * @var string
+     * @var string|null
      *
-     * @ORM\Column(name="JMBG", type="string", length=13, nullable=true)
+     * @ORM\Column(name="JMBG", type="string", length=13, nullable=true, options={"fixed"=true})
      */
     private $jmbg;
 
@@ -179,14 +179,14 @@ class Gradjanin
     }
     
     /**
-     * Get idGradjanin.
+     * Get idgradjanin.
      *
      * @return int
      */
     
     public function getId()
     {
-        return $this->idGradjanin;
+        return $this->idgradjanin;
     }
     
      /**

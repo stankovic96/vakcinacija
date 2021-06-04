@@ -36,8 +36,8 @@
                 </ul>
                 <img src="<?php echo base_url("assets/slike/logo.png")?>" id="logo2" alt="logo">
             </div>
-            <div class="col-12 col-md-8" id="glavni-sadrzaj">
-                <form class = "mb-3" name = "prijava" action = "<?= site_url("Gost/prijavaSubmit") ?>" method = "post">
+            <div class="col-12 col-md-8 mb-3" id="glavni-sadrzaj">
+                <form  name = "prijava" action = "<?= site_url("Gost/prijavaSubmit") ?>" method = "post">
                     <div class="form-group">
                         <label for="email">E-mail</label>
                         <input id="email" class="form-control" type="text" name="email" value="<?= set_value('email') ?>">

@@ -45,13 +45,13 @@ class Mesto
     /**
      * @var \Doctrine\Common\Collections\Collection
      *
-     * @ORM\OneToMany(targetEntity="App\Models\Entities\Gradjanin",mappedBy="idmesta",orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="App\Models\Entities\Gradjanin", mappedBy="idmesta", orphanRemoval=true, cascade ={"persist"})
      */
     private $gradjanini;
 
     /**
      * @var \Doctrine\Common\Collections\Collection
-     * @ORM\OneToMany(targetEntity="App\Models\Entities\Mestorezervisanopodanu",mappedBy="idmesta", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="App\Models\Entities\Mestorezervisanopodanu", mappedBy="idmesta", orphanRemoval=true)
      */
     private $VakcinacijaPoDanu;
 
@@ -154,8 +154,11 @@ class Mesto
      */
     public function addGradjanini(\App\Models\Entities\Gradjanin $gradjanini)
     {
-        $this->gradjanini[] = $gradjanini;
-
+         if(!$this->gradjanini->contains($gradjanini)){
+            $this->gradjanini[] = $gradjanini;
+            $gradjanini->setIdmesta($this);
+        }
+        
         return $this;
     }
 
@@ -168,7 +171,14 @@ class Mesto
      */
     public function removeGradjanini(\App\Models\Entities\Gradjanin $gradjanini)
     {
-        return $this->gradjanini->removeElement($gradjanini);
+        if($this->gradjanini->contains($gradjanini)){
+            if($gradjanini->getIdmesta() == $this)
+                $gradjanini->setIdmesta(null);
+            
+            return $this->gradjanini->removeElement($gradjanini);
+        }
+        
+        return false;
     }
 
     /**

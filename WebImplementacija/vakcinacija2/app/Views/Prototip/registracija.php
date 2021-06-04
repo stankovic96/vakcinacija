@@ -78,20 +78,20 @@
 //                                echo $nePodudara;
                             ?></font>
                     </div>
-                    <div class="form-group">
+<!--                    <div class="form-group">
                         <label for="mesto">Mesto <font color = "red">*</font></label>
-                        <!--<input id="mesto" class="form-control" type="text" name="mesto">-->
+                        <input id="mesto" class="form-control" type="text" name="mesto">
                         <select id="mesto" class = "form-control" name="mesto">
                             <?php 
-                                echo "<option>Izaberite mesto</option>";
-                                foreach($gradovi as $grad){
-                                    echo "<option>$grad</option>";
-                                }
+//                                echo "<option>Izaberite mesto</option>";
+//                                foreach($gradovi as $grad){
+//                                    echo "<option>$grad</option>";
+//                                }
                             ?> 
                         </select>
-                        <font color = "red"><?php if(!empty($greske['mesto']))
-                            echo $greske['mesto'];?></font>
-                    </div>
+                        <font color = "red"><?php// if(!empty($greske['mesto']))
+                            //echo $greske['mesto'];?></font>
+                    </div>-->
                     <div class="form-group">
                         <label for="adresa">Adresa <font color = "red">*</font></label>
                         <input id="adresa" class="form-control" type="text" name="adresa">

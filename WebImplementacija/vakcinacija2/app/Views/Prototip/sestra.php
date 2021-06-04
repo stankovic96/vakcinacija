@@ -20,26 +20,27 @@
             </div>
             <div class="col-8">
                 <nav class="nav">
-                    <a href="index.html" class="nav-link">Почетна</a>
+                    <a href="index.html" class="nav-link">Početna</a>
                     <!--<a href="index.html" class="nav-link">Одјава</a>-->
                     <?= anchor("Sestra/odjava", "Odjava", 'class = "nav-link"') ?>
-                    <a href="opisi.html" class="nav-link">О вакцинама</a>
-                    <a href="statistika.html" class="nav-link">Статистика</a>
+                    <a href="opisi.html" class="nav-link">O vakcinama</a>
+                    <a href="statistika.html" class="nav-link">Statistika</a>
                 </nav>
             </div>
         </div>
         <div class="row" id="main">
             <div class="col-12 col-md-2 remove-padding" id="levi-deo">
                 <ul class="breadcrumb remove-margin" id="putokaz">
-                    <li class="breadcrumb-item"><a href="#">Медицинска сестра</a></li>
+                    <li class="breadcrumb-item"><a href="#">Medicinska sestra</a></li>
                 </ul>
                 <nav class="nav flex-column" id="vertikalni-meni">
-                    <a href="vakcinacija_validacija.html" class="nav-link active">Валидација вакцинације</a>
+                    <!--<a href="vakcinacija_validacija.html" class="nav-link active">Validacija vakcinacije</a>-->
+                    <?= anchor("Sestra/validacija", "Validacija vakcinacije", 'class = "nav-link"') ?>
                 </nav>
                 <img src="<?php echo base_url("assets/slike/logo.png")?>" id="logo2" alt="logo">
             </div>
             <div class="col-12 col-md-8" id="glavni-sadrzaj">
-                <p>Medicinska sestra: <?php echo $ime." ".$prezime;?> </p>
+                <p>Medicinska sestra: <?php echo $korisnik->getIme()." ".$korisnik->getPrezime();?></p>
             </div>
             <div class="col-12 col-md-2 remove-padding text-center" id="baneri">
                 <a href="https://www.pfizer.com/">
