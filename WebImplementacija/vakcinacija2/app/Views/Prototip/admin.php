@@ -22,18 +22,20 @@
                     <a href="index.html" class="nav-link">Početna</a>
                     <!--<a href="index.html" class="nav-link">Odjava</a>-->
                     <?= anchor("Admin/odjava", "Odjava", 'class = "nav-link"') ?>
-                    <a href="opisi.html" class="nav-link">O vakcinama</a>
-                    <a href="statistika.html" class="nav-link">Statistika</a>
+                    <?= anchor("Admin/Opisi", "O vakcinama", 'class = "nav-link"') ?>
+                    <!--                <a href="statistika.html" class="nav-link">Statistika</a>-->
+                    <?= anchor("Admin/Statistika", "Statistika Vakcina", 'class = "nav-link"') ?>
                 </nav>
             </div>
         </div>
         <div class="row" id="main">
             <div class="col-12 col-md-2 remove-padding" id="levi-deo">
                 <ul class="breadcrumb remove-margin" id="putokaz">
-                    <li class="breadcrumb-item"><a href="admin.php.html">Администратор</a></li>
+                    <li class="breadcrumb-item"><a href="admin.php">Администратор</a></li>
                 </ul>
                 <nav class="nav flex-column" id="vertikalni-meni">
-                    <a href="vakcina_nova.html" class="nav-link active">Уношење новог типа вакцине</a>
+                    <!--<a href="vakcina_nova.html" class="nav-link active">Уношење новог типа вакцине</a>-->
+                    <?= anchor("Admin/NovaVakcina", "Unosenje novog tipa vakcine", 'class = "nav-link"') ?>
                 </nav>
                 <nav class="nav flex-column" id="vertikalni-meni">
                     <a href="vakcina_pristigla.html" class="nav-link active">Унос пристиглих количина вакцина</a>
