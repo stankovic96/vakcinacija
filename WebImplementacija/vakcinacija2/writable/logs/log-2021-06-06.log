@@ -1291,3 +1291,101 @@ CRITICAL - 2021-06-06 22:34:17 --> Call to a member function getNaziv() on null
 #8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
 #9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
 #10 {main}
+CRITICAL - 2021-06-06 22:45:34 --> An exception occurred in driver: Access denied for user 'root'@'localhost' (using password: NO)
+#0 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(182): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#1 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(169): Doctrine\DBAL\DBALException::wrapException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), 'An exception oc...')
+#2 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\Mysqli\Driver.php(19): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#3 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(400): Doctrine\DBAL\Driver\Mysqli\Driver->connect(Array, 'root', '', Array)
+#4 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(463): Doctrine\DBAL\Connection->connect()
+#5 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(425): Doctrine\DBAL\Connection->getDatabasePlatformVersion()
+#6 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(367): Doctrine\DBAL\Connection->detectDatabasePlatform()
+#7 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\app\Libraries\Doctrine.php(52): Doctrine\DBAL\Connection->getDatabasePlatform()
+#8 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\app\Config\Services.php(31): App\Libraries\Doctrine->__construct()
+#9 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Config\BaseService.php(192): Config\Services::doctrine(false)
+#10 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\app\Config\Services.php(28): CodeIgniter\Config\BaseService::getSharedInstance('doctrine')
+#11 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\BaseController.php(64): Config\Services::doctrine()
+#12 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#13 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#14 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#16 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\stank\\...')
+#17 {main}
+CRITICAL - 2021-06-06 22:45:34 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php:99
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\Users\\stank\\...', 99, Array)
+#1 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php(99): print_r(Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), true)
+#2 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(278): include('C:\\Users\\stank\\...')
+#3 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Doctrine\DBAL\Exception\ConnectionException), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptio
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-06 22:57:02 --> An exception occurred while executing 'SELECT t0.idIzvestaja AS idIzvestaja_1, t0.Diagnoza AS Diagnoza_2, t0.IdGradjanin AS IdGradjanin_3, t0.IdTipVakcine AS IdTipVakcine_4, t0.idLekara AS idLekara_5 FROM izvestajlekara t0 WHERE t0.IdTipVakcine = ?' with params [1]:
+
+Unknown column 't0.idLekara' in 'field list'
+#0 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(182): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionError))
+#1 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(159): Doctrine\DBAL\DBALException::wrapException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionError), 'An exception oc...')
+#2 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(2214): Doctrine\DBAL\DBALException::driverExceptionDuringQuery(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionError), 'SELECT t0.idIzv...', Array)
+#3 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(1301): Doctrine\DBAL\Connection->handleExceptionDuringQuery(Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionError), 'SELECT t0.idIzv...', Array, Array)
+#4 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\Persisters\Entity\BasicEntityPersister.php(1817): Doctrine\DBAL\Connection->executeQuery('SELECT t0.idIzv...', Array, Array)
+#5 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\Persisters\Entity\BasicEntityPersister.php(1758): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->getOneToManyStatement(Array, Object(App\Models\Entities\Tipvakcine))
+#6 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\UnitOfWork.php(2962): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->loadOneToManyCollection(Array, Object(App\Models\Entities\Tipvakcine), Object(Doctrine\ORM\PersistentCollection))
+#7 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\PersistentCollection.php(696): Doctrine\ORM\UnitOfWork->loadCollection(Object(Doctrine\ORM\PersistentCollection))
+#8 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\PersistentCollection.php(218): Doctrine\ORM\PersistentCollection->doInitialize()
+#9 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\collections\lib\Doctrine\Common\Collections\AbstractLazyCollection.php(62): Doctrine\ORM\PersistentCollection->initialize()
+#10 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\PersistentCollection.php(425): Doctrine\Common\Collections\AbstractLazyCollection->contains(Object(App\Models\Entities\Izvestajlekara))
+#11 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\app\Models\Entities\Tipvakcine.php(216): Doctrine\ORM\PersistentCollection->contains(Object(App\Models\Entities\Izvestajlekara))
+#12 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(152): App\Models\Entities\Tipvakcine->addIzvestaji(Object(App\Models\Entities\Izvestajlekara))
+#13 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Lekar->unosNezeljenihRekacija()
+#14 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#15 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#17 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\stank\\...')
+#18 {main}
+CRITICAL - 2021-06-06 23:00:10 --> Call to a member function getIme() on null
+#0 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(11): App\Controllers\Lekar->pocetnaStranica()
+#1 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Lekar->index()
+#2 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#3 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\stank\\...')
+#6 {main}
+CRITICAL - 2021-06-06 23:00:11 --> Call to a member function getIme() on null
+#0 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(11): App\Controllers\Lekar->pocetnaStranica()
+#1 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Lekar->index()
+#2 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#3 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\stank\\...')
+#6 {main}
+CRITICAL - 2021-06-06 23:00:11 --> Call to a member function getIme() on null
+#0 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(11): App\Controllers\Lekar->pocetnaStranica()
+#1 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Lekar->index()
+#2 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#3 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\stank\\...')
+#6 {main}
+CRITICAL - 2021-06-06 23:03:16 --> The identifier idadmin is missing for a query of App\Models\Entities\Admin
+#0 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\EntityManager.php(433): Doctrine\ORM\ORMException::missingIdentifierField('App\\Models\\Enti...', 'idadmin')
+#1 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\EntityRepository.php(190): Doctrine\ORM\EntityManager->find('App\\Models\\Enti...', Array, NULL, NULL)
+#2 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Admin.php(69): Doctrine\ORM\EntityRepository->find(NULL)
+#3 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Admin.php(23): App\Controllers\Admin->prikaz('nova_vakcina.ph...', Array)
+#4 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Admin->NovaVakcina()
+#5 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\stank\\...')
+#9 {main}
+CRITICAL - 2021-06-06 23:20:29 --> Undefined variable: tipovi
+#0 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\app\Views\Prototip\vakcina_pristigla.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\stank\\...', 51, Array)
+#1 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\Users\\stank\\...')
+#2 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/vakcin...', Array, true)
+#4 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Admin.php(70): view('Prototip/vakcin...', Array)
+#5 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\Admin.php(125): App\Controllers\Admin->prikaz('vakcina_pristig...', Array)
+#6 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Admin->unosenjePristiglihVakcina()
+#7 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\stank\\...')
+#11 {main}

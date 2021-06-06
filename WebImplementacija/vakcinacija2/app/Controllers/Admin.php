@@ -76,6 +76,73 @@ class Admin extends BaseController
 	        $tipoviVakcina=$this->doctrine->em->getRepository(Entities\Tipvakcine::class)->findAll();
 	        $this->prikaz_globalni("opisi.php",["tipoviVakcina"=>$tipoviVakcina]);
     }
+    public function pocetniPrikaz(){
+
+        return $this->prikaz("vakcina_pristigla",[]);;
+    }
+    public function unosenjePristiglihVakcina(){
+
+        $this->doctrine->em->clear();
+
+        $tip = $this->request->getVar('tip');
+        $validation =  \Config\Services::validation();
+        $validation->reset();
+
+        $validation->setRules([
+            'rok' => 'required',
+            'broj' => 'required'
+        ],
+            [   // Errors
+                'rok' => [
+                    'required' => 'Ovo polje je obavezno',
+                ],
+                'broj' =>[
+                    'required' => 'Ovo polje je obavezno',
+                ]
+            ]);
+
+        $greske = [];
+
+        if($tip == "Izaberite tip vakcine") {
+            $greske['tip'] = 'Ovo polje je obavezno';
+        }
+
+        $trenutniDatum = date('m/d/Y', time());
+        if(strtotime($this->request->getVar('rok')) <= strtotime($trenutniDatum)){
+            $greske['rok'] = 'Unesite datum koji je veci od trenutnog';
+        }
+
+
+        if(!$validation->withRequest($this->request)->run() or !empty($greske['rok']) or !empty($greske['tip'])){
+            $ret = $validation->getErrors();
+
+            if(!empty($ret['rok'])){
+                $greske['rok'] = $ret['rok'];    }
+
+            if(!empty($ret['broj'])){
+                $greske['broj'] = $ret['broj'];}
+
+            return $this->prikaz('vakcina_pristigla.php', ['greske' => $greske]);
+        }
+
+
+        $datum = date('Y-m-d', strtotime(str_replace('-', '/', $this->request->getVar('rok'))));
+
+        $pristigleKol = new Entities\Pristiglevakcine();
+
+        $pristigleKol->setRaspolozivakolicina($this->request->getVar('broj'));
+        $pristigleKol->setRezervisanakolicina(0);
+        $pristigleKol->setRokupotrebe(new \DateTime($datum));
+
+        $tipvakcine = $this->doctrine->em->getRepository(Entities\Tipvakcine::class)->findOneBy(['naziv' => $this->request->getVar('tip')]);
+        $tipvakcine->addPristigleKolicine($pristigleKol);
+
+        $this->doctrine->em->persist($pristigleKol);
+
+        $this->doctrine->em->flush();
+
+        return $this->pocetniPrikaz();
+    }
     public function Statistika(){
         $tipoviVakcina=$this->doctrine->em->getRepository(Entities\Tipvakcine::class)->findAll();
         $this->prikaz_globalni("statistika.php",["tipoviVakcina"=>$tipoviVakcina]);

@@ -35,7 +35,7 @@
                     <?= anchor("Admin/NovaVakcina", "Unosenje novog tipa vakcine", 'class = "nav-link"') ?>
                 </nav>
                 <nav class="nav flex-column" id="vertikalni-meni">
-                    <a href="vakcina_pristigla.html" class="nav-link active">Унос пристиглих количина вакцина</a>
+                    <?= anchor("Admin/unosenjePristiglihVakcina", "Unos pristiglih kolicina vakcina", 'class = "nav-link"') ?>
                 </nav>
                 <img src="<?php echo base_url("assets/slike/logo.png")?>" id="logo2" alt="logo">
             </div>
