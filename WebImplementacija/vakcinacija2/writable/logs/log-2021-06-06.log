@@ -1,0 +1,38 @@
+CRITICAL - 2021-06-06 10:15:14 --> Undefined constant "php"
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(230): include()
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render('Prototip/regist...', Array, true)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Gost.php(23): view('Prototip/regist...', Array)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Gost.php(27): App\Controllers\Gost->prikaz('registracija.ph...', Array)
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Gost->registracija()
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gost))
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#10 {main}
+CRITICAL - 2021-06-06 10:16:24 --> Undefined constant "php"
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(230): include()
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render('Prototip/regist...', Array, true)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Gost.php(23): view('Prototip/regist...', Array)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Gost.php(27): App\Controllers\Gost->prikaz('registracija.ph...', Array)
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Gost->registracija()
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gost))
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#10 {main}
+CRITICAL - 2021-06-06 10:38:55 --> Call to a member function getStatust1() on null
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Sestra->zabelezi('sestra.html')
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#5 {main}
+CRITICAL - 2021-06-06 10:40:17 --> Call to a member function getStatust1() on null
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Sestra->zabelezi('index.html')
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#5 {main}
