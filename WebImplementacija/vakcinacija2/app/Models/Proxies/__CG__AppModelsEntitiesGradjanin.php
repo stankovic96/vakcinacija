@@ -66,10 +66,10 @@ class Gradjanin extends \App\Models\Entities\Gradjanin implements \Doctrine\ORM\
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'jmbg', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'ime', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'prezime', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'brojtelefona', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'adresa', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'prijava', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'statusprijave', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'termint1', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'datumt1', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'statust1', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'termint2', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'datumt2', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'statust2', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'email', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'password', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'idmesta', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'idtipvakcine', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'idsestrat1', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'idsestrat2', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'izvestaji'];
+            return ['__isInitialized__', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'idgradjanin', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'jmbg', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'ime', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'prezime', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'brojtelefona', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'adresa', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'prijava', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'statusprijave', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'termint1', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'datumt1', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'statust1', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'termint2', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'datumt2', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'statust2', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'email', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'password', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'idmesta', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'idtipvakcine', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'idsestrat1', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'idsestrat2', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'izvestaji'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'jmbg', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'ime', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'prezime', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'brojtelefona', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'adresa', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'prijava', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'statusprijave', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'termint1', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'datumt1', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'statust1', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'termint2', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'datumt2', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'statust2', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'email', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'password', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'idmesta', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'idtipvakcine', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'idsestrat1', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'idsestrat2', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'izvestaji'];
+        return ['__isInitialized__', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'idgradjanin', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'jmbg', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'ime', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'prezime', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'brojtelefona', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'adresa', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'prijava', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'statusprijave', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'termint1', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'datumt1', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'statust1', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'termint2', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'datumt2', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'statust2', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'email', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'password', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'idmesta', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'idtipvakcine', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'idsestrat1', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'idsestrat2', '' . "\0" . 'App\\Models\\Entities\\Gradjanin' . "\0" . 'izvestaji'];
     }
 
     /**
@@ -179,12 +179,30 @@ class Gradjanin extends \App\Models\Entities\Gradjanin implements \Doctrine\ORM\
     /**
      * {@inheritDoc}
      */
+    public function getId()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getId', []);
+
+        return parent::getId();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setJmbg($jmbg = NULL)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setJmbg', [$jmbg]);
+
+        return parent::setJmbg($jmbg);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getJmbg()
     {
-        if ($this->__isInitialized__ === false) {
-            return  parent::getJmbg();
-        }
-
 
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getJmbg', []);
 
@@ -590,12 +608,12 @@ class Gradjanin extends \App\Models\Entities\Gradjanin implements \Doctrine\ORM\
     /**
      * {@inheritDoc}
      */
-    public function addIzvestaji(\App\Models\Entities\Izvestajlekara $izvestaji)
+    public function addIzvestaji(\App\Models\Entities\Izvestajlekara $izvestaj)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addIzvestaji', [$izvestaji]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addIzvestaji', [$izvestaj]);
 
-        return parent::addIzvestaji($izvestaji);
+        return parent::addIzvestaji($izvestaj);
     }
 
     /**
@@ -618,6 +636,17 @@ class Gradjanin extends \App\Models\Entities\Gradjanin implements \Doctrine\ORM\
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIzvestaji', []);
 
         return parent::getIzvestaji();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getTip()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getTip', []);
+
+        return parent::getTip();
     }
 
 }

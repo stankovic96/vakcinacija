@@ -337,3 +337,957 @@ Unknown column 't0.idLekara' in 'field list'
 CRITICAL - 2021-06-06 11:37:11 --> Allowed memory size of 2097152000 bytes exhausted (tried to allocate 2088767488 bytes)
 #0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
 #1 {main}
+CRITICAL - 2021-06-06 11:58:12 --> An exception occurred in driver: Access denied for user 'root'@'localhost' (using password: YES)
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(182): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(169): Doctrine\DBAL\DBALException::wrapException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), 'An exception oc...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\Mysqli\Driver.php(19): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(400): Doctrine\DBAL\Driver\Mysqli\Driver->connect(Array, 'root', 'B4t4m1l4', Array)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(463): Doctrine\DBAL\Connection->connect()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(425): Doctrine\DBAL\Connection->getDatabasePlatformVersion()
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(367): Doctrine\DBAL\Connection->detectDatabasePlatform()
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Libraries\Doctrine.php(52): Doctrine\DBAL\Connection->getDatabasePlatform()
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Config\Services.php(31): App\Libraries\Doctrine->__construct()
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Config\BaseService.php(192): Config\Services::doctrine(false)
+#10 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Config\Services.php(28): CodeIgniter\Config\BaseService::getSharedInstance('doctrine')
+#11 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\BaseController.php(62): Config\Services::doctrine()
+#12 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#13 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#14 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2021-06-06 11:58:12 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php:99
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\wamp64\\www\\v...', 99, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php(99): print_r(Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), true)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(278): include('C:\\wamp64\\www\\v...')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Doctrine\DBAL\Exception\ConnectionException), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Obj
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-06 11:59:58 --> An exception occurred in driver: Access denied for user 'root'@'localhost' (using password: YES)
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(182): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(169): Doctrine\DBAL\DBALException::wrapException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), 'An exception oc...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\Mysqli\Driver.php(19): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(400): Doctrine\DBAL\Driver\Mysqli\Driver->connect(Array, 'root', 'B4t4m1l4', Array)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(463): Doctrine\DBAL\Connection->connect()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(425): Doctrine\DBAL\Connection->getDatabasePlatformVersion()
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(367): Doctrine\DBAL\Connection->detectDatabasePlatform()
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Libraries\Doctrine.php(52): Doctrine\DBAL\Connection->getDatabasePlatform()
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Config\Services.php(31): App\Libraries\Doctrine->__construct()
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Config\BaseService.php(192): Config\Services::doctrine(false)
+#10 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Config\Services.php(28): CodeIgniter\Config\BaseService::getSharedInstance('doctrine')
+#11 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\BaseController.php(62): Config\Services::doctrine()
+#12 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#13 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#14 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2021-06-06 11:59:58 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php:99
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\wamp64\\www\\v...', 99, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php(99): print_r(Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), true)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(278): include('C:\\wamp64\\www\\v...')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Doctrine\DBAL\Exception\ConnectionException), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Obj
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-06 11:59:59 --> An exception occurred in driver: Access denied for user 'root'@'localhost' (using password: YES)
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(182): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(169): Doctrine\DBAL\DBALException::wrapException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), 'An exception oc...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\Mysqli\Driver.php(19): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(400): Doctrine\DBAL\Driver\Mysqli\Driver->connect(Array, 'root', 'B4t4m1l4', Array)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(463): Doctrine\DBAL\Connection->connect()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(425): Doctrine\DBAL\Connection->getDatabasePlatformVersion()
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(367): Doctrine\DBAL\Connection->detectDatabasePlatform()
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Libraries\Doctrine.php(52): Doctrine\DBAL\Connection->getDatabasePlatform()
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Config\Services.php(31): App\Libraries\Doctrine->__construct()
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Config\BaseService.php(192): Config\Services::doctrine(false)
+#10 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Config\Services.php(28): CodeIgniter\Config\BaseService::getSharedInstance('doctrine')
+#11 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\BaseController.php(62): Config\Services::doctrine()
+#12 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#13 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#14 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2021-06-06 11:59:59 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php:99
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\wamp64\\www\\v...', 99, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php(99): print_r(Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), true)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(278): include('C:\\wamp64\\www\\v...')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Doctrine\DBAL\Exception\ConnectionException), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Obj
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-06 12:00:00 --> An exception occurred in driver: Access denied for user 'root'@'localhost' (using password: YES)
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(182): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(169): Doctrine\DBAL\DBALException::wrapException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), 'An exception oc...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\Mysqli\Driver.php(19): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(400): Doctrine\DBAL\Driver\Mysqli\Driver->connect(Array, 'root', 'B4t4m1l4', Array)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(463): Doctrine\DBAL\Connection->connect()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(425): Doctrine\DBAL\Connection->getDatabasePlatformVersion()
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(367): Doctrine\DBAL\Connection->detectDatabasePlatform()
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Libraries\Doctrine.php(52): Doctrine\DBAL\Connection->getDatabasePlatform()
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Config\Services.php(31): App\Libraries\Doctrine->__construct()
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Config\BaseService.php(192): Config\Services::doctrine(false)
+#10 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Config\Services.php(28): CodeIgniter\Config\BaseService::getSharedInstance('doctrine')
+#11 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\BaseController.php(62): Config\Services::doctrine()
+#12 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#13 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#14 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2021-06-06 12:00:00 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php:99
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\wamp64\\www\\v...', 99, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php(99): print_r(Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), true)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(278): include('C:\\wamp64\\www\\v...')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Doctrine\DBAL\Exception\ConnectionException), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Obj
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-06 12:00:01 --> An exception occurred in driver: Access denied for user 'root'@'localhost' (using password: YES)
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(182): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(169): Doctrine\DBAL\DBALException::wrapException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), 'An exception oc...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\Mysqli\Driver.php(19): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(400): Doctrine\DBAL\Driver\Mysqli\Driver->connect(Array, 'root', 'B4t4m1l4', Array)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(463): Doctrine\DBAL\Connection->connect()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(425): Doctrine\DBAL\Connection->getDatabasePlatformVersion()
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(367): Doctrine\DBAL\Connection->detectDatabasePlatform()
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Libraries\Doctrine.php(52): Doctrine\DBAL\Connection->getDatabasePlatform()
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Config\Services.php(31): App\Libraries\Doctrine->__construct()
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Config\BaseService.php(192): Config\Services::doctrine(false)
+#10 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Config\Services.php(28): CodeIgniter\Config\BaseService::getSharedInstance('doctrine')
+#11 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\BaseController.php(62): Config\Services::doctrine()
+#12 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#13 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#14 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2021-06-06 12:00:01 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php:99
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\wamp64\\www\\v...', 99, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php(99): print_r(Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), true)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(278): include('C:\\wamp64\\www\\v...')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Doctrine\DBAL\Exception\ConnectionException), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Obj
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-06 12:00:07 --> An exception occurred in driver: Access denied for user 'root'@'localhost' (using password: YES)
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(182): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(169): Doctrine\DBAL\DBALException::wrapException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), 'An exception oc...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\Mysqli\Driver.php(19): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(400): Doctrine\DBAL\Driver\Mysqli\Driver->connect(Array, 'root', 'B4t4m1l4', Array)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(463): Doctrine\DBAL\Connection->connect()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(425): Doctrine\DBAL\Connection->getDatabasePlatformVersion()
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(367): Doctrine\DBAL\Connection->detectDatabasePlatform()
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Libraries\Doctrine.php(52): Doctrine\DBAL\Connection->getDatabasePlatform()
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Config\Services.php(31): App\Libraries\Doctrine->__construct()
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Config\BaseService.php(192): Config\Services::doctrine(false)
+#10 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Config\Services.php(28): CodeIgniter\Config\BaseService::getSharedInstance('doctrine')
+#11 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\BaseController.php(62): Config\Services::doctrine()
+#12 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#13 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#14 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2021-06-06 12:00:07 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php:99
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\wamp64\\www\\v...', 99, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php(99): print_r(Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), true)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(278): include('C:\\wamp64\\www\\v...')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Doctrine\DBAL\Exception\ConnectionException), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Obj
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-06 12:03:17 --> An exception occurred in driver: Access denied for user 'root'@'localhost' (using password: YES)
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(182): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(169): Doctrine\DBAL\DBALException::wrapException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), 'An exception oc...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\Mysqli\Driver.php(19): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(400): Doctrine\DBAL\Driver\Mysqli\Driver->connect(Array, 'root', 'B4t4m1l4', Array)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(463): Doctrine\DBAL\Connection->connect()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(425): Doctrine\DBAL\Connection->getDatabasePlatformVersion()
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(367): Doctrine\DBAL\Connection->detectDatabasePlatform()
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Libraries\Doctrine.php(52): Doctrine\DBAL\Connection->getDatabasePlatform()
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Config\Services.php(31): App\Libraries\Doctrine->__construct()
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Config\BaseService.php(192): Config\Services::doctrine(false)
+#10 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Config\Services.php(28): CodeIgniter\Config\BaseService::getSharedInstance('doctrine')
+#11 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\BaseController.php(62): Config\Services::doctrine()
+#12 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#13 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#14 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2021-06-06 12:03:17 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php:99
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\wamp64\\www\\v...', 99, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php(99): print_r(Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), true)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(278): include('C:\\wamp64\\www\\v...')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Doctrine\DBAL\Exception\ConnectionException), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Obj
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-06 12:09:20 --> An exception occurred in driver: Access denied for user 'root'@'localhost' (using password: YES)
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(182): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(169): Doctrine\DBAL\DBALException::wrapException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), 'An exception oc...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\Mysqli\Driver.php(19): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(400): Doctrine\DBAL\Driver\Mysqli\Driver->connect(Array, 'root', 'B4t4m1l4', Array)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(463): Doctrine\DBAL\Connection->connect()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(425): Doctrine\DBAL\Connection->getDatabasePlatformVersion()
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(367): Doctrine\DBAL\Connection->detectDatabasePlatform()
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Libraries\Doctrine.php(52): Doctrine\DBAL\Connection->getDatabasePlatform()
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Config\Services.php(31): App\Libraries\Doctrine->__construct()
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Config\BaseService.php(192): Config\Services::doctrine(false)
+#10 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Config\Services.php(28): CodeIgniter\Config\BaseService::getSharedInstance('doctrine')
+#11 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\BaseController.php(62): Config\Services::doctrine()
+#12 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#13 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#14 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2021-06-06 12:09:20 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php:99
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\wamp64\\www\\v...', 99, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php(99): print_r(Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), true)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(278): include('C:\\wamp64\\www\\v...')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Doctrine\DBAL\Exception\ConnectionException), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Obj
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-06 12:13:45 --> An exception occurred in driver: Access denied for user 'root'@'localhost' (using password: YES)
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(182): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(169): Doctrine\DBAL\DBALException::wrapException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), 'An exception oc...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\Mysqli\Driver.php(19): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(400): Doctrine\DBAL\Driver\Mysqli\Driver->connect(Array, 'root', 'B4t4m1l4', Array)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(463): Doctrine\DBAL\Connection->connect()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(425): Doctrine\DBAL\Connection->getDatabasePlatformVersion()
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(367): Doctrine\DBAL\Connection->detectDatabasePlatform()
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Libraries\Doctrine.php(52): Doctrine\DBAL\Connection->getDatabasePlatform()
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Config\Services.php(31): App\Libraries\Doctrine->__construct()
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Config\BaseService.php(192): Config\Services::doctrine(false)
+#10 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Config\Services.php(28): CodeIgniter\Config\BaseService::getSharedInstance('doctrine')
+#11 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\BaseController.php(62): Config\Services::doctrine()
+#12 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#13 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#14 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2021-06-06 12:13:45 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php:99
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\wamp64\\www\\v...', 99, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php(99): print_r(Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), true)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(278): include('C:\\wamp64\\www\\v...')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Doctrine\DBAL\Exception\ConnectionException), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Obj
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-06 12:32:22 --> Class 'BaseController' not found
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Router\Router.php(566): include_once()
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Lekar/unosNezel...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(812): CodeIgniter\Router\Router->handle('Lekar/unosNezel...')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(392): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#7 {main}
+CRITICAL - 2021-06-06 12:33:26 --> Illegal string offset 'tipovi'
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\wamp64\\www\\v...', 67, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(129): App\Controllers\Lekar->pocetniPrikazUnosaNezeljeneReakcije('izvestaj_kreira...', Array)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Lekar->unosNezeljenihRekacija()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#7 {main}
+CRITICAL - 2021-06-06 12:43:54 --> Illegal string offset 'tipovi'
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\wamp64\\www\\v...', 67, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(129): App\Controllers\Lekar->pocetniPrikazUnosaNezeljeneReakcije('izvestaj_kreira...', Array)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Lekar->unosNezeljenihRekacija()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#7 {main}
+CRITICAL - 2021-06-06 12:44:43 --> Undefined variable: ime
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\Prototip\izvestaji.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\v...', 38, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/izvest...', Array, true)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(74): view('Prototip/izvest...', Array)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(49): App\Controllers\Lekar->prikaz('izvestaji.php', Array)
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Lekar->pocetniPrikaz()
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#11 {main}
+CRITICAL - 2021-06-06 12:53:06 --> Illegal string offset 'tipovi'
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\wamp64\\www\\v...', 67, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(129): App\Controllers\Lekar->pocetniPrikazUnosaNezeljeneReakcije('izvestaj_kreira...', Array)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Lekar->unosNezeljenihRekacija()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#7 {main}
+CRITICAL - 2021-06-06 12:55:14 --> The identifier idzdravstveniradnik is missing for a query of App\Models\Entities\Zdravstveniradnici
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\EntityManager.php(433): Doctrine\ORM\ORMException::missingIdentifierField('App\\Models\\Enti...', 'idzdravstvenira...')
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\EntityRepository.php(190): Doctrine\ORM\EntityManager->find('App\\Models\\Enti...', Array, NULL, NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(158): Doctrine\ORM\EntityRepository->find(NULL)
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Lekar->unosNezeljenihRekacija()
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#8 {main}
+CRITICAL - 2021-06-06 13:03:37 --> Undefined index: nazivJMBG
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\Prototip\izvestaj_kreiranje.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\v...', 43, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/izvest...', Array, true)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(74): view('Prototip/izvest...', Array)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(70): App\Controllers\Lekar->prikaz('izvestaj_kreira...', Array)
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(121): App\Controllers\Lekar->pocetniPrikazUnosaNezeljeneReakcije(Array)
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Lekar->unosNezeljenihRekacija()
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#12 {main}
+CRITICAL - 2021-06-06 13:03:52 --> Undefined index: nazivJMBG
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\Prototip\izvestaj_kreiranje.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\v...', 43, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/izvest...', Array, true)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(74): view('Prototip/izvest...', Array)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(70): App\Controllers\Lekar->prikaz('izvestaj_kreira...', Array)
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(121): App\Controllers\Lekar->pocetniPrikazUnosaNezeljeneReakcije(Array)
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Lekar->unosNezeljenihRekacija()
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#12 {main}
+CRITICAL - 2021-06-06 13:04:36 --> Undefined index: nazivJMBG
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\Prototip\izvestaj_kreiranje.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\v...', 43, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/izvest...', Array, true)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(74): view('Prototip/izvest...', Array)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(70): App\Controllers\Lekar->prikaz('izvestaj_kreira...', Array)
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(121): App\Controllers\Lekar->pocetniPrikazUnosaNezeljeneReakcije(Array)
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Lekar->unosNezeljenihRekacija()
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#12 {main}
+CRITICAL - 2021-06-06 13:04:44 --> Undefined index: nazivJMBG
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\Prototip\izvestaj_kreiranje.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\v...', 43, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/izvest...', Array, true)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(74): view('Prototip/izvest...', Array)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(70): App\Controllers\Lekar->prikaz('izvestaj_kreira...', Array)
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(122): App\Controllers\Lekar->pocetniPrikazUnosaNezeljeneReakcije(Array)
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Lekar->unosNezeljenihRekacija()
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#12 {main}
+CRITICAL - 2021-06-06 13:04:47 --> Undefined index: nazivJMBG
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\Prototip\izvestaj_kreiranje.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\v...', 43, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/izvest...', Array, true)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(74): view('Prototip/izvest...', Array)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(70): App\Controllers\Lekar->prikaz('izvestaj_kreira...', Array)
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(122): App\Controllers\Lekar->pocetniPrikazUnosaNezeljeneReakcije(Array)
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Lekar->unosNezeljenihRekacija()
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#12 {main}
+CRITICAL - 2021-06-06 13:04:49 --> Undefined index: nazivJMBG
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\Prototip\izvestaj_kreiranje.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\v...', 43, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/izvest...', Array, true)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(74): view('Prototip/izvest...', Array)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(70): App\Controllers\Lekar->prikaz('izvestaj_kreira...', Array)
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(123): App\Controllers\Lekar->pocetniPrikazUnosaNezeljeneReakcije(Array)
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Lekar->unosNezeljenihRekacija()
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#12 {main}
+CRITICAL - 2021-06-06 13:05:50 --> Undefined index: nazivJMBG
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\Prototip\izvestaj_kreiranje.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\v...', 43, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/izvest...', Array, true)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(74): view('Prototip/izvest...', Array)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(70): App\Controllers\Lekar->prikaz('izvestaj_kreira...', Array)
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(121): App\Controllers\Lekar->pocetniPrikazUnosaNezeljeneReakcije(Array)
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Lekar->unosNezeljenihRekacija()
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#12 {main}
+CRITICAL - 2021-06-06 13:06:44 --> Undefined index: nazivJMBG
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\Prototip\izvestaj_kreiranje.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\v...', 43, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/izvest...', Array, true)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(74): view('Prototip/izvest...', Array)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(70): App\Controllers\Lekar->prikaz('izvestaj_kreira...', Array)
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Lekar.php(120): App\Controllers\Lekar->pocetniPrikazUnosaNezeljeneReakcije(Array)
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Lekar->unosNezeljenihRekacija()
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#12 {main}
+CRITICAL - 2021-06-06 13:24:17 --> Call to a member function getNaziv() on null
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/valida...', Array, true)
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(23): view('Prototip/valida...', Array)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(80): App\Controllers\Sestra->prikaz('validacija.php', Array)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Sestra->validacijaPretraga('4')
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#10 {main}
+CRITICAL - 2021-06-06 20:26:46 --> Undefined property: App\Controllers\Sestra::$session
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\BaseController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 61, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 20:26:46 --> Undefined property: App\Controllers\Sestra::$session
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\BaseController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 61, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 20:27:35 --> Undefined property: App\Controllers\Sestra::$session
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\BaseController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 61, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 20:27:42 --> Undefined property: App\Controllers\Sestra::$session
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\BaseController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 61, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 20:27:45 --> Undefined property: App\Controllers\Sestra::$session
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\BaseController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 61, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 20:28:06 --> Undefined property: App\Controllers\Sestra::$session
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\BaseController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 61, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 20:29:02 --> Call to a member function getNaziv() on null
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/valida...', Array, true)
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(23): view('Prototip/valida...', Array)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(80): App\Controllers\Sestra->prikaz('validacija.php', Array)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Sestra->validacijaPretraga('4')
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#10 {main}
+CRITICAL - 2021-06-06 20:31:52 --> Call to a member function getNaziv() on null
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/valida...', Array, true)
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(23): view('Prototip/valida...', Array)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(80): App\Controllers\Sestra->prikaz('validacija.php', Array)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Sestra->validacijaPretraga('4')
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#10 {main}
+CRITICAL - 2021-06-06 20:35:19 --> Call to a member function getNaziv() on null
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/valida...', Array, true)
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(23): view('Prototip/valida...', Array)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(80): App\Controllers\Sestra->prikaz('validacija.php', Array)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Sestra->validacijaPretraga('4')
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#10 {main}
+CRITICAL - 2021-06-06 20:40:00 --> Cannot use object of type App\Models\Entities\Gradjanin as array
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Sestra->pretraga()
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#5 {main}
+CRITICAL - 2021-06-06 20:46:26 --> Undefined variable: gradjanin
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\Prototip\validacija.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\v...', 48, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/valida...', Array, true)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(23): view('Prototip/valida...', Array)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(57): App\Controllers\Sestra->prikaz('validacija.php', Array)
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Sestra->pretraga()
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#11 {main}
+CRITICAL - 2021-06-06 20:46:31 --> Undefined variable: gradjanin
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Views\Prototip\validacija.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\v...', 48, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/valida...', Array, true)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(23): view('Prototip/valida...', Array)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(57): App\Controllers\Sestra->prikaz('validacija.php', Array)
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Sestra->pretraga()
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#11 {main}
+CRITICAL - 2021-06-06 20:47:27 --> Undefined variable: gradjanin
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\v...', 64, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Sestra->pretraga()
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 20:49:00 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-06 20:58:04 --> Cannot use object of type App\Models\Entities\Gradjanin as array
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/valida...', Array, true)
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(23): view('Prototip/valida...', Array)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(82): App\Controllers\Sestra->prikaz('validacija.php', Array)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Sestra->validacijaPretraga('4')
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#10 {main}
+CRITICAL - 2021-06-06 20:59:55 --> Cannot use object of type App\Models\Entities\Gradjanin as array
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/valida...', Array, true)
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(23): view('Prototip/valida...', Array)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(82): App\Controllers\Sestra->prikaz('validacija.php', Array)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Sestra->validacijaPretraga('4')
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#10 {main}
+CRITICAL - 2021-06-06 21:03:30 --> The identifier idtipvakcine is missing for a query of App\Models\Entities\Tipvakcine
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\EntityManager.php(433): Doctrine\ORM\ORMException::missingIdentifierField('App\\Models\\Enti...', 'idtipvakcine')
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\EntityRepository.php(190): Doctrine\ORM\EntityManager->find('App\\Models\\Enti...', Array, NULL, NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(98): Doctrine\ORM\EntityRepository->find(NULL)
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Sestra->zabelezi('4')
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#8 {main}
+CRITICAL - 2021-06-06 21:04:49 --> The identifier idtipvakcine is missing for a query of App\Models\Entities\Tipvakcine
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\EntityManager.php(433): Doctrine\ORM\ORMException::missingIdentifierField('App\\Models\\Enti...', 'idtipvakcine')
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\EntityRepository.php(190): Doctrine\ORM\EntityManager->find('App\\Models\\Enti...', Array, NULL, NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(98): Doctrine\ORM\EntityRepository->find(NULL)
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Sestra->zabelezi('4')
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#8 {main}
+CRITICAL - 2021-06-06 21:06:17 --> The identifier idtipvakcine is missing for a query of App\Models\Entities\Tipvakcine
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\EntityManager.php(433): Doctrine\ORM\ORMException::missingIdentifierField('App\\Models\\Enti...', 'idtipvakcine')
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\doctrine\orm\lib\Doctrine\ORM\EntityRepository.php(190): Doctrine\ORM\EntityManager->find('App\\Models\\Enti...', Array, NULL, NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(98): Doctrine\ORM\EntityRepository->find(NULL)
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Sestra->zabelezi('4')
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#8 {main}
+CRITICAL - 2021-06-06 21:12:25 --> Call to a member function getNaziv() on null
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/valida...', Array, true)
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(23): view('Prototip/valida...', Array)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(91): App\Controllers\Sestra->prikaz('validacija.php', Array)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Sestra->zabelezi('4')
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#10 {main}
+CRITICAL - 2021-06-06 14:20:33 --> Class 'Config\App\Filters\IzbacivanjeVakcina' not found
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#4 {main}
+CRITICAL - 2021-06-06 14:21:21 --> Class 'Config\App\Filters\IzbacivanjeVakcina' not found
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#4 {main}
+CRITICAL - 2021-06-06 14:28:13 --> Class 'Config\App\Filters\IzbacivanjeVakcina' not found
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#4 {main}
+CRITICAL - 2021-06-06 14:28:49 --> Class 'Config\App\Filters\IzbacivanjeVakcina' not found
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#4 {main}
+CRITICAL - 2021-06-06 14:28:50 --> Class 'Config\App\Filters\IzbacivanjeVakcina' not found
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#4 {main}
+CRITICAL - 2021-06-06 14:28:50 --> Class 'Config\App\Filters\IzbacivanjeVakcina' not found
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#4 {main}
+CRITICAL - 2021-06-06 14:28:51 --> Class 'Config\App\Filters\IzbacivanjeVakcina' not found
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#4 {main}
+CRITICAL - 2021-06-06 14:28:51 --> Class 'Config\App\Filters\IzbacivanjeVakcina' not found
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#4 {main}
+CRITICAL - 2021-06-06 14:29:07 --> Class 'Config\App\Filters\IzbacivanjeVakcina' not found
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#4 {main}
+CRITICAL - 2021-06-06 14:29:50 --> Class 'Config\App\Filters\IzbacivanjeVakcina' not found
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#4 {main}
+CRITICAL - 2021-06-06 14:30:47 --> Class 'Config\App\Filters\IzbacivanjeVakcina' not found
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#4 {main}
+CRITICAL - 2021-06-06 14:31:50 --> Undefined property: App\Filters\IzbacivanjeVakcina::$session
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Filters\IzbacivanjeVakcina.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 13, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 14:31:51 --> Undefined property: App\Filters\IzbacivanjeVakcina::$session
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Filters\IzbacivanjeVakcina.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 13, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 14:32:27 --> Undefined property: App\Filters\IzbacivanjeVakcina::$session
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Filters\IzbacivanjeVakcina.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 13, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 14:32:42 --> Class 'app\Filters\IzbacivanjeVakcina' not found
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#4 {main}
+CRITICAL - 2021-06-06 14:32:51 --> Class 'app\Filters\IzbacivanjeVakcina' not found
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#4 {main}
+CRITICAL - 2021-06-06 14:32:53 --> Class 'app\Filters\IzbacivanjeVakcina' not found
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#4 {main}
+CRITICAL - 2021-06-06 14:32:59 --> Undefined property: App\Filters\IzbacivanjeVakcina::$session
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Filters\IzbacivanjeVakcina.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 13, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 14:33:53 --> Undefined property: App\Filters\IzbacivanjeVakcina::$session
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Filters\IzbacivanjeVakcina.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 13, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 14:35:52 --> Undefined property: App\Filters\IzbacivanjeVakcina::$doctrine
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Filters\IzbacivanjeVakcina.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 17, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 14:38:05 --> Undefined property: App\Filters\IzbacivanjeVakcina::$doctrine
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Filters\IzbacivanjeVakcina.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 17, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 14:38:44 --> Undefined property: App\Filters\IzbacivanjeVakcina::$doctrine
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Filters\IzbacivanjeVakcina.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 18, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 14:39:18 --> Class 'App\Filters\BaseController' not found
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(309): include_once()
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\Izb...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\Izb...')
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(172): spl_autoload_call('App\\Filters\\Izb...')
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#9 {main}
+CRITICAL - 2021-06-06 14:40:37 --> Undefined property: App\Filters\IzbacivanjeVakcina::$doctrine
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Filters\IzbacivanjeVakcina.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 18, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 14:41:12 --> Class 'App\Filters\App\Controllers\BaseController' not found
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(309): include_once()
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\Izb...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\Izb...')
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(172): spl_autoload_call('App\\Filters\\Izb...')
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#9 {main}
+CRITICAL - 2021-06-06 14:41:15 --> Undefined property: App\Filters\IzbacivanjeVakcina::$doctrine
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Filters\IzbacivanjeVakcina.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 18, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 14:44:57 --> Undefined variable: entityManager
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Filters\IzbacivanjeVakcina.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\v...', 19, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 14:45:09 --> Undefined property: App\Filters\IzbacivanjeVakcina::$doctrine
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Filters\IzbacivanjeVakcina.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 19, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 14:46:59 --> Undefined property: App\Filters\IzbacivanjeVakcina::$doctrine
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Filters\IzbacivanjeVakcina.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 19, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 14:50:04 --> Class 'App\Filters\EntityManager' not found
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#5 {main}
+CRITICAL - 2021-06-06 14:50:27 --> Class 'App\Filters\EntityManager' not found
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#5 {main}
+CRITICAL - 2021-06-06 14:50:41 --> Cannot use App\Models\Entities as Entities because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-06 14:50:53 --> Class 'App\Filters\EntityManager' not found
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#5 {main}
+CRITICAL - 2021-06-06 14:52:26 --> syntax error, unexpected 'use' (T_USE), expecting identifier (T_STRING) or \\ (T_NS_SEPARATOR)
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\v...')
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\Izb...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\Izb...')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(172): spl_autoload_call('App\\Filters\\Izb...')
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#8 {main}
+CRITICAL - 2021-06-06 14:52:38 --> Call to protected Doctrine\ORM\EntityManager::__construct() from context 'App\Filters\IzbacivanjeVakcina'
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#5 {main}
+CRITICAL - 2021-06-06 14:53:37 --> Call to protected Doctrine\ORM\EntityManager::__construct() from context 'App\Filters\IzbacivanjeVakcina'
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#5 {main}
+CRITICAL - 2021-06-06 14:54:46 --> Undefined property: App\Filters\IzbacivanjeVakcina::$doctrine
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Filters\IzbacivanjeVakcina.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 20, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 14:55:37 --> Undefined property: App\Filters\IzbacivanjeVakcina::$doctrine
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Filters\IzbacivanjeVakcina.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 20, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 14:55:39 --> Undefined property: App\Filters\IzbacivanjeVakcina::$doctrine
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Filters\IzbacivanjeVakcina.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 20, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 14:57:39 --> Undefined property: App\Filters\IzbacivanjeVakcina::$doctrine
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Filters\IzbacivanjeVakcina.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 20, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 14:57:48 --> Undefined property: App\Filters\IzbacivanjeVakcina::$doctrine
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Filters\IzbacivanjeVakcina.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\v...', 25, Array)
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\IzbacivanjeVakcina->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('Sestra/zabelezi...', 'before')
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#6 {main}
+CRITICAL - 2021-06-06 22:27:40 --> Call to a member function getNaziv() on null
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/valida...', Array, true)
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(23): view('Prototip/valida...', Array)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(91): App\Controllers\Sestra->prikaz('validacija.php', Array)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Sestra->zabelezi('4')
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#10 {main}
+CRITICAL - 2021-06-06 22:31:20 --> Call to a member function getNaziv() on null
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/valida...', Array, true)
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(23): view('Prototip/valida...', Array)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(80): App\Controllers\Sestra->prikaz('validacija.php', Array)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Sestra->validacijaPretraga('4')
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#10 {main}
+CRITICAL - 2021-06-06 22:34:17 --> Call to a member function getNaziv() on null
+#0 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Prototip/valida...', Array, true)
+#3 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(23): view('Prototip/valida...', Array)
+#4 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\app\Controllers\Sestra.php(80): App\Controllers\Sestra->prikaz('validacija.php', Array)
+#5 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Sestra->validacijaPretraga('4')
+#6 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#7 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\vakcinacijaMarko\vakcinacija2\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#10 {main}

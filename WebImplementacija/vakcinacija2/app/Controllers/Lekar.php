@@ -60,7 +60,7 @@ class Lekar extends BaseController
     }
 
     public function pocetniPrikazUnosaNezeljeneReakcije($data){
-
+        
         $tipoviVakcina = $this->doctrine->em->getRepository(Entities\Tipvakcine::class)->findAll();
 
         foreach ($tipoviVakcina as $tipovi){
@@ -106,27 +106,25 @@ class Lekar extends BaseController
         if($tip == "Izaberite tip vakcine") {
             $greske['tipVakcine'] = 'Ovo polje je obavezno';
         }
-        if(!$validation->withRequest($this->request)->run() or !empty($greske['tipVakcine'])){
-            $ret = $validation->getErrors();
+        $gradjanin = $this->doctrine->em->getRepository(Entities\Gradjanin::class)
+            ->findOneBy(['jmbg' => $this->request->getVar('nazivJMBG')]);
 
+        if($gradjanin == null){
+            $greske['nazivJMBG'] = 'Ne postoji korisnik sa zadatim JMBG-om';
+        }
+        
+        if(!$validation->withRequest($this->request)->run() || !empty($greske['tipVakcine']) || $gradjanin == null){
+            $ret = $validation->getErrors();
             if(!empty($ret['tekstIzvestaj'])){
                 $greske['tekstIzvestaj'] = $ret['tekstIzvestaj'];    }
 
-            if(!empty($ret['nazivJMBG'])){
+            if(!empty($ret['nazivJMBG'])){   
                 $greske['nazivJMBG'] = $ret['nazivJMBG'];}
 
             if(!empty($ret['nezeljeneReakcije'])){
                 $greske['nezeljeneReakcije'] = $ret['nezeljeneReakcije'];}
             $data = ['greske' => $greske,'tipovi' => []];
             return $this->pocetniPrikazUnosaNezeljeneReakcije($data);
-        }
-
-        $gradjanin = $this->doctrine->em->getRepository(Entities\Gradjanin::class)
-            ->findOneBy(['jmbg' => $this->request->getVar('nazivJMBG')]);
-
-        ;       if($gradjanin == null){
-            $greske['nazivJMBG'] = 'Ne postoji korisnik sa zadatim JMBG-om';
-            return $this->pocetniPrikazUnosaNezeljeneReakcije('izvestaj_kreiranje.php', ['greske' => $greske]);
         }
 
         $nezeljeneReakcije = explode(",", $this->request->getVar('nezeljeneReakcije'));

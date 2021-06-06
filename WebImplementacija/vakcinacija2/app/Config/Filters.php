@@ -19,7 +19,8 @@ class Filters extends BaseConfig
 		'csrf'     => CSRF::class,
 		'toolbar'  => DebugToolbar::class,
 		'honeypot' => Honeypot::class,
-                'gost' => \App\Filters\GostFilter::class
+                'gost' => \App\Filters\GostFilter::class,
+                'izbacivanjeVakcina' => \App\Filters\IzbacivanjeVakcina::class
 	];
 
 	/**
@@ -60,6 +61,7 @@ class Filters extends BaseConfig
 	 * @var array
 	 */
 	public $filters = [
-            'gost' => ['before' => ['Gost/*', 'Gost', '/']] 
+            'gost' => ['before' => ['Gost/*', 'Gost', '/']] ,
+            'izbacivanjeVakcina' => ['before' => [ 'Sestra/zabelezi/*','Gradjanin/prijavaVakcinasubmit']]
         ];
 }
