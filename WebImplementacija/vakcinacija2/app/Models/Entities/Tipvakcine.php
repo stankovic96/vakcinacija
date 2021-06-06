@@ -58,13 +58,13 @@ class Tipvakcine
 
     /**
      * @var \Doctrine\Common\Collections\Collection
-     * @ORM\OneToMany(targetEntity="App\Models\Entities\Izvestajlekara",mappedBy="idtipvakcine", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="App\Models\Entities\Izvestajlekara",mappedBy="idtipvakcine", orphanRemoval=true,cascade={"persist"})
      */
     private $izvestaji;
 
     /**
      * @var \Doctrine\Common\Collections\Collection
-     * @ORM\OneToMany(targetEntity="App\Models\Entities\Pristiglevakcine",mappedBy="idtipvakcine", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="App\Models\Entities\Pristiglevakcine",mappedBy="idtipvakcine", orphanRemoval=true,cascade={"all"})
      */
     private $pristigleKolicine;
 
@@ -207,14 +207,17 @@ class Tipvakcine
     /**
      * Add izvestaji.
      *
-     * @param \App\Models\Entities\Izvestajlekara $izvestaji
+     * @param \App\Models\Entities\Izvestajlekara $izvestaj
      *
      * @return Tipvakcine
      */
-    public function addIzvestaji(\App\Models\Entities\Izvestajlekara $izvestaji)
+    public function addIzvestaji(\App\Models\Entities\Izvestajlekara $izvestaj)
     {
-        $this->izvestaji[] = $izvestaji;
+        if(!$this->izvestaji->contains($izvestaj)){
 
+            $this->izvestaji[] = $izvestaj;
+            $izvestaj->setIdtipvakcine($this);
+        }
         return $this;
     }
 
@@ -249,7 +252,10 @@ class Tipvakcine
      */
     public function addPristigleKolicine(\App\Models\Entities\Pristiglevakcine $pristigleKolicine)
     {
-        $this->pristigleKolicine[] = $pristigleKolicine;
+        if(!$this->pristigleKolicine->contains($pristigleKolicine)){
+            $this->pristigleKolicine[] = $pristigleKolicine;
+            $pristigleKolicine->setIdtipvakcine($this);
+        }
 
         return $this;
     }
@@ -263,7 +269,12 @@ class Tipvakcine
      */
     public function removePristigleKolicine(\App\Models\Entities\Pristiglevakcine $pristigleKolicine)
     {
-        return $this->pristigleKolicine->removeElement($pristigleKolicine);
+        if($this->pristigleKolicine->contains($pristigleKolicine)){
+            $this->pristigleKolicine->removeElement($pristigleKolicine);
+            $pristigleKolicine->setIdtipvakcine(null);
+            return true;
+        }
+        return false;
     }
 
     /**

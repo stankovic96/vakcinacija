@@ -29,16 +29,9 @@ class Nezeljenereakcije
     private $naziv;
 
     /**
-     * @var string|null
-     *
-     * @ORM\Column(name="Opis", type="text", length=0, nullable=true)
-     */
-    private $opis;
-
-    /**
      * @var \Doctrine\Common\Collections\Collection
      *
-     * @ORM\ManyToMany(targetEntity="App\Models\Entities\Izvestajlekara", mappedBy="nezeljenereakcijeIdnezeljenereakcije")
+     * @ORM\ManyToMany(targetEntity="App\Models\Entities\Izvestajlekara", mappedBy="nezeljenereakcijeIdnezeljenereakcije", cascade = {"persist"})
      */
     private $izvestajlekaraIdizvestaja;
 
@@ -118,8 +111,11 @@ class Nezeljenereakcije
      */
     public function addIzvestajlekaraIdizvestaja(\App\Models\Entities\Izvestajlekara $izvestajlekaraIdizvestaja)
     {
-        $this->izvestajlekaraIdizvestaja[] = $izvestajlekaraIdizvestaja;
+        if(!$this->izvestajlekaraIdizvestaja->contains($izvestajlekaraIdizvestaja)){
 
+            $this->izvestajlekaraIdizvestaja[] = $izvestajlekaraIdizvestaja;
+            $izvestajlekaraIdizvestaja->addNezeljenereakcijeIdnezeljenereakcije($this);
+        }
         return $this;
     }
 

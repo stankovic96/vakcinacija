@@ -69,13 +69,16 @@ class Admin extends BaseController
             ->find($this->session->get('id'));
         echo view("Prototip/$page", $data);
     }
+    public function prikaz_globalni($page, $data){
+        echo view("Prototip/$page", $data);
+    }
     public function Opisi(){
 	        $tipoviVakcina=$this->doctrine->em->getRepository(Entities\Tipvakcine::class)->findAll();
-	        $this->prikaz("opisi.php",["tipoviVakcina"=>$tipoviVakcina]);
+	        $this->prikaz_globalni("opisi.php",["tipoviVakcina"=>$tipoviVakcina]);
     }
     public function Statistika(){
         $tipoviVakcina=$this->doctrine->em->getRepository(Entities\Tipvakcine::class)->findAll();
-        $this->prikaz("statistika.php",["tipoviVakcina"=>$tipoviVakcina]);
+        $this->prikaz_globalni("statistika.php",["tipoviVakcina"=>$tipoviVakcina]);
     }
     public function odjava(){
         $this->session->stop();

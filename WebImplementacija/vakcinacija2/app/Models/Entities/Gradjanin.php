@@ -169,7 +169,7 @@ class Gradjanin
 
     /**
      * @var \Doctrine\Common\Collections\Collection
-     * @ORM\OneToMany(targetEntity="App\Models\Entities\Izvestajlekara",mappedBy="idgradjanin", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="App\Models\Entities\Izvestajlekara",mappedBy="idgradjanin", orphanRemoval=true, cascade={"persist"})
      */
     private $izvestaji;
 
@@ -648,14 +648,16 @@ class Gradjanin
     /**
      * Add izvestaji.
      *
-     * @param \App\Models\Entities\Izvestajlekara $izvestaji
+     * @param \App\Models\Entities\Izvestajlekara $izvestaj
      *
      * @return Gradjanin
      */
-    public function addIzvestaji(\App\Models\Entities\Izvestajlekara $izvestaji)
+    public function addIzvestaji(\App\Models\Entities\Izvestajlekara $izvestaj)
     {
-        $this->izvestaji[] = $izvestaji;
-
+        if(!$this->izvestaji->contains($izvestaj)){
+            $this->izvestaji[] = $izvestaj;
+            $izvestaj->setIdgradjanin($this);
+        }
         return $this;
     }
 

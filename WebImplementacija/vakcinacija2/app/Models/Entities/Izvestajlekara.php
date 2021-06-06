@@ -61,7 +61,7 @@ class Izvestajlekara
     /**
      * @var \Doctrine\Common\Collections\Collection
      *
-     * @ORM\ManyToMany(targetEntity="App\Models\Entities\Nezeljenereakcije", inversedBy="izvestajlekaraIdizvestaja")
+     * @ORM\ManyToMany(targetEntity="App\Models\Entities\Nezeljenereakcije", inversedBy="izvestajlekaraIdizvestaja",cascade={"persist"})
      * @ORM\JoinTable(name="izvestajlekaraimanezeljenereakcije",
      *   joinColumns={
      *     @ORM\JoinColumn(name="IzvestajLekara_idIzvestaja", referencedColumnName="idIzvestaja")
@@ -72,13 +72,6 @@ class Izvestajlekara
      * )
      */
     private $nezeljenereakcijeIdnezeljenereakcije;
-
-    /**
-     * @var \Doctrine\Common\Collections\Collection
-     *
-     * @ORM\OneToMany(targetEntity="App\Models\Entities\Nezeljenereakcije",mappedBy="idnezeljenereakcije")
-     */
-    private $idnezeljenereakcije;
 
     /**
      * Constructor
@@ -204,8 +197,9 @@ class Izvestajlekara
      */
     public function addNezeljenereakcijeIdnezeljenereakcije(\App\Models\Entities\Nezeljenereakcije $nezeljenereakcijeIdnezeljenereakcije)
     {
-        $this->nezeljenereakcijeIdnezeljenereakcije[] = $nezeljenereakcijeIdnezeljenereakcije;
-
+        if(!$this->nezeljenereakcijeIdnezeljenereakcije->contains($nezeljenereakcijeIdnezeljenereakcije)){
+            $this->nezeljenereakcijeIdnezeljenereakcije[] = $nezeljenereakcijeIdnezeljenereakcije;
+        }
         return $this;
     }
 
@@ -231,39 +225,4 @@ class Izvestajlekara
         return $this->nezeljenereakcijeIdnezeljenereakcije;
     }
 
-    /**
-     * Add idnezeljenereakcije.
-     *
-     * @param \App\Models\Entities\Nezeljenereakcije $idnezeljenereakcije
-     *
-     * @return Izvestajlekara
-     */
-    public function addIdnezeljenereakcije(\App\Models\Entities\Nezeljenereakcije $idnezeljenereakcije)
-    {
-        $this->idnezeljenereakcije[] = $idnezeljenereakcije;
-
-        return $this;
-    }
-
-    /**
-     * Remove idnezeljenereakcije.
-     *
-     * @param \App\Models\Entities\Nezeljenereakcije $idnezeljenereakcije
-     *
-     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
-     */
-    public function removeIdnezeljenereakcije(\App\Models\Entities\Nezeljenereakcije $idnezeljenereakcije)
-    {
-        return $this->idnezeljenereakcije->removeElement($idnezeljenereakcije);
-    }
-
-    /**
-     * Get idnezeljenereakcije.
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getIdnezeljenereakcije()
-    {
-        return $this->idnezeljenereakcije;
-    }
 }

@@ -79,7 +79,7 @@ class Zdravstveniradnici
 
     /**
      * @var \Doctrine\Common\Collections\Collection
-     * @ORM\OneToMany(targetEntity="App\Models\Entities\Izvestajlekara",mappedBy="idlekara", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="App\Models\Entities\Izvestajlekara",mappedBy="idlekara", orphanRemoval=true,cascade={"persist"})
      */
     private $izvestaji;
 
@@ -300,7 +300,11 @@ class Zdravstveniradnici
      */
     public function addIzvestaji(\App\Models\Entities\Izvestajlekara $izvestaji)
     {
-        $this->izvestaji[] = $izvestaji;
+        if(!$this->izvestaji->contains($izvestaji)){
+
+            $this->izvestaji[] = $izvestaji;
+            $izvestaji->setIdlekara($this);
+        }
 
         return $this;
     }

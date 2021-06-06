@@ -304,12 +304,12 @@ class Tipvakcine extends \App\Models\Entities\Tipvakcine implements \Doctrine\OR
     /**
      * {@inheritDoc}
      */
-    public function addIzvestaji(\App\Models\Entities\Izvestajlekara $izvestaji)
+    public function addIzvestaji(\App\Models\Entities\Izvestajlekara $izvestaj)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addIzvestaji', [$izvestaji]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addIzvestaji', [$izvestaj]);
 
-        return parent::addIzvestaji($izvestaji);
+        return parent::addIzvestaji($izvestaj);
     }
 
     /**

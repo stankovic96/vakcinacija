@@ -36,3 +36,304 @@ CRITICAL - 2021-06-06 10:40:17 --> Call to a member function getStatust1() on nu
 #3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
 #4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
 #5 {main}
+CRITICAL - 2021-06-06 10:42:52 --> Call to a member function getIme() on null
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(230): include()
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render('Prototip/valida...', Array, true)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Sestra.php(23): view('Prototip/valida...', Array)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Sestra.php(80): App\Controllers\Sestra->prikaz('validacija.php', Array)
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Sestra->validacijaPretraga('vakcinacija_val...')
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#10 {main}
+CRITICAL - 2021-06-06 10:43:08 --> Call to a member function getIme() on null
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(230): include()
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render('Prototip/valida...', Array, true)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Sestra.php(23): view('Prototip/valida...', Array)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Sestra.php(80): App\Controllers\Sestra->prikaz('validacija.php', Array)
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Sestra->validacijaPretraga('vakcinacija_val...')
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#10 {main}
+CRITICAL - 2021-06-06 10:43:53 --> Call to a member function getIme() on null
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(230): include()
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render('Prototip/valida...', Array, true)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Sestra.php(23): view('Prototip/valida...', Array)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Sestra.php(80): App\Controllers\Sestra->prikaz('validacija.php', Array)
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Sestra->validacijaPretraga('sestra.html')
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#10 {main}
+CRITICAL - 2021-06-06 10:44:27 --> Call to a member function getIme() on null
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(230): include()
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render('Prototip/valida...', Array, true)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Sestra.php(23): view('Prototip/valida...', Array)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Sestra.php(80): App\Controllers\Sestra->prikaz('validacija.php', Array)
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Sestra->validacijaPretraga('vakcinacija_val...')
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#10 {main}
+CRITICAL - 2021-06-06 10:44:29 --> Call to a member function getIme() on null
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(230): include()
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render('Prototip/valida...', Array, true)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Sestra.php(23): view('Prototip/valida...', Array)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Sestra.php(80): App\Controllers\Sestra->prikaz('validacija.php', Array)
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Sestra->validacijaPretraga('sestra.html')
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#10 {main}
+CRITICAL - 2021-06-06 10:48:51 --> The identifier idadmin is missing for a query of App\Models\Entities\Admin
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(433): Doctrine\ORM\ORMException::missingIdentifierField('App\\Models\\Enti...', 'idadmin')
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php(190): Doctrine\ORM\EntityManager->find('App\\Models\\Enti...', Array, NULL, NULL)
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Admin.php(69): Doctrine\ORM\EntityRepository->find(NULL)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Admin.php(74): App\Controllers\Admin->prikaz('opisi.php', Array)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Admin->Opisi()
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#9 {main}
+CRITICAL - 2021-06-06 10:50:04 --> The identifier idadmin is missing for a query of App\Models\Entities\Admin
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(433): Doctrine\ORM\ORMException::missingIdentifierField('App\\Models\\Enti...', 'idadmin')
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php(190): Doctrine\ORM\EntityManager->find('App\\Models\\Enti...', Array, NULL, NULL)
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Admin.php(69): Doctrine\ORM\EntityRepository->find(NULL)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Admin.php(74): App\Controllers\Admin->prikaz('opisi.php', Array)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Admin->Opisi()
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#9 {main}
+CRITICAL - 2021-06-06 10:50:10 --> The identifier idadmin is missing for a query of App\Models\Entities\Admin
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(433): Doctrine\ORM\ORMException::missingIdentifierField('App\\Models\\Enti...', 'idadmin')
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php(190): Doctrine\ORM\EntityManager->find('App\\Models\\Enti...', Array, NULL, NULL)
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Admin.php(69): Doctrine\ORM\EntityRepository->find(NULL)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Admin.php(74): App\Controllers\Admin->prikaz('opisi.php', Array)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Admin->Opisi()
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#9 {main}
+CRITICAL - 2021-06-06 10:51:26 --> The identifier idadmin is missing for a query of App\Models\Entities\Admin
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(433): Doctrine\ORM\ORMException::missingIdentifierField('App\\Models\\Enti...', 'idadmin')
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php(190): Doctrine\ORM\EntityManager->find('App\\Models\\Enti...', Array, NULL, NULL)
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Admin.php(69): Doctrine\ORM\EntityRepository->find(NULL)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Admin.php(74): App\Controllers\Admin->prikaz('opisi.php', Array)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Admin->Opisi()
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#9 {main}
+CRITICAL - 2021-06-06 10:51:31 --> The identifier idadmin is missing for a query of App\Models\Entities\Admin
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(433): Doctrine\ORM\ORMException::missingIdentifierField('App\\Models\\Enti...', 'idadmin')
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php(190): Doctrine\ORM\EntityManager->find('App\\Models\\Enti...', Array, NULL, NULL)
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Admin.php(69): Doctrine\ORM\EntityRepository->find(NULL)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Admin.php(74): App\Controllers\Admin->prikaz('opisi.php', Array)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Admin->Opisi()
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#9 {main}
+CRITICAL - 2021-06-06 10:54:50 --> The identifier idadmin is missing for a query of App\Models\Entities\Admin
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(433): Doctrine\ORM\ORMException::missingIdentifierField('App\\Models\\Enti...', 'idadmin')
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php(190): Doctrine\ORM\EntityManager->find('App\\Models\\Enti...', Array, NULL, NULL)
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Admin.php(69): Doctrine\ORM\EntityRepository->find(NULL)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Admin.php(74): App\Controllers\Admin->prikaz('opisi.php', Array)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Admin->Opisi()
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#9 {main}
+CRITICAL - 2021-06-06 10:57:41 --> The identifier idadmin is missing for a query of App\Models\Entities\Admin
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(433): Doctrine\ORM\ORMException::missingIdentifierField('App\\Models\\Enti...', 'idadmin')
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php(190): Doctrine\ORM\EntityManager->find('App\\Models\\Enti...', Array, NULL, NULL)
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Admin.php(69): Doctrine\ORM\EntityRepository->find(NULL)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Admin.php(23): App\Controllers\Admin->prikaz('nova_vakcina.ph...', Array)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Admin->NovaVakcina()
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#9 {main}
+CRITICAL - 2021-06-06 10:57:48 --> The identifier idadmin is missing for a query of App\Models\Entities\Admin
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(433): Doctrine\ORM\ORMException::missingIdentifierField('App\\Models\\Enti...', 'idadmin')
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php(190): Doctrine\ORM\EntityManager->find('App\\Models\\Enti...', Array, NULL, NULL)
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Admin.php(69): Doctrine\ORM\EntityRepository->find(NULL)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Admin.php(23): App\Controllers\Admin->prikaz('nova_vakcina.ph...', Array)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Admin->NovaVakcina()
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#9 {main}
+CRITICAL - 2021-06-06 11:15:18 --> Undefined variable $korisnik
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Views/prototip/lekar.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/markosta...', 42)
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(230): include('/Users/markosta...')
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render('prototip/lekar....', Array, true)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Lekar.php(12): view('prototip/lekar....')
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Lekar->index()
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#10 {main}
+CRITICAL - 2021-06-06 11:17:11 --> Undefined variable $korisnik
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Views/prototip/lekar.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/markosta...', 42)
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(230): include('/Users/markosta...')
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render('prototip/lekar....', Array, true)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Lekar.php(12): view('prototip/lekar....')
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Lekar->index()
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#10 {main}
+CRITICAL - 2021-06-06 11:17:12 --> Undefined variable $korisnik
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Views/prototip/lekar.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/markosta...', 42)
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(230): include('/Users/markosta...')
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render('prototip/lekar....', Array, true)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Lekar.php(12): view('prototip/lekar....')
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Lekar->index()
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#10 {main}
+CRITICAL - 2021-06-06 11:17:16 --> Undefined variable $korisnik
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Views/prototip/lekar.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/markosta...', 42)
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(230): include('/Users/markosta...')
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render('prototip/lekar....', Array, true)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Lekar.php(12): view('prototip/lekar....')
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Lekar->index()
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#10 {main}
+CRITICAL - 2021-06-06 11:17:20 --> Undefined variable $korisnik
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Views/prototip/lekar.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/markosta...', 42)
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(230): include('/Users/markosta...')
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render('prototip/lekar....', Array, true)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Lekar.php(12): view('prototip/lekar....')
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Lekar->index()
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#10 {main}
+CRITICAL - 2021-06-06 11:22:46 --> Cannot declare class Lekar, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-06 11:22:49 --> Cannot declare class Lekar, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-06 11:23:19 --> Cannot declare class Lekar, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-06 11:24:35 --> Undefined variable $ime
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Views/prototip/lekar.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/markosta...', 38)
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(230): include('/Users/markosta...')
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render('prototip/lekar....', Array, true)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Lekar.php(11): view('prototip/lekar....')
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Lekar->index()
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#10 {main}
+CRITICAL - 2021-06-06 11:28:31 --> An exception occurred while executing 'INSERT INTO izvestajlekara (Diagnoza, IdGradjanin, IdTipVakcine, idLekara) VALUES (?, ?, ?, ?)':
+
+Unknown column 'idLekara' in 'field list'
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(182): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionError))
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(159): Doctrine\DBAL\DBALException::wrapException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionError), 'An exception oc...')
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(2214): Doctrine\DBAL\DBALException::driverExceptionDuringQuery(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionError), 'INSERT INTO izv...', Array)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(1248): Doctrine\DBAL\Connection->handleExceptionDuringQuery(Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionError), 'INSERT INTO izv...')
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(273): Doctrine\DBAL\Connection->prepare('INSERT INTO izv...')
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(1111): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->executeInserts()
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(423): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(378): Doctrine\ORM\UnitOfWork->commit(NULL)
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Lekar.php(163): Doctrine\ORM\EntityManager->flush()
+#9 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Lekar->unosNezeljenihRekacija()
+#10 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#11 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#13 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#14 {main}
+CRITICAL - 2021-06-06 11:28:42 --> Allowed memory size of 2097152000 bytes exhausted (tried to allocate 1006944256 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-06 11:30:55 --> An exception occurred while executing 'SELECT t0.idIzvestaja AS idIzvestaja_1, t0.Diagnoza AS Diagnoza_2, t0.IdGradjanin AS IdGradjanin_3, t0.IdTipVakcine AS IdTipVakcine_4, t0.idLekara AS idLekara_5 FROM izvestajlekara t0 WHERE t0.IdGradjanin = ?' with params [3]:
+
+Unknown column 't0.idLekara' in 'field list'
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(182): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionError))
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(159): Doctrine\DBAL\DBALException::wrapException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionError), 'An exception oc...')
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(2214): Doctrine\DBAL\DBALException::driverExceptionDuringQuery(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionError), 'SELECT t0.idIzv...', Array)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(1301): Doctrine\DBAL\Connection->handleExceptionDuringQuery(Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionError), 'SELECT t0.idIzv...', Array, Array)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(1817): Doctrine\DBAL\Connection->executeQuery('SELECT t0.idIzv...', Array, Array)
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(1758): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->getOneToManyStatement(Array, Object(App\Models\Entities\Gradjanin))
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(2962): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->loadOneToManyCollection(Array, Object(App\Models\Entities\Gradjanin), Object(Doctrine\ORM\PersistentCollection))
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/PersistentCollection.php(696): Doctrine\ORM\UnitOfWork->loadCollection(Object(Doctrine\ORM\PersistentCollection))
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/PersistentCollection.php(218): Doctrine\ORM\PersistentCollection->doInitialize()
+#9 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/collections/lib/Doctrine/Common/Collections/AbstractLazyCollection.php(62): Doctrine\ORM\PersistentCollection->initialize()
+#10 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/PersistentCollection.php(425): Doctrine\Common\Collections\AbstractLazyCollection->contains(Object(App\Models\Entities\Izvestajlekara))
+#11 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Models/Entities/Gradjanin.php(657): Doctrine\ORM\PersistentCollection->contains(Object(App\Models\Entities\Izvestajlekara))
+#12 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Lekar.php(156): App\Models\Entities\Gradjanin->addIzvestaji(Object(App\Models\Entities\Izvestajlekara))
+#13 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Lekar->unosNezeljenihRekacija()
+#14 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#15 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#17 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#18 {main}
+CRITICAL - 2021-06-06 11:31:00 --> Allowed memory size of 2097152000 bytes exhausted (tried to allocate 2092961792 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-06 11:37:06 --> An exception occurred while executing 'SELECT t0.idIzvestaja AS idIzvestaja_1, t0.Diagnoza AS Diagnoza_2, t0.IdGradjanin AS IdGradjanin_3, t0.IdTipVakcine AS IdTipVakcine_4, t0.idLekara AS idLekara_5 FROM izvestajlekara t0 WHERE t0.IdTipVakcine = ?' with params [1]:
+
+Unknown column 't0.idLekara' in 'field list'
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(182): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionError))
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(159): Doctrine\DBAL\DBALException::wrapException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionError), 'An exception oc...')
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(2214): Doctrine\DBAL\DBALException::driverExceptionDuringQuery(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionError), 'SELECT t0.idIzv...', Array)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(1301): Doctrine\DBAL\Connection->handleExceptionDuringQuery(Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionError), 'SELECT t0.idIzv...', Array, Array)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(1817): Doctrine\DBAL\Connection->executeQuery('SELECT t0.idIzv...', Array, Array)
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(1758): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->getOneToManyStatement(Array, Object(App\Models\Proxies\__CG__\App\Models\Entities\Tipvakcine))
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(2962): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->loadOneToManyCollection(Array, Object(App\Models\Proxies\__CG__\App\Models\Entities\Tipvakcine), Object(Doctrine\ORM\PersistentCollection))
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/PersistentCollection.php(696): Doctrine\ORM\UnitOfWork->loadCollection(Object(Doctrine\ORM\PersistentCollection))
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/PersistentCollection.php(218): Doctrine\ORM\PersistentCollection->doInitialize()
+#9 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/collections/lib/Doctrine/Common/Collections/AbstractLazyCollection.php(62): Doctrine\ORM\PersistentCollection->initialize()
+#10 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/PersistentCollection.php(425): Doctrine\Common\Collections\AbstractLazyCollection->contains(Object(App\Models\Entities\Izvestajlekara))
+#11 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Models/Entities/Tipvakcine.php(216): Doctrine\ORM\PersistentCollection->contains(Object(App\Models\Entities\Izvestajlekara))
+#12 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Models/Proxies/__CG__AppModelsEntitiesTipvakcine.php(312): App\Models\Entities\Tipvakcine->addIzvestaji(Object(App\Models\Entities\Izvestajlekara))
+#13 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Lekar.php(154): App\Models\Proxies\__CG__\App\Models\Entities\Tipvakcine->addIzvestaji(Object(App\Models\Entities\Izvestajlekara))
+#14 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Lekar->unosNezeljenihRekacija()
+#15 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lekar))
+#16 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#18 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#19 {main}
+CRITICAL - 2021-06-06 11:37:11 --> Allowed memory size of 2097152000 bytes exhausted (tried to allocate 2088767488 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
