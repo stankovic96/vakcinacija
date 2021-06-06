@@ -64,6 +64,50 @@ class Gradjanin extends BaseController
             
             
             //PROVERA DA LI IMA DOSTUPINIH VAKCINA
+            $vakcine = $this->doctrine->em->getRepository(Entities\Tipvakcine::class)
+                    ->findOneBy(['naziv' => $tip]);
+            
+            $pristigle = $vakcine->getPristigleKolicine();
+            $imaVakcina = false;
+            $paketVakcinaId = null;
+            
+            if($pristigle != null)
+                foreach($pristigle as $kolicina){
+                    if($kolicina->getRaspolozivakolicina() - $kolicina->getRezervisanakolicina() > 0){
+                        $paketVakcinaId = $kolicina->getIdpristiglevakcine();
+                        $imaVakcina = true;
+                        break;
+                    }
+                }
+            
+            if($imaVakcina == false){
+                $gradovi = $this->doctrine->em->getRepository(Entities\Mesto::class)->findAll();
+                $nazivi = [];
+
+                if($gradovi != null){
+                    foreach($gradovi as $grad)
+                        {
+                            $nazivi[] = $grad->getNaziv();
+                        }
+                }
+                else{
+                    $naiziv[] = "Ne postoji grad u kojem se moze primiti vakcina";
+                }
+                
+                $naziviVakcine = [];            
+                $vakcine = $this->doctrine->em->getRepository(Entities\Tipvakcine::class)->findAll();
+
+                if($vakcine != null)
+                    foreach($vakcine as $vakcina){
+                        $naziviVakcine[] = $vakcina->getNaziv();
+                    }
+                else{
+                    $naziviVakcine[] = "Ne postoji niti jedna vakcina u ponudi";
+                }
+                
+                return $this->prikaz('vakcinacija_prijava.php', ['greske' => ['nedostatak' => "Ne postoji dovoljan broj vakcina za $tip vakcine za koje se prijavljujete"],
+                    "gradovi" => $nazivi, "vakcine" => $naziviVakcine]);
+            }
             
             
             $gradjanin = $this->doctrine->em->getRepository(Entities\Gradjanin::class)
@@ -72,6 +116,9 @@ class Gradjanin extends BaseController
 
             $mest = $this->doctrine->em->getRepository(Entities\Mesto::class)->
                     findOneBy(['naziv' => $mesto]);
+            
+            $paketVakcina = $this->doctrine->em->getRepository(Entities\Pristiglevakcine::class)
+                    ->find($paketVakcinaId);
             
             $mest->addGradjanini($gradjanin);
             
@@ -83,7 +130,7 @@ class Gradjanin extends BaseController
             $gradjanin->setStatusprijave('Zakazan');
             $gradjanin->setDatumt1(new \DateTime("+1 week"));
             $gradjanin->setTermint1(true);
-            
+            $paketVakcina->setRezervisanakolicina($paketVakcina->getRezervisanakolicina() + 1);
             $this->doctrine->em->flush();
             
            // return $this->prikaz('gradjanin.php', []);

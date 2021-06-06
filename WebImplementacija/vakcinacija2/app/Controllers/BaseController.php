@@ -64,7 +64,7 @@ class BaseController extends Controller
 	}
         
         public function odjava(){
-            $this->session->stop();
+//            $this->session->stop();
             $this->session->destroy();
             
             return redirect()->to(site_url('/'));

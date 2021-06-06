@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="<?php echo base_url("assets/slike/logo.png")?>" type="image/x-icon">
-    <title>Вакцинација</title>
+    <title>Vakcinacija</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo base_url("assets/css/style.css")?>">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -20,10 +20,12 @@
             </div>
             <div class="col-8">
                 <nav class="nav">
-                    <a href="index.html" class="nav-link">Почетна</a>
-                    <a href="index.html" class="nav-link">Одјава</a>
-                    <a href="opisi.html" class="nav-link">О вакцинама</a>
-                    <a href="statistika.html" class="nav-link">Статистика</a>
+                    <!--<a href="#" class="nav-link">Početna</a>-->
+                    <?= anchor("Setra", "Početna", 'class = "nav-link"') ?>
+                    <!--<a href="index.html" class="nav-link">Одјава</a>-->
+                    <?= anchor("Sestra/odjava", "Odjava", 'class = "nav-link"') ?>
+                    <a href="opisi.html" class="nav-link">O vakcinama</a>
+                    <a href="statistika.html" class="nav-link">Statistika</a>
                 </nav>
             </div>
         </div>
@@ -81,15 +83,7 @@
                         
                         <button type = "submit" class = "btn btn-success">Validiraj vakcinaciju</button>
                     </div>
-                    <form action = "
-                        <?php 
-                        if(!empty($gradjanin['gradjanin'])){ 
-                           echo site_url("$controller/zabelezi/{$gradjanin['gradjanin']->getId()}");
-                         } 
-                          ?>" method = "get" >
-                        
-                        <button type = "submit" class = "btn btn-danger">Nije moguće vakcinisati</button>
-                    </form>
+
                     <?php 
                         if(!empty($greske['vakcina'])){
                             echo "<font color = 'red'>".$greske['vakcina']."</font>";

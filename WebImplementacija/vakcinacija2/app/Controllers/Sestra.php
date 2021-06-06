@@ -82,8 +82,7 @@ class Sestra extends BaseController
         
         public function zabelezi($id){
             $g = $this->doctrine->em->getRepository(Entities\Gradjanin::class)->find($id);
-            echo $id;
-//            $g = $id;
+
             if($g->getStatust1() == "Uspesno"){
                 return $this->prikaz('validacija.php',["greske" => ['vakcina' => 'Građanin je već vakcinisan'],
                     'gradjanin' => ['gradjanin' => $g]]);
@@ -92,7 +91,21 @@ class Sestra extends BaseController
             $g->setStatust1("Uspesno");
             $sestra = $this->doctrine->em->getRepository(Entities\Zdravstveniradnici::class)->find($this->session->get('id'));
             $g->setIdSestrat1($sestra);
-
+            
+            $tipVakcine = $this->doctrine->em->getRepository(Entities\Tipvakcine::class)->find($g->getIdtipvakcine());
+            $pristigle = $tipVakcine->getPristiglekolicine();
+            foreach($pristigle as $kolicina){
+                $kolicina->setRezervisanakolicina($kolicina->getRezervisanakolicina() - 1);
+                $kolicina->setRaspolozivakolicina($kolicina->getRaspolozivakolicina() - 1);
+                
+                if($kolicina->getRaspolozivakolicina() == 0){
+                    $tipVakcine->removePristigleKolicine($kolicina);
+                }
+                
+                break;
+            }
+            
+            $tipVakcine->setKolicinavakcinisanih($tipVakcine->getKolicinavakcinisanih() + 1);
             $this->doctrine->em->flush();
             
             return $this->prikaz('validacija.php', ["greske" => ['vakcina' => 'Vakcinacija zabeležena'], 'gradjanin' => ['gradjanin' => $g]]);

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
-    <title>Вакцинација</title>
+    <link rel="shortcut icon" href="<?php echo base_url("assets/slike/logo.png")?>" type="image/x-icon">
+    <title>Vakcinacija</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo base_url("assets/css/style.css")?>">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -20,7 +20,8 @@
             </div>
             <div class="col-8">
                 <nav class="nav">
-                    <a href="index.html" class="nav-link">Početna</a>
+                    <!--<a href="index.html" class="nav-link">Početna</a>-->
+                    <?= anchor("Gost", "Početna", 'class = "nav-link"') ?>
 <!--                    <a href="registracija.html" class="nav-link">Registracija</a>-->
                     <?= anchor("Gost/registracija", "Registracija", 'class = "nav-link"') ?>
                     <a href="#" class="nav-link active">Prijava</a>

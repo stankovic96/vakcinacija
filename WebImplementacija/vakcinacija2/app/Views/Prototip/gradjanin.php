@@ -20,7 +20,7 @@
             </div>
             <div class="col-8">
                 <nav class="nav">
-                    <a href="index.html" class="nav-link">Početna</a>
+                    <a href="#" class="nav-link">Početna</a>;
                     <!--<a href="index.html" class="nav-link">Odjava</a>-->
                     <?= anchor("Gradjanin/odjava", "Odjava", 'class = "nav-link"') ?>
                     <a href="opisi.html" class="nav-link">O vakcinama</a>

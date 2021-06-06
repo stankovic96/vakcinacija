@@ -64,7 +64,7 @@ class Tipvakcine
 
     /**
      * @var \Doctrine\Common\Collections\Collection
-     * @ORM\OneToMany(targetEntity="App\Models\Entities\Pristiglevakcine",mappedBy="idtipvakcine", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="App\Models\Entities\Pristiglevakcine",mappedBy="idtipvakcine", orphanRemoval=true, cascade ={"all"})
      */
     private $pristigleKolicine;
 
@@ -263,7 +263,14 @@ class Tipvakcine
      */
     public function removePristigleKolicine(\App\Models\Entities\Pristiglevakcine $pristigleKolicine)
     {
-        return $this->pristigleKolicine->removeElement($pristigleKolicine);
+       if($this->pristigleKolicine->contains($pristigleKolicine)){
+            if($pristigleKolicine->getIdtipvakcine() == $this)
+                $pristigleKolicine->setIdtipvakcine(null);
+            
+            return $this->pristigleKolicine->removeElement($pristigleKolicine);
+        }
+        
+        return false;
     }
 
     /**
