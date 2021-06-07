@@ -64,9 +64,18 @@ class Admin extends BaseController
         }
 
     public function prikaz($page, $data){
-        $data['controller'] = "Admin";
+        
         $data['korisnik'] =$this->doctrine->em->getRepository(Entities\Admin::class)
             ->find($this->session->get('id'));
+            $tipoviVakcina = $this->doctrine->em->getRepository(Entities\Tipvakcine::class)->findAll();
+        
+        $naziviVakcina = [];
+        
+        foreach ($tipoviVakcina as $tipovi){
+            $naziviVakcina[] = $tipovi->getNaziv();
+        }
+        $data['controller'] = "Admin";
+        $data['tipovi'] = $naziviVakcina;
         echo view("Prototip/$page", $data);
     }
     public function prikaz_globalni($page, $data){
@@ -76,9 +85,9 @@ class Admin extends BaseController
 	        $tipoviVakcina=$this->doctrine->em->getRepository(Entities\Tipvakcine::class)->findAll();
 	        $this->prikaz_globalni("opisi.php",["tipoviVakcina"=>$tipoviVakcina]);
     }
-    public function pocetniPrikaz(){
+    public function unosNovihVakcina(){
 
-        return $this->prikaz("vakcina_pristigla",[]);;
+        return $this->prikaz("vakcina_pristigla.php",[]);;
     }
     public function unosenjePristiglihVakcina(){
 
@@ -141,7 +150,7 @@ class Admin extends BaseController
 
         $this->doctrine->em->flush();
 
-        return $this->pocetniPrikaz();
+        return $this->NovaVakcina();
     }
     public function Statistika(){
         $tipoviVakcina=$this->doctrine->em->getRepository(Entities\Tipvakcine::class)->findAll();

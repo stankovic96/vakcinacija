@@ -20,7 +20,7 @@
         <div class="col-8">
             <nav class="nav">
                 <?= anchor("Lekar/pocetnaStranica", "Pocetna", 'class = "nav-link active"') ?>
-                <?= anchor("Lekar/odjava", "Odjava", 'class = "nav-link active"') ?>
+                <?= anchor("Lekar/odjava", "Odjava", 'class = "nav-link"') ?>
                 <?= anchor("Admin/Opisi", "O vakcinama", 'class = "nav-link"') ?>
                 <?= anchor("Admin/Statistika", "Statistika", 'class = "nav-link"') ?>
             </nav>

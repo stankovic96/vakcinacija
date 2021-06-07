@@ -40,44 +40,44 @@
             <div class="col-12 col-md-8 remove-padding" id="glavni-sadrzaj">
                 <form class = "ml-3"  action = "
                     <?php 
-                       /* if(!empty($gradjanin['gradjanin'])){ 
+                        if(!empty($gradjanin['gradjanin'])){ 
                            echo site_url("$controller/zabelezi/{$gradjanin['gradjanin']->getId()}");
-                         } */
+                         } 
                     ?>" method = "get">
                     <div class="form-group">
                         <p>Pacijent: 
                             <?php 
-                              // echo $gradjanin['gradjanin']->getIme()." ".$gradjanin['gradjanin']->getPrezime();
+                               echo $gradjanin['gradjanin']->getIme()." ".$gradjanin['gradjanin']->getPrezime();
                             ?>
                         </p>
                         <p>JMBG: 
                             <?php 
-                                //echo $gradjanin['gradjanin']->getJmbg();
+                                echo $gradjanin['gradjanin']->getJmbg();
                             ?>
                         </p>
                         <p>Termin:
                             <?php 
-                              //  echo $gradjanin['gradjanin']->getDatumt1()->format('d-m-Y');
+                                echo $gradjanin['gradjanin']->getDatumt1()->format('d-m-Y');
                             ?>
                         </p>
                         <p>Vakcina:
                             <?php 
-                              //  echo $gradjanin['gradjanin']->getIdtipvakcine()->getNaziv();
+                                echo $gradjanin['gradjanin']->getIdtipvakcine()->getNaziv();
                             ?>
                         </p>
                         <p>Mesto:
                             <?php 
-                              //  echo $gradjanin['gradjanin']->getIdmesta()->getNaziv();
+                                echo $gradjanin['gradjanin']->getIdmesta()->getNaziv();
                             ?>
                         </p>
                         <p>
                             <?php 
-                              /*  if($gradjanin['gradjanin']->getStatust1() == "Uspesno"){
+                                if($gradjanin['gradjanin']->getStatust1() == "Uspesno"){
                                     echo "<font color = 'green'>Građanin je vakcinisan</font>";
                                 }
                                 else{
                                     echo "<font color = 'red'>Građanin nije vakcinisan</font>";
-                                }*/
+                                }
                             ?>
                         </p>
                         

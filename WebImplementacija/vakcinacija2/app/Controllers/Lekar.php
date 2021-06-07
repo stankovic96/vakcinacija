@@ -56,6 +56,7 @@ class Lekar extends BaseController
         foreach ($tipoviVakcina as $tipovi){
             array_push($data['tipovi'],$tipovi->getNaziv());
         }
+        $data['uspeh'] = "Uspesno dodavanje izvestaja";
         return $this->prikaz("izvestaj_kreiranje.php",$data);
     }
 
@@ -66,6 +67,8 @@ class Lekar extends BaseController
         foreach ($tipoviVakcina as $tipovi){
             array_push($data['tipovi'],$tipovi->getNaziv());
         }
+        
+        
 
         return $this->prikaz("izvestaj_kreiranje.php",$data);
     }
@@ -161,6 +164,13 @@ class Lekar extends BaseController
         $this->doctrine->em->flush();
 
         return $this->pocetniPrikazUnosenjaNezeljeneReakcijeBezGreske();
+    }
+    
+      public function odjava(){
+        $this->session->stop();
+        $this->session->destroy();
+
+        return redirect()->to(site_url('/'));
     }
 
 }

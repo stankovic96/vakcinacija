@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <title>Вакцинација</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url("assets/css/style.css")?>">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -16,27 +16,31 @@
 <div class="container-fluid">
     <div class="row" id="header">
         <div class="col-4">
-            <img src="assets/logo.png" alt="Logo" id="logo1">
-        </div>
+                <img src="<?php echo base_url("assets/slike/logo.png")?>" alt="Logo" id="logo1">
+            </div>
         <div class="col-8">
             <nav class="nav">
-                <a href="index.html" class="nav-link">Почетна</a>
-                <a href="index.html" class="nav-link">Одјава</a>
-                <a href="opisi.html" class="nav-link">О вакцинама</a>
-                <a href="statistika.html" class="nav-link">Статистика</a>
+                <?= anchor("/", "Pocetna", 'class = "nav-link"') ?>
+                <?= anchor("Admin/odjava", "Odjava", 'class = "nav-link"') ?>
+                <?= anchor("Admin/Opisi", "O vakcinama", 'class = "nav-link"') ?>
+                <?= anchor("Admin/Statistika", "Statistika Vakcina", 'class = "nav-link"') ?>
             </nav>
         </div>
     </div>
     <div class="row" id="main">
         <div class="col-12 col-md-2 remove-padding" id="levi-deo">
             <ul class="breadcrumb remove-margin" id="putokaz">
-                <li class="breadcrumb-item"><a href="nadlezni.html">Надлежни за дом здравља</a></li>
-                <li class="breadcrumb-item"><a href="vakcina_pristigla.html">Уношење пристиглих количина вакцина</a></li>
+                <nav class="nav flex-column" id="vertikalni-meni">
+                <?= anchor("Admin/NovaVakcina", "Unosenje novog tipa vakcine", 'class = "nav-link"') ?>
+            </nav>
+            <nav class="nav flex-column" id="vertikalni-meni">
+                <?= anchor("Admin/unosNovihVakcina", "Unosenje nove ture vakcina", 'class = "nav-link"') ?>
+            </nav>
             </ul>
-            <img src="assets/logo.png" id="logo2" alt="logo">
+            <img src=<?php echo base_url("assets/slike/logo.png")?> id="logo2" alt="logo" style ="width:100%;">
         </div>
         <div class="col-12 col-md-8" id="glavni-sadrzaj">
-            <form action="<?= site_url("$controller/ispisKolicina") ?>">
+            <form action="<?= site_url("Admin/unosenjePristiglihVakcina") ?>">
                 <div class="form-group">
                     <label for="tip">Тип вакцина</label>
                     <font color = "red"><?php
@@ -77,17 +81,17 @@
             </form>
         </div>
         <div class="col-12 col-md-2 remove-padding text-center" id="baneri">
-            <a href="https://www.pfizer.com/">
-                <img src="assets/pfizer.png" alt="Pfizer" class="img-fluid">
+             <a href="https://www.pfizer.com/">
+                <img src=<?php echo base_url("assets/slike/pfizer.png")?> alt="Pfizer" class="img-fluid">
             </a>
             <a href="http://www.sinopharm.com/1156.html">
-                <img src="assets/sinopharm.png" alt="Sinopharm" class="img-fluid">
+                <img src=<?php echo base_url("assets/slike/sinopharm.png")?> alt="Sinopharm" class="img-fluid">
             </a>
             <a href="https://www.astrazeneca.com/">
-                <img src="assets/astrazenece.png" alt="AstraZeneca" class="img-fluid">
+                <img src=<?php echo base_url("assets/slike/astrazenece.png")?> alt="AstraZeneca" class="img-fluid">
             </a>
             <a href="https://sputnikvaccine.com/">
-                <img src="assets/sputnik.svg" alt="Sputnik" class="img-fluid" style="background-color: rgb(28, 113, 119);">
+                <img src=<?php echo base_url("assets/slike/sputnik.svg")?> alt="Sputnik" class="img-fluid" style="background-color: rgb(28, 113, 119);">
             </a>
         </div>
     </div>

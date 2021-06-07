@@ -29,15 +29,13 @@
     </div>
     <div class="row" id="main">
         <div class="col-12 col-md-2 remove-padding" id="levi-deo">
-            <ul class="breadcrumb remove-margin" id="putokaz">
-                <li class="breadcrumb-item"><a href="">Администратор</a></li>
-            </ul>
+                
             <nav class="nav flex-column" id="vertikalni-meni">
                 <!--<a href="vakcina_nova.html" class="nav-link active">Уношење новог типа вакцине</a>-->
                 <?= anchor("Admin/NovaVakcina", "Unosenje novog tipa vakcine", 'class = "nav-link"') ?>
             </nav>
             <nav class="nav flex-column" id="vertikalni-meni">
-                <a href="vakcina_pristigla.html" class="nav-link active">Унос пристиглих количина вакцина</a>
+                <?= anchor("Admin/unosNovihVakcina", "Unosenje nove ture vakcina", 'class = "nav-link"') ?>
             </nav>
             <img src="<?php echo base_url("assets/slike/logo.png")?>" id="logo2" alt="logo">
         </div>

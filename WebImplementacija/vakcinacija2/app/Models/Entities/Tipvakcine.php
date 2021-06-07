@@ -62,6 +62,17 @@ class Tipvakcine
      */
     private $izvestaji;
 
+     /**
+     * @var \Doctrine\Common\Collections\Collection
+     * @ORM\OneToMany(targetEntity="App\Models\Entities\Izvestajlekara",mappedBy="idtipvakcine", orphanRemoval=true,cascade={"persist"})
+     */
+    
+     /**
+     * @var \Doctrine\Common\Collections\Collection
+     * @ORM\OneToMany(targetEntity="App\Models\Entities\Gradjanin",mappedBy="idtipvakcine", orphanRemoval=true,cascade={"all"})
+     */ 
+    private $gradjanini;
+    
     /**
      * @var \Doctrine\Common\Collections\Collection
      * @ORM\OneToMany(targetEntity="App\Models\Entities\Pristiglevakcine",mappedBy="idtipvakcine", orphanRemoval=true,cascade={"all"})
@@ -72,6 +83,7 @@ class Tipvakcine
     {
         $this->izvestaji = new \Doctrine\Common\Collections\ArrayCollection();
         $this->pristigleKolicine = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->gradjanini = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
     /**
@@ -203,7 +215,7 @@ class Tipvakcine
     {
         return $this->brojnezeljenih;
     }
-
+ 
     /**
      * Add izvestaji.
      *

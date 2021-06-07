@@ -21,7 +21,7 @@
         <div class="col-8">
             <nav class="nav">
                 <?= anchor("Lekar/pocetnaStranica", "Pocetna", 'class = "nav-link active"') ?>
-                <?= anchor("Lekar/odjava", "Pocetna", 'class = "nav-link active"') ?>
+                <?= anchor("Lekar/odjava", "Odjava", 'class = "nav-link active"') ?>
                 <?= anchor("Admin/Opisi", "O vakcinama", 'class = "nav-link"') ?>
                 <?= anchor("Admin/Statistika", "Statistika", 'class = "nav-link"') ?>
             </nav>
@@ -69,6 +69,8 @@
                             echo $greske['tekstIzvestaj'];?></font>
                 </div>
                 <button class="btn btn-success">Kreiraj izvestaj</button>
+                <font color = "green"><?php if(!empty($uspeh))
+                        echo "$uspeh";?></font>
             </form>
         </div>
         <div class="col-12 col-md-2 remove-padding text-center" id="baneri">

@@ -28,15 +28,7 @@
     </div>
     <div class="row" id="main">
         <div class="col-12 col-md-2 remove-padding" id="levi-deo">
-            <ul class="breadcrumb remove-margin" id="putokaz">
-                <li class="breadcrumb-item"><?= anchor("/Admin/Opisi", "Administrator/O vakcinama", 'class = "nav-link"') ?></li>
-            </ul>
-            <nav class="nav flex-column" id="vertikalni-meni">
-                <?= anchor("Admin/NovaVakcina", "Unosenje novog tipa vakcine", 'class = "nav-link"') ?>
-            </nav>
-            <nav class="nav flex-column" id="vertikalni-meni">
-                <a href="vakcina_pristigla.html" class="nav-link active">Унос пристиглих количина вакцина</a>
-            </nav>
+          
             <img src="<?php echo base_url("assets/slike/logo.png")?>" id="logo2" alt="logo">
         </div>
         <div class="col-12 col-md-8 remove-padding" id="glavni-sadrzaj">

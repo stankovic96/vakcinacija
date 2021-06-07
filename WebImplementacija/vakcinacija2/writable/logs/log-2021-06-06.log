@@ -1389,3 +1389,59 @@ CRITICAL - 2021-06-06 23:20:29 --> Undefined variable: tipovi
 #9 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
 #10 C:\Users\stank\Documents\Git Projects\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\stank\\...')
 #11 {main}
+CRITICAL - 2021-06-06 23:33:56 --> An exception occurred in driver: Access denied for user 'root'@'localhost' (using password: YES)
+#0 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(182): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#1 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(169): Doctrine\DBAL\DBALException::wrapException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), 'An exception oc...')
+#2 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\Mysqli\Driver.php(19): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#3 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(400): Doctrine\DBAL\Driver\Mysqli\Driver->connect(Array, 'root', 'B4t4m1l4', Array)
+#4 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(463): Doctrine\DBAL\Connection->connect()
+#5 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(425): Doctrine\DBAL\Connection->getDatabasePlatformVersion()
+#6 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(367): Doctrine\DBAL\Connection->detectDatabasePlatform()
+#7 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\app\Libraries\Doctrine.php(52): Doctrine\DBAL\Connection->getDatabasePlatform()
+#8 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\app\Config\Services.php(31): App\Libraries\Doctrine->__construct()
+#9 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Config\BaseService.php(192): Config\Services::doctrine(false)
+#10 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\app\Config\Services.php(28): CodeIgniter\Config\BaseService::getSharedInstance('doctrine')
+#11 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\app\Controllers\BaseController.php(64): Config\Services::doctrine()
+#12 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#13 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#14 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2021-06-06 23:33:56 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php:99
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\wamp64\\www\\v...', 99, Array)
+#1 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\app\Views\errors\html\error_exception.php(99): print_r(Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), true)
+#2 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(278): include('C:\\wamp64\\www\\v...')
+#3 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Doctrine\DBAL\Exception\ConnectionException), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Doctrine\DBA
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-06 23:53:36 --> Call to undefined method App\Controllers\Admin::pocetniPrikaz()
+#0 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Admin->unosenjePristiglihVakcina()
+#1 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\wamp64\\www\\v...')
+#5 {main}
+CRITICAL - 2021-06-06 17:11:21 --> unlink(C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\writable\debugbar/debugbar_1623016186.json): Resource temporarily unavailable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\wamp6...', 'C:\\wamp64\\www\\v...', 78, Array)
+#1 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Toolbar\Collectors\History.php(78): unlink('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Toolbar.php(480): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1623017480, 20)
+#3 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Toolbar.php(452): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\app\Config\Events.php(52): CodeIgniter\Debug\Toolbar->respond()
+#5 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Events\Events.php(166): call_user_func(Object(Closure))
+#7 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\Events\Events::trigger('pre_system')
+#8 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-06 17:42:08 --> unlink(C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\writable\debugbar/debugbar_1623019254.json): Resource temporarily unavailable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\wamp6...', 'C:\\wamp64\\www\\v...', 78, Array)
+#1 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Toolbar\Collectors\History.php(78): unlink('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Toolbar.php(480): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1623019327, 20)
+#3 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Debug\Toolbar.php(452): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\app\Config\Events.php(52): CodeIgniter\Debug\Toolbar->respond()
+#5 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\Events\Events.php(166): call_user_func(Object(Closure))
+#7 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\Events\Events::trigger('pre_system')
+#8 C:\wamp64\www\vakcinacijaV3\vakcinacija\WebImplementacija\vakcinacija2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
