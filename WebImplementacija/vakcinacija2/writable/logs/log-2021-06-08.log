@@ -1,0 +1,51 @@
+CRITICAL - 2021-06-08 12:30:17 --> An exception occurred in driver: Access denied for user 'root'@'localhost' (using password: NO)
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(182): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(169): Doctrine\DBAL\DBALException::wrapException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed), 'An exception oc...')
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/Mysqli/Driver.php(19): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\ConnectionFailed))
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(400): Doctrine\DBAL\Driver\Mysqli\Driver->connect(Array, 'root', '', Array)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(463): Doctrine\DBAL\Connection->connect()
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(425): Doctrine\DBAL\Connection->getDatabasePlatformVersion()
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(367): Doctrine\DBAL\Connection->detectDatabasePlatform()
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Libraries/Doctrine.php(52): Doctrine\DBAL\Connection->getDatabasePlatform()
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Config/Services.php(31): App\Libraries\Doctrine->__construct()
+#9 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Config/BaseService.php(192): Config\Services::doctrine(false)
+#10 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Config/Services.php(28): CodeIgniter\Config\BaseService::getSharedInstance('doctrine')
+#11 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/BaseController.php(64): Config\Services::doctrine()
+#12 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#13 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#14 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#16 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#17 {main}
+CRITICAL - 2021-06-08 12:31:27 --> An exception occurred while executing 'INSERT INTO pristiglevakcine (RaspolozivaKolicina, RezervisanaKolicina, RokUpotrebe, IdTipVakcine) VALUES (?, ?, ?, ?)' with params ["1000", 0, "2021-08-10", 2]:
+
+Field 'idPristigleVakcine' doesn't have a default value
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(182): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\Mysqli\Exception\StatementError))
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(159): Doctrine\DBAL\DBALException::wrapException(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\StatementError), 'An exception oc...')
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(2214): Doctrine\DBAL\DBALException::driverExceptionDuringQuery(Object(Doctrine\DBAL\Driver\Mysqli\Driver), Object(Doctrine\DBAL\Driver\Mysqli\Exception\StatementError), 'INSERT INTO pri...', Array)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Statement.php(183): Doctrine\DBAL\Connection->handleExceptionDuringQuery(Object(Doctrine\DBAL\Driver\Mysqli\Exception\StatementError), 'INSERT INTO pri...', Array, Array)
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(287): Doctrine\DBAL\Statement->execute()
+#5 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(1111): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->executeInserts()
+#6 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(423): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#7 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(378): Doctrine\ORM\UnitOfWork->commit(NULL)
+#8 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Admin.php(151): Doctrine\ORM\EntityManager->flush()
+#9 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Admin->unosenjePristiglihVakcina()
+#10 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#13 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#14 {main}
+CRITICAL - 2021-06-08 12:34:04 --> Call to a member function getStatust1() on null
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Sestra->zabelezi('statistika.html')
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#5 {main}
+CRITICAL - 2021-06-08 12:35:51 --> Call to a member function getStatust1() on null
+#0 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Sestra->zabelezi('statistika.html')
+#1 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sestra))
+#2 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 /Users/markostankovic/vakcinacija/WebImplementacija/vakcinacija2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/markosta...')
+#5 {main}
