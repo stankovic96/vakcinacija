@@ -35,7 +35,7 @@
             </ul>
             <nav class="nav flex-column" id="vertikalni-meni">
                 <?= anchor("Gradjanin/prijavaVakcina", "Prijava za vakcinaciju", 'class = "nav-link"') ?>
-                <a href="izvestaji.html" class="nav-link active">Izveštaji</a>
+               
             </nav>
             <img src="<?php echo base_url("assets/slike/logo.png")?>" id="logo2" alt="logo">
         </div>

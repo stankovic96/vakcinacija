@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
-    <title>Вакцинација</title>
+    <title>Vakcinacija</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo base_url("assets/css/style.css")?>">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -20,12 +20,12 @@
             </div>
             <div class="col-8">
                 <nav class="nav">
-                    <a href="index.php" class="nav-link">Početna</a>
+                     <?= anchor("/", "Pocetna", 'class = "nav-link"') ?>
                     <a href="#" class="nav-link active">Registracija</a>
                     <!--<a href="prijava.html" class="nav-link">Prijava</a>-->
                     <?= anchor("Gost/prijava", "Prijava", 'class = "nav-link"') ?>
-                    <a href="opisi.html" class="nav-link">O vakcinama</a>
-                    <a href="statistika.html" class="nav-link">Statistika</a>
+                    <?= anchor("Admin/Opisi", "O vakcinama", 'class = "nav-link"') ?>
+                    <?= anchor("Admin/Statistika", "Statistika", 'class = "nav-link"') ?>
                 </nav>
             </div>
         </div>

@@ -23,8 +23,8 @@
                 <a href="#" class="nav-link">Početna</a>
                 <!--<a href="index.html" class="nav-link">Одјава</a>-->
                 <?= anchor("Sestra/odjava", "Odjava", 'class = "nav-link"') ?>
-                <a href="opisi.html" class="nav-link">O vakcinama</a>
-                <a href="statistika.html" class="nav-link">Statistika</a>
+                <?= anchor("Admin/Opisi", "O vakcinama", 'class = "nav-link"') ?>
+                <?= anchor("Admin/Statistika", "Statistika", 'class = "nav-link"') ?>
             </nav>
         </div>
     </div>
