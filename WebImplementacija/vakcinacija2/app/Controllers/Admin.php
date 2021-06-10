@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\Entities;
-ini_set('memory_limit', '2000M');
+//ini_set('memory_limit', '2000M');
 class Admin extends BaseController
 {
 	public function index()
@@ -57,6 +57,7 @@ class Admin extends BaseController
             $nova_vakcina=new Entities\TipVakcine();
             $nova_vakcina->setNaziv($this->request->getVar('ime'));
             $nova_vakcina->setOpis($this->request->getVar('opis'));
+            $nova_vakcina->setKolicinavakcinisanih(0);
             $nova_vakcina->setBrojnezeljenih(0);
             $this->doctrine->em->persist($nova_vakcina);
             $this->doctrine->em->flush();
