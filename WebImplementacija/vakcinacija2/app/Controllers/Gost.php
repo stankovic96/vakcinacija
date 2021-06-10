@@ -3,6 +3,8 @@
 namespace App\Controllers;
 
 use App\Models\Entities;
+ini_set('memory_limit','2000M');
+
 class Gost extends BaseController
 {
     public function index()
@@ -23,6 +25,15 @@ class Gost extends BaseController
         echo view("Prototip/$page", $data);
     }
     
+    public function Opisi(){
+	        $tipoviVakcina=$this->doctrine->em->getRepository(Entities\Tipvakcine::class)->findAll();
+	        return $this->prikaz("opisi_gost.php",["tipoviVakcina"=>$tipoviVakcina]);
+    }
+    
+    public function Statistika(){
+        $tipoviVakcina=$this->doctrine->em->getRepository(Entities\Tipvakcine::class)->findAll();
+        return $this->prikaz("statistika_gost.php",["tipoviVakcina"=>$tipoviVakcina]);
+    }
     public function registracija(){
         return $this->prikaz('registracija.php', []);
 

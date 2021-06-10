@@ -1,0 +1,36 @@
+Running 'Funcionalnost 5.9 kao prijavljeni korisnik'
+16:55:28
+1.
+open on / OK
+16:55:28
+2.
+setWindowSize on 1156x824 OK
+16:55:28
+3.
+click on linkText=Prijava OK
+16:55:28
+4.
+click on id=email OK
+16:55:29
+5.
+type on id=email with value nedim1jukic@gmail.com OK
+16:55:31
+6.
+type on id=lozinka with value nedim123 OK
+16:55:31
+7.
+select on id=tip with value label=Gradjanin OK
+16:55:31
+8.
+click on id=tip OK
+16:55:31
+9.
+click on css=.btn OK
+16:55:31
+10.
+click on linkText=O vakcinama OK
+16:55:31
+11.
+click on linkText=Odjava OK
+16:55:37
+'Funcionalnost 5.9 kao prijavljeni korisnik' completed successfully

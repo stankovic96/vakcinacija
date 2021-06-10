@@ -3,17 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Views/Prototip/registracija.php</file>
-            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Models/Entities/Admin.php</file>
-            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/BaseController.php</file>
-            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Views/Prototip/gradjanin.php</file>
-            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Views/Prototip/index.php</file>
-            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Views/Prototip/admin.php</file>
+            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Views/Prototip/vakcinacija_validacija.php</file>
+            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Sestra.php</file>
+            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Views/Prototip/validacija.php</file>
+            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Lekar.php</file>
             <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Gradjanin.php</file>
-            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Gost.php</file>
-            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Views/Prototip/prijava.php</file>
-            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/.env</file>
-            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Controllers/Admin.php</file>
+            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Models/Entities/Gradjanin.php</file>
+            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Models/Entities/Tipvakcine.php</file>
+            <file>file:/C:/wamp64/www/vakcinacija/WebImplementacija/vakcinacija2/app/Views/Prototip/vakcinacija_prijava.php</file>
         </group>
     </open-files>
 </project-private>

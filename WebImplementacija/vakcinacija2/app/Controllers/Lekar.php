@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-ini_set('memory_limit', '2000M');
+//ini_set('memory_limit', '2000M');
 use App\Models\Entities;
 class Lekar extends BaseController
 {

@@ -1,0 +1,21 @@
+Running 'Funcionalnost 5.9 kao Gost'
+16:54:26
+1.
+open on / OK
+16:54:27
+2.
+setWindowSize on 1156x824 OK
+16:54:27
+3.
+click on linkText=O vakcinama OK
+16:54:27
+4.
+click on linkText=Pocetna OK
+16:54:27
+5.
+click on css=#vertikalni-meni > .nav-link:nth-child(4) OK
+16:54:30
+6.
+click on linkText=Pocetna OK
+16:54:33
+'Funcionalnost 5.9 kao Gost' completed successfully

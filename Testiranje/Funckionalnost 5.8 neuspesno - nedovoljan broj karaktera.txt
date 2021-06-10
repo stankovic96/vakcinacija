@@ -1,0 +1,78 @@
+Running 'Funckionalnost 5.8 neuspesno - nedovoljan broj karaktera'
+16:58:50
+1.
+open on / OK
+16:58:50
+2.
+setWindowSize on 1156x824 OK
+16:58:50
+3.
+click on linkText=Prijava OK
+16:58:50
+4.
+click on id=email OK
+16:58:51
+5.
+type on id=email with value marko@gmail.com OK
+16:58:51
+6.
+type on id=lozinka with value marko123 OK
+16:58:52
+7.
+select on id=tip with value label=Admin OK
+16:58:52
+8.
+click on id=tip OK
+16:58:52
+9.
+click on css=.btn OK
+16:58:52
+10.
+click on linkText=Unosenje novog tipa vakcine OK
+16:58:52
+11.
+mouseDownAt on id=ime with value 246.59999084472656,9.75 OK
+16:58:53
+12.
+mouseMoveAt on id=ime with value 246.59999084472656,9.75 OK
+16:58:54
+13.
+mouseUpAt on id=ime with value 246.59999084472656,9.75 OK
+16:58:54
+14.
+click on css=.form-group:nth-child(1) OK
+16:58:54
+15.
+click on id=ime OK
+16:58:55
+16.
+click on id=ime OK
+16:58:55
+17.
+type on id=ime with value DobraVakcina OK
+16:58:55
+18.
+type on id=opis with value as OK
+16:58:55
+19.
+click on css=.btn OK
+16:58:55
+20.
+click on css=.form-group:nth-child(2) > font OK
+16:58:55
+21.
+assertText on css=.form-group:nth-child(2) > font with value Opis mora sadrzati minimalno 20 karaktera OK
+16:58:56
+22.
+click on id=opis OK
+16:58:56
+23.
+type on id=opis OK
+16:58:56
+24.
+click on linkText=Odjava OK
+16:58:56
+25.
+close OK
+16:58:57
+'Funckionalnost 5.8 neuspesno - nedovoljan broj karaktera' completed successfully

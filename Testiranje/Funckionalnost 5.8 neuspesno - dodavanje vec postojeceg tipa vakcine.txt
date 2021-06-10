@@ -1,0 +1,54 @@
+Running 'Funckionalnost 5.8 neuspesno - dodavanje vec postojeceg tipa vakcine'
+16:58:03
+1.
+open on / OK
+16:58:04
+2.
+setWindowSize on 1156x824 OK
+16:58:04
+3.
+click on linkText=Prijava OK
+16:58:04
+4.
+click on id=email OK
+16:58:05
+5.
+type on id=email with value marko@gmail.com OK
+16:58:05
+6.
+type on id=lozinka with value marko123 OK
+16:58:05
+7.
+select on id=tip with value label=Admin OK
+16:58:06
+8.
+click on id=tip OK
+16:58:06
+9.
+click on css=.btn OK
+16:58:06
+10.
+click on linkText=Unosenje novog tipa vakcine OK
+16:58:06
+11.
+click on id=ime OK
+16:58:07
+12.
+type on id=ime with value Pfizer OK
+16:58:08
+13.
+type on id=opis with value Pfizer je dobra i americka vakcina. OK
+16:58:08
+14.
+click on css=.btn OK
+16:58:08
+15.
+assertText on css=.form-group:nth-child(1) > font with value Greska! Postoji tip vakcine sa ovim nazivom OK
+16:58:09
+16.
+click on linkText=Odjava OK
+16:58:09
+17.
+close OK
+16:58:09
+'Funckionalnost 5.8 neuspesno - dodavanje vec postojeceg tipa vakcine' completed successfully

@@ -1,0 +1,2343 @@
+{
+  "id": "1f9b26c9-6704-4491-aec4-02851f766cc9",
+  "version": "2.0",
+  "name": "TestiranjeMarko",
+  "url": "http://localhost:8080/index.php/Gost/prijava",
+  "tests": [{
+    "id": "8dfcd4b1-b69a-4acd-9710-ae16b3548b9b",
+    "name": "TestNistaNijeUnetoPravljenjeIzvestaja",
+    "commands": [{
+      "id": "890f4456-3e8d-40bf-b811-233636beaaf7",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Gost/prijava",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d37d912-78bf-4eda-b51a-89603b0e03ac",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "799e6849-7273-4507-bfb4-2c6fd855b26b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(1)",
+      "targets": [
+        ["css=.form-group:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div", "xpath:idRelative"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f967b3ee-6f8a-47e2-b3a0-b1522e2e8be7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(1)",
+      "targets": [
+        ["css=.form-group:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div", "xpath:idRelative"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38eef589-f358-4e9a-92f9-6d638eaa71ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "600f31bb-2f12-47f9-9f37-dcc3c03618cb",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "nikola.milosav@gmail.com"
+    }, {
+      "id": "2dde868f-2ad6-455d-8c87-1111855fcf0b",
+      "comment": "",
+      "command": "type",
+      "target": "id=lozinka",
+      "targets": [
+        ["id=lozinka", "id"],
+        ["name=lozinka", "name"],
+        ["css=#lozinka", "css:finder"],
+        ["xpath=//input[@id='lozinka']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sifra123"
+    }, {
+      "id": "5470636a-d2dc-4614-826a-9e064f79201c",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fbaab6e-b7aa-4629-8caf-e7c0cb0baa85",
+      "comment": "",
+      "command": "select",
+      "target": "id=tip",
+      "targets": [],
+      "value": "label=Lekar"
+    }, {
+      "id": "b0ce5db4-a74b-4dfd-a99b-f90c69f6ace2",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00f2884c-c573-4c4d-b9f6-01b5b775555b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Prijavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d841e327-efab-4a6d-933c-968b0ff8ace9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Kreiranje izvestaja o reakciji na vakcinu",
+      "targets": [
+        ["linkText=Kreiranje izvestaja o reakciji na vakcinu", "linkText"],
+        ["css=.breadcrumb-item > .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Kreiranje izvestaja o reakciji na vakcinu')]", "xpath:link"],
+        ["xpath=//ul[@id='putokaz']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/index.php/Lekar/pocetniPrikazUnosenjaNezeljeneReakcijeBezGreske']", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Kreiranje izvestaja o reakciji na vakcinu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "259d37be-7463-46e6-a7b0-459860562a66",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Kreiranje izvestaja o reakciji na vakcinu",
+      "targets": [
+        ["linkText=Kreiranje izvestaja o reakciji na vakcinu", "linkText"],
+        ["css=.breadcrumb-item > .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Kreiranje izvestaja o reakciji na vakcinu')]", "xpath:link"],
+        ["xpath=//ul[@id='putokaz']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/index.php/Lekar/pocetniPrikazUnosenjaNezeljeneReakcijeBezGreske']", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Kreiranje izvestaja o reakciji na vakcinu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5d19054-2ca8-40aa-9b92-5832602075f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Kreiraj izvestaj')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eec7be32-6ede-4e5a-8994-b5ca2154eec6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.form-group:nth-child(1) > font:nth-child(4)",
+      "targets": [
+        ["css=.form-group:nth-child(1) > font:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/font[2]", "xpath:idRelative"],
+        ["xpath=//font[2]", "xpath:position"],
+        ["xpath=//font[contains(.,'Ovo polje je obavezno')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "047bbd62-5c15-4be1-82d0-35a4893dd76a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.form-group:nth-child(3) > font:nth-child(4)",
+      "targets": [
+        ["css=.form-group:nth-child(3) > font:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/font[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/font[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb0b84d1-3b5b-47c1-968c-36171146b91e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.form-group:nth-child(4) > font:nth-child(4)",
+      "targets": [
+        ["css=.form-group:nth-child(4) > font:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[4]/font[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/font[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b364a96f-aafc-4979-baf2-726cd0a80e7f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Odjava",
+      "targets": [
+        ["linkText=Odjava", "linkText"],
+        ["css=.nav-link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Odjava')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[2]/nav/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/index.php/Lekar/odjava']", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Odjava')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "acedc518-0d24-41a0-be5a-c8263129b5da",
+    "name": "TestNijeIspravanJMBG",
+    "commands": [{
+      "id": "6622ce42-a12f-439d-a5f9-27c541d57389",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Gost/prijava",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66c373cb-e9ee-45e2-934b-0cd8850a5778",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c08e7d72-7383-4335-af67-465e58c15619",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb997df8-a0e2-42fb-a38c-14dc63c89d4b",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "nikola.milosav@gmail.com"
+    }, {
+      "id": "62b72469-e633-4ea2-84df-6980f5a3a6d0",
+      "comment": "",
+      "command": "type",
+      "target": "id=lozinka",
+      "targets": [
+        ["id=lozinka", "id"],
+        ["name=lozinka", "name"],
+        ["css=#lozinka", "css:finder"],
+        ["xpath=//input[@id='lozinka']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sifra123"
+    }, {
+      "id": "b9adbb61-8df9-40b6-ba85-b6add9c08c71",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40f393ba-e9b7-4251-89f7-86673a7a06c0",
+      "comment": "",
+      "command": "select",
+      "target": "id=tip",
+      "targets": [],
+      "value": "label=Lekar"
+    }, {
+      "id": "199678b3-54f0-4ea9-80d8-2247f46ccfa0",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8d0e591-6967-415b-b5a0-3b2ee6099cc3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Prijavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "82bf4aee-ace5-4df9-940b-91185996d54c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Kreiranje izvestaja o reakciji na vakcinu",
+      "targets": [
+        ["linkText=Kreiranje izvestaja o reakciji na vakcinu", "linkText"],
+        ["css=.breadcrumb-item > .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Kreiranje izvestaja o reakciji na vakcinu')]", "xpath:link"],
+        ["xpath=//ul[@id='putokaz']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/index.php/Lekar/pocetniPrikazUnosenjaNezeljeneReakcijeBezGreske']", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Kreiranje izvestaja o reakciji na vakcinu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fa0f305-f443-4f30-a10a-017b141ed27f",
+      "comment": "",
+      "command": "click",
+      "target": "id=jmbg",
+      "targets": [
+        ["id=jmbg", "id"],
+        ["name=nazivJMBG", "name"],
+        ["css=#jmbg", "css:finder"],
+        ["xpath=//input[@id='jmbg']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01f83e12-da09-4312-b73b-a073c7fd288c",
+      "comment": "",
+      "command": "type",
+      "target": "id=jmbg",
+      "targets": [
+        ["id=jmbg", "id"],
+        ["name=nazivJMBG", "name"],
+        ["css=#jmbg", "css:finder"],
+        ["xpath=//input[@id='jmbg']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "4572164517264172645"
+    }, {
+      "id": "4ce93556-f438-4af7-a499-917d485c4439",
+      "comment": "",
+      "command": "click",
+      "target": "id=mesto",
+      "targets": [
+        ["id=mesto", "id"],
+        ["name=tipVakcine", "name"],
+        ["css=#mesto", "css:finder"],
+        ["xpath=//select[@id='mesto']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9251a7fd-1ef4-48a0-afb3-8fe9a73fc70a",
+      "comment": "",
+      "command": "select",
+      "target": "id=mesto",
+      "targets": [],
+      "value": "label=Sinopharm"
+    }, {
+      "id": "39ba5abf-f2e0-411c-9492-f5a4b304443c",
+      "comment": "",
+      "command": "click",
+      "target": "id=mesto",
+      "targets": [
+        ["id=mesto", "id"],
+        ["name=tipVakcine", "name"],
+        ["css=#mesto", "css:finder"],
+        ["xpath=//select[@id='mesto']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9111dbc7-88bc-46f1-9d5a-49d4b5964e2e",
+      "comment": "",
+      "command": "click",
+      "target": "id=nez_reakcije",
+      "targets": [
+        ["id=nez_reakcije", "id"],
+        ["name=nezeljeneReakcije", "name"],
+        ["css=#nez_reakcije", "css:finder"],
+        ["xpath=//textarea[@id='nez_reakcije']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d29e125f-9927-476d-949d-294eceff6fda",
+      "comment": "",
+      "command": "type",
+      "target": "id=nez_reakcije",
+      "targets": [
+        ["id=nez_reakcije", "id"],
+        ["name=nezeljeneReakcije", "name"],
+        ["css=#nez_reakcije", "css:finder"],
+        ["xpath=//textarea[@id='nez_reakcije']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "reakcija1"
+    }, {
+      "id": "71a5a62f-ba67-4894-abe4-d6a400eb3c02",
+      "comment": "",
+      "command": "type",
+      "target": "id=izvestaj",
+      "targets": [
+        ["id=izvestaj", "id"],
+        ["name=tekstIzvestaj", "name"],
+        ["css=#izvestaj", "css:finder"],
+        ["xpath=//textarea[@id='izvestaj']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[4]/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/textarea", "xpath:position"]
+      ],
+      "value": "opis1"
+    }, {
+      "id": "39e655f2-0b85-4124-ac50-590930528c69",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Kreiraj izvestaj')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4719ff40-3877-4706-9782-16b8c293692d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(1) > font:nth-child(4)",
+      "targets": [
+        ["css=.form-group:nth-child(1) > font:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/font[2]", "xpath:idRelative"],
+        ["xpath=//font[2]", "xpath:position"],
+        ["xpath=//font[contains(.,'Ne postoji korisnik sa zadatim JMBG-om')]", "xpath:innerText"]
+      ],
+      "value": "Ne postoji korisnik sa zadatim JMBG-om"
+    }, {
+      "id": "fbab41ff-10f5-4137-aceb-39af63433fe6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Odjava",
+      "targets": [
+        ["linkText=Odjava", "linkText"],
+        ["css=.nav-link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Odjava')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[2]/nav/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/index.php/Lekar/odjava']", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Odjava')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6f6efb91-5a35-49e5-92ff-bd16f6f6a0f8",
+    "name": "TestUspesnoKreiranjeIzvestajaSaJednomNezeljenomReakcijom",
+    "commands": [{
+      "id": "32179855-f957-47c9-82f7-5be4f76ee0cd",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Gost/prijava",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2b92742-bf42-48a5-8247-5b73f91e2d6d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be304854-fcaa-4337-858f-ebe9f99d208a",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d92261d-6a8f-4d4e-96ae-c34ce5df7a41",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "nikola.milosav@gmail.com"
+    }, {
+      "id": "7d9cbf01-da23-4250-873d-04acb3cf5f72",
+      "comment": "",
+      "command": "type",
+      "target": "id=lozinka",
+      "targets": [
+        ["id=lozinka", "id"],
+        ["name=lozinka", "name"],
+        ["css=#lozinka", "css:finder"],
+        ["xpath=//input[@id='lozinka']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sifra123"
+    }, {
+      "id": "8304e6d2-6013-4682-a203-00c0ecf4d2f9",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3f49efc-4ccf-463b-9b48-03e1f14d1f1b",
+      "comment": "",
+      "command": "select",
+      "target": "id=tip",
+      "targets": [],
+      "value": "label=Lekar"
+    }, {
+      "id": "1340115e-fe0f-4202-b267-5bea1220daae",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40ac923d-2d71-476f-8b20-4949d6596700",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Prijavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d343889-7131-49c0-8a63-eb3b65218398",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Kreiranje izvestaja o reakciji na vakcinu",
+      "targets": [
+        ["linkText=Kreiranje izvestaja o reakciji na vakcinu", "linkText"],
+        ["css=.breadcrumb-item > .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Kreiranje izvestaja o reakciji na vakcinu')]", "xpath:link"],
+        ["xpath=//ul[@id='putokaz']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/index.php/Lekar/pocetniPrikazUnosenjaNezeljeneReakcijeBezGreske']", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Kreiranje izvestaja o reakciji na vakcinu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfd3c3a9-276b-4842-a5ad-f31cc614e350",
+      "comment": "",
+      "command": "click",
+      "target": "id=jmbg",
+      "targets": [
+        ["id=jmbg", "id"],
+        ["name=nazivJMBG", "name"],
+        ["css=#jmbg", "css:finder"],
+        ["xpath=//input[@id='jmbg']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfe4cf4f-86b5-4c5e-ad38-6c0ed385fd46",
+      "comment": "",
+      "command": "type",
+      "target": "id=jmbg",
+      "targets": [
+        ["id=jmbg", "id"],
+        ["name=nazivJMBG", "name"],
+        ["css=#jmbg", "css:finder"],
+        ["xpath=//input[@id='jmbg']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2604998654456"
+    }, {
+      "id": "7c4e4f1a-bca6-4737-b1f5-cb7f822d6768",
+      "comment": "",
+      "command": "click",
+      "target": "id=mesto",
+      "targets": [
+        ["id=mesto", "id"],
+        ["name=tipVakcine", "name"],
+        ["css=#mesto", "css:finder"],
+        ["xpath=//select[@id='mesto']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15741d19-77e8-4fb0-8602-ce4aafd4fe07",
+      "comment": "",
+      "command": "select",
+      "target": "id=mesto",
+      "targets": [],
+      "value": "label=Phizer"
+    }, {
+      "id": "d08c2690-96ba-4052-86a2-89aadfeaf31a",
+      "comment": "",
+      "command": "click",
+      "target": "id=mesto",
+      "targets": [
+        ["id=mesto", "id"],
+        ["name=tipVakcine", "name"],
+        ["css=#mesto", "css:finder"],
+        ["xpath=//select[@id='mesto']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff77e281-39dd-4eed-8919-ab16ec49e91b",
+      "comment": "",
+      "command": "click",
+      "target": "id=nez_reakcije",
+      "targets": [
+        ["id=nez_reakcije", "id"],
+        ["name=nezeljeneReakcije", "name"],
+        ["css=#nez_reakcije", "css:finder"],
+        ["xpath=//textarea[@id='nez_reakcije']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80aa9483-a760-44e0-a439-297827bd1134",
+      "comment": "",
+      "command": "type",
+      "target": "id=nez_reakcije",
+      "targets": [
+        ["id=nez_reakcije", "id"],
+        ["name=nezeljeneReakcije", "name"],
+        ["css=#nez_reakcije", "css:finder"],
+        ["xpath=//textarea[@id='nez_reakcije']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Bol u glavi"
+    }, {
+      "id": "890fc8b7-0dbf-402c-bd7f-70ec77a26447",
+      "comment": "",
+      "command": "type",
+      "target": "id=izvestaj",
+      "targets": [
+        ["id=izvestaj", "id"],
+        ["name=tekstIzvestaj", "name"],
+        ["css=#izvestaj", "css:finder"],
+        ["xpath=//textarea[@id='izvestaj']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[4]/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/textarea", "xpath:position"]
+      ],
+      "value": "Pacijent oseca bol u glavi."
+    }, {
+      "id": "8fc3304b-17bd-42cf-b396-226b0fb3956e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Kreiraj izvestaj')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "841806ea-d201-406e-a816-4e8c8e6a66cb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=font:nth-child(6)",
+      "targets": [
+        ["css=font:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/font", "xpath:idRelative"],
+        ["xpath=//form/font", "xpath:position"],
+        ["xpath=//font[contains(.,'Uspesno dodavanje izvestaja')]", "xpath:innerText"]
+      ],
+      "value": "Uspesno dodavanje izvestaja"
+    }, {
+      "id": "2a318e77-dd73-4a3c-a70d-a0840b2497ef",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Odjava",
+      "targets": [
+        ["linkText=Odjava", "linkText"],
+        ["css=.nav-link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Odjava')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[2]/nav/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/index.php/Lekar/odjava']", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Odjava')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4ca645b4-56c6-4b33-9883-beb41f28ba35",
+    "name": "TestUspesnoKreiranjaIzvestajaSaViseNezeljenihReakcija",
+    "commands": [{
+      "id": "aa69115b-2bca-4c84-874d-7b554d0196fe",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Gost/prijava",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee64b501-1481-43de-9510-1bf3de1b7dbd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57519a6f-a533-42ce-bd01-27f5b0d6ec1e",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50555954-4313-452e-87cf-f114e77247e8",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "nikola.milosav@gmail.com"
+    }, {
+      "id": "6cf2b11d-3fb2-48db-9ed7-c0143fbf5fe5",
+      "comment": "",
+      "command": "type",
+      "target": "id=lozinka",
+      "targets": [
+        ["id=lozinka", "id"],
+        ["name=lozinka", "name"],
+        ["css=#lozinka", "css:finder"],
+        ["xpath=//input[@id='lozinka']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sifra123"
+    }, {
+      "id": "8492545b-ba72-4a48-aae7-490c06721b5c",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42b87882-fcdb-4c08-8a70-54931cf4efd2",
+      "comment": "",
+      "command": "select",
+      "target": "id=tip",
+      "targets": [],
+      "value": "label=Admin"
+    }, {
+      "id": "209aa536-ddee-4386-b2fb-4ebbb9e7f4d3",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70665af0-bbd3-484c-89f3-2da40d44a814",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6a5a90a-74c7-4bfb-a2ba-831c17453043",
+      "comment": "",
+      "command": "select",
+      "target": "id=tip",
+      "targets": [],
+      "value": "label=Lekar"
+    }, {
+      "id": "43e58a4c-79fd-4d0d-be7f-ef15b95bd6d2",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39de1e55-7b0f-4f4e-8b5d-0c3813385e12",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Prijavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "36bc9c05-1de5-4d02-a896-2ac7ad4fd1dc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Kreiranje izvestaja o reakciji na vakcinu",
+      "targets": [
+        ["linkText=Kreiranje izvestaja o reakciji na vakcinu", "linkText"],
+        ["css=.breadcrumb-item > .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Kreiranje izvestaja o reakciji na vakcinu')]", "xpath:link"],
+        ["xpath=//ul[@id='putokaz']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/index.php/Lekar/pocetniPrikazUnosenjaNezeljeneReakcijeBezGreske']", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Kreiranje izvestaja o reakciji na vakcinu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4f00b49-6dca-4c17-bf6b-ef571782cdf2",
+      "comment": "",
+      "command": "click",
+      "target": "id=jmbg",
+      "targets": [
+        ["id=jmbg", "id"],
+        ["name=nazivJMBG", "name"],
+        ["css=#jmbg", "css:finder"],
+        ["xpath=//input[@id='jmbg']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f833292-96c9-460a-aed9-cac4fa1c2a82",
+      "comment": "",
+      "command": "type",
+      "target": "id=jmbg",
+      "targets": [
+        ["id=jmbg", "id"],
+        ["name=nazivJMBG", "name"],
+        ["css=#jmbg", "css:finder"],
+        ["xpath=//input[@id='jmbg']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2604998654456"
+    }, {
+      "id": "9d893863-3d90-4bea-95b3-867a4211a6bd",
+      "comment": "",
+      "command": "click",
+      "target": "id=mesto",
+      "targets": [
+        ["id=mesto", "id"],
+        ["name=tipVakcine", "name"],
+        ["css=#mesto", "css:finder"],
+        ["xpath=//select[@id='mesto']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3d0f0f4-351f-4cbd-bd6d-f125cac443a5",
+      "comment": "",
+      "command": "select",
+      "target": "id=mesto",
+      "targets": [],
+      "value": "label=Sinopharm"
+    }, {
+      "id": "300b9f72-d7dc-4952-8869-23bb89d05b60",
+      "comment": "",
+      "command": "click",
+      "target": "id=mesto",
+      "targets": [
+        ["id=mesto", "id"],
+        ["name=tipVakcine", "name"],
+        ["css=#mesto", "css:finder"],
+        ["xpath=//select[@id='mesto']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e7ea51e-9b5b-4408-a631-1c80cfd58e66",
+      "comment": "",
+      "command": "click",
+      "target": "id=nez_reakcije",
+      "targets": [
+        ["id=nez_reakcije", "id"],
+        ["name=nezeljeneReakcije", "name"],
+        ["css=#nez_reakcije", "css:finder"],
+        ["xpath=//textarea[@id='nez_reakcije']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "742f3733-baed-4d0d-8c32-77b338d66ced",
+      "comment": "",
+      "command": "type",
+      "target": "id=nez_reakcije",
+      "targets": [
+        ["id=nez_reakcije", "id"],
+        ["name=nezeljeneReakcije", "name"],
+        ["css=#nez_reakcije", "css:finder"],
+        ["xpath=//textarea[@id='nez_reakcije']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Bol u glavi, bol u ramenima"
+    }, {
+      "id": "4a74f7b4-e84c-4d7c-94f2-8f9736f442db",
+      "comment": "",
+      "command": "type",
+      "target": "id=izvestaj",
+      "targets": [
+        ["id=izvestaj", "id"],
+        ["name=tekstIzvestaj", "name"],
+        ["css=#izvestaj", "css:finder"],
+        ["xpath=//textarea[@id='izvestaj']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[4]/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/textarea", "xpath:position"]
+      ],
+      "value": "Pacijent oseca bolove u glavi i ramenima."
+    }, {
+      "id": "7816c072-833c-4621-8917-6f632c517379",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Kreiraj izvestaj')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b60a10c8-4770-410d-914c-ec0b80254ce8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=font:nth-child(6)",
+      "targets": [
+        ["css=font:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/font", "xpath:idRelative"],
+        ["xpath=//form/font", "xpath:position"],
+        ["xpath=//font[contains(.,'Uspesno dodavanje izvestaja')]", "xpath:innerText"]
+      ],
+      "value": "Uspesno dodavanje izvestaja"
+    }, {
+      "id": "eba61b79-f9e5-40bb-b4d4-36e69a8d3f0e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Odjava",
+      "targets": [
+        ["linkText=Odjava", "linkText"],
+        ["css=.nav-link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Odjava')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[2]/nav/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/index.php/Lekar/odjava']", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Odjava')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1177ebb7-681c-44ae-a2d6-1c36ad604efa",
+    "name": "TestPrikazSvihIzvestaja",
+    "commands": [{
+      "id": "d674f961-5ff0-487e-9424-48b9319c41dd",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Gost/prijava",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a67c793-b0d0-4243-8247-945de9c44958",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f814d28c-ac89-479b-8ae0-64accd24c58e",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f264dce3-8de9-4296-8710-6002544b9744",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "nikola.milosav@gmail.com"
+    }, {
+      "id": "3c225d23-86c5-46e1-96bb-3a4fb53cc297",
+      "comment": "",
+      "command": "type",
+      "target": "id=lozinka",
+      "targets": [
+        ["id=lozinka", "id"],
+        ["name=lozinka", "name"],
+        ["css=#lozinka", "css:finder"],
+        ["xpath=//input[@id='lozinka']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sifra123"
+    }, {
+      "id": "5aac2980-6792-4c91-a60c-dadfe8e0d2c6",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1329240-3343-4ce4-a1e2-c89d636e9b53",
+      "comment": "",
+      "command": "select",
+      "target": "id=tip",
+      "targets": [],
+      "value": "label=Lekar"
+    }, {
+      "id": "8835d321-e476-44f2-81c0-2d3caa7af867",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ac5aac2-a8fd-4d50-a32f-894d02883727",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Prijavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea9bc393-8da7-4cda-88e0-d1d02c368e5a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Izvestaji",
+      "targets": [
+        ["linkText=Izvestaji", "linkText"],
+        ["css=.breadcrumb-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Izvestaji')]", "xpath:link"],
+        ["xpath=//ul[@id='putokaz']/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/index.php/Lekar/pocetniPrikaz']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Izvestaji')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2427979-86a7-4132-9e54-9b4636776902",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(29) > td:nth-child(4)",
+      "targets": [
+        ["css=tr:nth-child(29) > td:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/table/tbody/tr[29]/td[4]", "xpath:idRelative"],
+        ["xpath=//tr[29]/td[4]", "xpath:position"],
+        ["xpath=//td[contains(.,'Pacijent oseca bolove u glavi i ramenima.')]", "xpath:innerText"]
+      ],
+      "value": "Pacijent oseca bolove u glavi i ramenima."
+    }, {
+      "id": "f5068fe2-ec42-4bae-8493-64a211de011a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Odjava",
+      "targets": [
+        ["linkText=Odjava", "linkText"],
+        ["css=.nav-link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Odjava')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[2]/nav/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/index.php/Lekar/odjava']", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Odjava')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "840b76cf-44e7-4bb4-b7e6-a2c96bf19f0f",
+    "name": "TestUnosiNegativnuKolicinuVakcina",
+    "commands": [{
+      "id": "3af62ecb-6a4c-43b7-822d-6ccc2d3c1826",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Gost/prijava",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6da8fb2-0ff1-4946-9382-5303692cddf6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dabeb1e6-08c5-4d01-b474-aaf887b60c5c",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09776d7f-37d9-42e7-91ba-f754a0d4f821",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin@gmail.com"
+    }, {
+      "id": "9c9e637f-6a50-4333-8940-9587af30ec6e",
+      "comment": "",
+      "command": "type",
+      "target": "id=lozinka",
+      "targets": [
+        ["id=lozinka", "id"],
+        ["name=lozinka", "name"],
+        ["css=#lozinka", "css:finder"],
+        ["xpath=//input[@id='lozinka']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "admin123"
+    }, {
+      "id": "18672e2b-4df7-43fa-a701-38978e5d0730",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bda0848-2ede-4834-b0bb-77ea669349ad",
+      "comment": "",
+      "command": "select",
+      "target": "id=tip",
+      "targets": [],
+      "value": "label=Admin"
+    }, {
+      "id": "914255c8-b630-40c7-8d90-2c5c212a0326",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01a2dcd7-1f2e-47dd-8ca6-19cf78bdd093",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Prijavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bdfe011-4feb-4b3b-90f0-7be30a981409",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Unos pristiglih kolicina vakcina",
+      "targets": [
+        ["linkText=Unos pristiglih kolicina vakcina", "linkText"],
+        ["xpath=//a[contains(text(),'Unos pristiglih kolicina vakcina')]", "xpath:link"],
+        ["xpath=(//nav[@id='vertikalni-meni']/a)[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/index.php/Admin/unosNovihVakcina']", "xpath:href"],
+        ["xpath=//nav[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Unos pristiglih kolicina vakcina')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41bb1177-a53a-4264-90f3-3b960f49ca12",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fced564f-9d79-44b6-b966-be044c08f80d",
+      "comment": "",
+      "command": "select",
+      "target": "id=tip",
+      "targets": [],
+      "value": "label=Phizer"
+    }, {
+      "id": "d54c3016-1798-4493-88ba-e98207406d94",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69a13e0f-5986-48e7-9b91-00aea7ce3d84",
+      "comment": "",
+      "command": "click",
+      "target": "id=rok",
+      "targets": [
+        ["id=rok", "id"],
+        ["name=rok", "name"],
+        ["css=#rok", "css:finder"],
+        ["xpath=//input[@id='rok']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a122a308-35fa-44a6-a914-8c12c13e0fc7",
+      "comment": "",
+      "command": "type",
+      "target": "id=rok",
+      "targets": [
+        ["id=rok", "id"],
+        ["name=rok", "name"],
+        ["css=#rok", "css:finder"],
+        ["xpath=//input[@id='rok']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0002-02-04"
+    }, {
+      "id": "12ba1ce4-4fab-46ed-ae95-1e21eb2a1283",
+      "comment": "",
+      "command": "type",
+      "target": "id=rok",
+      "targets": [
+        ["id=rok", "id"],
+        ["name=rok", "name"],
+        ["css=#rok", "css:finder"],
+        ["xpath=//input[@id='rok']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0020-02-04"
+    }, {
+      "id": "67455938-33c6-4213-a290-a1d4d3c2639a",
+      "comment": "",
+      "command": "type",
+      "target": "id=rok",
+      "targets": [
+        ["id=rok", "id"],
+        ["name=rok", "name"],
+        ["css=#rok", "css:finder"],
+        ["xpath=//input[@id='rok']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0202-02-04"
+    }, {
+      "id": "e62bd7f5-f24e-4b68-b066-43169908011a",
+      "comment": "",
+      "command": "type",
+      "target": "id=rok",
+      "targets": [
+        ["id=rok", "id"],
+        ["name=rok", "name"],
+        ["css=#rok", "css:finder"],
+        ["xpath=//input[@id='rok']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2024-02-04"
+    }, {
+      "id": "0b453d77-8713-4b6e-98e1-a07502d46f6d",
+      "comment": "",
+      "command": "click",
+      "target": "id=broj",
+      "targets": [
+        ["id=broj", "id"],
+        ["name=broj", "name"],
+        ["css=#broj", "css:finder"],
+        ["xpath=//input[@id='broj']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d1f4a1c-79c7-481d-a8b6-ac1107da6a0c",
+      "comment": "",
+      "command": "type",
+      "target": "id=broj",
+      "targets": [
+        ["id=broj", "id"],
+        ["name=broj", "name"],
+        ["css=#broj", "css:finder"],
+        ["xpath=//input[@id='broj']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "-10"
+    }, {
+      "id": "2422211a-e35a-4875-866b-343019119586",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Unesi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f746b636-dbd3-49b3-9436-12998e9934dd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(3) > font",
+      "targets": [
+        ["css=.form-group:nth-child(3) > font", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/font", "xpath:idRelative"],
+        ["xpath=//div[3]/font", "xpath:position"],
+        ["xpath=//font[contains(.,' Morate uneti broj veci od 0')]", "xpath:innerText"]
+      ],
+      "value": " Morate uneti broj veci od 0"
+    }, {
+      "id": "9829c1bf-ac44-4136-9f23-ed897d21f0c1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Odjava",
+      "targets": [
+        ["linkText=Odjava", "linkText"],
+        ["css=.nav-link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Odjava')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[2]/nav/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/index.php/Admin/odjava']", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Odjava')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c3644749-e7f4-437d-810a-eaeb60e88d51",
+    "name": "TestUspenoUnosenjePristiglihVakcina",
+    "commands": [{
+      "id": "56843f6d-20d0-4048-b8c3-0b27d6c55811",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Gost/prijava",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4629914-fbe6-40e3-862e-a8f59b4bdd0d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99fa3e35-cf80-477d-bcd9-bca8d4163c88",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01e391f0-1271-403d-a4a0-5571f7bb55e3",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin@gmail.com"
+    }, {
+      "id": "2d0ace0e-5fc0-47d8-b088-a89e01e6aa8a",
+      "comment": "",
+      "command": "type",
+      "target": "id=lozinka",
+      "targets": [
+        ["id=lozinka", "id"],
+        ["name=lozinka", "name"],
+        ["css=#lozinka", "css:finder"],
+        ["xpath=//input[@id='lozinka']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "admin123"
+    }, {
+      "id": "fad0ba03-96ba-4f53-8bae-90b11678cebb",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d791a312-c6cf-489e-8b0c-12280b8df774",
+      "comment": "",
+      "command": "select",
+      "target": "id=tip",
+      "targets": [],
+      "value": "label=Admin"
+    }, {
+      "id": "e405706c-e3f6-4b64-8fd7-1330ce6cc8c0",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d10c4b4-0953-4e0a-b59f-08a5604aac33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Prijavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cb66304-cb9f-41d3-8baa-58371a53bb78",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Unos pristiglih kolicina vakcina",
+      "targets": [
+        ["linkText=Unos pristiglih kolicina vakcina", "linkText"],
+        ["xpath=//a[contains(text(),'Unos pristiglih kolicina vakcina')]", "xpath:link"],
+        ["xpath=(//nav[@id='vertikalni-meni']/a)[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/index.php/Admin/unosNovihVakcina']", "xpath:href"],
+        ["xpath=//nav[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Unos pristiglih kolicina vakcina')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2527a92-6bd6-4449-9317-cab28c446168",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cafdc77d-8479-4d6f-9b5d-b8d5b0945de9",
+      "comment": "",
+      "command": "select",
+      "target": "id=tip",
+      "targets": [],
+      "value": "label=Phizer"
+    }, {
+      "id": "25fd696c-1660-49d3-85e7-26081309483f",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32d3039d-3332-4995-8bcc-9b6df20f385c",
+      "comment": "",
+      "command": "click",
+      "target": "id=rok",
+      "targets": [
+        ["id=rok", "id"],
+        ["name=rok", "name"],
+        ["css=#rok", "css:finder"],
+        ["xpath=//input[@id='rok']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "072e82a3-0717-4f08-b2c3-f3a17e8523ae",
+      "comment": "",
+      "command": "type",
+      "target": "id=rok",
+      "targets": [
+        ["id=rok", "id"],
+        ["name=rok", "name"],
+        ["css=#rok", "css:finder"],
+        ["xpath=//input[@id='rok']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0002-06-06"
+    }, {
+      "id": "2ce2476f-d438-4463-8805-00d9a66f4308",
+      "comment": "",
+      "command": "type",
+      "target": "id=rok",
+      "targets": [
+        ["id=rok", "id"],
+        ["name=rok", "name"],
+        ["css=#rok", "css:finder"],
+        ["xpath=//input[@id='rok']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0020-06-06"
+    }, {
+      "id": "88782f21-df83-49b6-ad63-10dfbd91b512",
+      "comment": "",
+      "command": "type",
+      "target": "id=rok",
+      "targets": [
+        ["id=rok", "id"],
+        ["name=rok", "name"],
+        ["css=#rok", "css:finder"],
+        ["xpath=//input[@id='rok']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0202-06-06"
+    }, {
+      "id": "8991a520-50cd-45b2-a633-618063674c64",
+      "comment": "",
+      "command": "type",
+      "target": "id=rok",
+      "targets": [
+        ["id=rok", "id"],
+        ["name=rok", "name"],
+        ["css=#rok", "css:finder"],
+        ["xpath=//input[@id='rok']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2024-06-06"
+    }, {
+      "id": "18eab9bd-f7d2-4672-8f31-3c1489fb4eb7",
+      "comment": "",
+      "command": "click",
+      "target": "id=broj",
+      "targets": [
+        ["id=broj", "id"],
+        ["name=broj", "name"],
+        ["css=#broj", "css:finder"],
+        ["xpath=//input[@id='broj']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa995094-a3ad-42ff-af24-260c7365cc29",
+      "comment": "",
+      "command": "type",
+      "target": "id=broj",
+      "targets": [
+        ["id=broj", "id"],
+        ["name=broj", "name"],
+        ["css=#broj", "css:finder"],
+        ["xpath=//input[@id='broj']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "847766fb-4f41-4413-921b-17132d5a23b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Unesi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c7e2b4c-7bea-41ae-a22b-7e0da8ef6d5a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=font:nth-child(5)",
+      "targets": [
+        ["css=font:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/font", "xpath:idRelative"],
+        ["xpath=//form/font", "xpath:position"],
+        ["xpath=//font[contains(.,'Uspesno dodavanje nove ture vakcina')]", "xpath:innerText"]
+      ],
+      "value": "Uspesno dodavanje nove ture vakcina"
+    }, {
+      "id": "a2fc29a0-0569-4ba8-b2e8-edb91b3e785c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Odjava",
+      "targets": [
+        ["linkText=Odjava", "linkText"],
+        ["css=.nav-link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Odjava')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[2]/nav/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/index.php/Admin/odjava']", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Odjava')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ebd23d65-a133-469d-a736-fb7c4a98f96d",
+    "name": "TestNeispravanDatum",
+    "commands": [{
+      "id": "fd0211f2-b261-4738-ba2d-a94c3c870436",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Gost/prijava",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9ed7779-7e25-4ba5-b0ef-12869cdf6fdd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ec3be68-a59a-4fd1-b125-7594b0889d46",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6909bc4f-75be-4be3-a6b6-9b91f1b1f8a0",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin@gmail.com"
+    }, {
+      "id": "7b7ff43c-6da1-45f2-b1d7-5c76cfff4e60",
+      "comment": "",
+      "command": "type",
+      "target": "id=lozinka",
+      "targets": [
+        ["id=lozinka", "id"],
+        ["name=lozinka", "name"],
+        ["css=#lozinka", "css:finder"],
+        ["xpath=//input[@id='lozinka']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "admin123"
+    }, {
+      "id": "ee1c79b1-99fa-4f80-939d-7b7faef25d5c",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95d9e11c-aea6-4e36-b447-c55ed002f054",
+      "comment": "",
+      "command": "select",
+      "target": "id=tip",
+      "targets": [],
+      "value": "label=Admin"
+    }, {
+      "id": "3096273f-760d-4e5b-862e-5b46f5ce09aa",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c531174-46ee-48fc-9ca1-53465c9fe615",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Prijavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e9a1d44-67e7-4b53-bafa-ac6910310395",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Unos pristiglih kolicina vakcina",
+      "targets": [
+        ["linkText=Unos pristiglih kolicina vakcina", "linkText"],
+        ["xpath=//a[contains(text(),'Unos pristiglih kolicina vakcina')]", "xpath:link"],
+        ["xpath=(//nav[@id='vertikalni-meni']/a)[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/index.php/Admin/unosNovihVakcina']", "xpath:href"],
+        ["xpath=//nav[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Unos pristiglih kolicina vakcina')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d46b985-68ff-4030-96d2-67d1e3016883",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f29b1023-94ab-47fb-9f80-a64795c75663",
+      "comment": "",
+      "command": "select",
+      "target": "id=tip",
+      "targets": [],
+      "value": "label=Phizer"
+    }, {
+      "id": "f02ef661-7224-4753-a7de-c7bee321362f",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d05b414c-a606-441d-af72-e873f07ae839",
+      "comment": "",
+      "command": "click",
+      "target": "id=rok",
+      "targets": [
+        ["id=rok", "id"],
+        ["name=rok", "name"],
+        ["css=#rok", "css:finder"],
+        ["xpath=//input[@id='rok']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58b2833f-1297-4ff4-95b9-482f348699e5",
+      "comment": "",
+      "command": "type",
+      "target": "id=rok",
+      "targets": [
+        ["id=rok", "id"],
+        ["name=rok", "name"],
+        ["css=#rok", "css:finder"],
+        ["xpath=//input[@id='rok']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0009-02-21"
+    }, {
+      "id": "6ddd28ca-3829-4842-aa93-c25c52e9bd12",
+      "comment": "",
+      "command": "type",
+      "target": "id=rok",
+      "targets": [
+        ["id=rok", "id"],
+        ["name=rok", "name"],
+        ["css=#rok", "css:finder"],
+        ["xpath=//input[@id='rok']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee2bd6af-f304-42f2-9ced-c89b6af94aad",
+      "comment": "",
+      "command": "type",
+      "target": "id=rok",
+      "targets": [
+        ["id=rok", "id"],
+        ["name=rok", "name"],
+        ["css=#rok", "css:finder"],
+        ["xpath=//input[@id='rok']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0001-02-21"
+    }, {
+      "id": "457f79a8-f987-4cf3-9675-66ac11b6b131",
+      "comment": "",
+      "command": "type",
+      "target": "id=rok",
+      "targets": [
+        ["id=rok", "id"],
+        ["name=rok", "name"],
+        ["css=#rok", "css:finder"],
+        ["xpath=//input[@id='rok']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0019-02-21"
+    }, {
+      "id": "3cadd278-a452-490a-b961-6346321c0bdc",
+      "comment": "",
+      "command": "type",
+      "target": "id=rok",
+      "targets": [
+        ["id=rok", "id"],
+        ["name=rok", "name"],
+        ["css=#rok", "css:finder"],
+        ["xpath=//input[@id='rok']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0199-02-21"
+    }, {
+      "id": "126f237e-459b-4b9a-b2ea-d1302e0df5a6",
+      "comment": "",
+      "command": "type",
+      "target": "id=rok",
+      "targets": [
+        ["id=rok", "id"],
+        ["name=rok", "name"],
+        ["css=#rok", "css:finder"],
+        ["xpath=//input[@id='rok']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1998-02-21"
+    }, {
+      "id": "bc9a3437-a6ac-4926-a586-1296724d9f57",
+      "comment": "",
+      "command": "click",
+      "target": "id=broj",
+      "targets": [
+        ["id=broj", "id"],
+        ["name=broj", "name"],
+        ["css=#broj", "css:finder"],
+        ["xpath=//input[@id='broj']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77fa4978-1bca-4430-8101-061d85433cb5",
+      "comment": "",
+      "command": "type",
+      "target": "id=broj",
+      "targets": [
+        ["id=broj", "id"],
+        ["name=broj", "name"],
+        ["css=#broj", "css:finder"],
+        ["xpath=//input[@id='broj']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "d24d45c0-c7f4-417d-a0aa-508f85a665c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Unesi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1caaaa94-24ba-4c1c-b1a1-08aefe411132",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(2) > font",
+      "targets": [
+        ["css=.form-group:nth-child(2) > font", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/font", "xpath:idRelative"],
+        ["xpath=//div[2]/font", "xpath:position"],
+        ["xpath=//font[contains(.,' Unesite datum koji je veci od trenutnog')]", "xpath:innerText"]
+      ],
+      "value": " Unesite datum koji je veci od trenutnog"
+    }, {
+      "id": "6ab7a73e-f8f7-473f-9531-509ce5615f0a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Odjava",
+      "targets": [
+        ["linkText=Odjava", "linkText"],
+        ["css=.nav-link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Odjava')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[2]/nav/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/index.php/Admin/odjava']", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Odjava')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f917af63-4c25-4134-86dc-cfbd8a1ae780",
+    "name": "TestNijeUnetoNistaUnosPristiglihVakcina",
+    "commands": [{
+      "id": "194c7537-d975-48d8-a4a2-7e9fa2263fd7",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Gost/prijava",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41ed2f41-9637-4c70-90ed-6beb8d90620d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "261391cf-163b-4d6b-9e11-49fceb8574f4",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbf6757e-290c-464a-a93c-f56149da88f7",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "6d359aab-ecb3-402d-bdcf-28a05a68594d",
+      "comment": "",
+      "command": "click",
+      "target": "id=main",
+      "targets": [
+        ["id=main", "id"],
+        ["css=#main", "css:finder"],
+        ["xpath=//div[@id='main']", "xpath:attributes"],
+        ["xpath=//body/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd723b0e-0b8a-4f48-9cd6-4f4853ba06bb",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin@gmail.com"
+    }, {
+      "id": "d085f08b-3718-4dc7-bca5-8ff8c5065c9c",
+      "comment": "",
+      "command": "type",
+      "target": "id=lozinka",
+      "targets": [
+        ["id=lozinka", "id"],
+        ["name=lozinka", "name"],
+        ["css=#lozinka", "css:finder"],
+        ["xpath=//input[@id='lozinka']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "admin123"
+    }, {
+      "id": "12f2151e-4eb2-4b4a-add6-f989c0acf9e5",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a1cc56e-89ce-49ec-bf91-5e9e98b9893e",
+      "comment": "",
+      "command": "select",
+      "target": "id=tip",
+      "targets": [],
+      "value": "label=Admin"
+    }, {
+      "id": "e10eefb7-a982-4906-9b62-7558ac9127f9",
+      "comment": "",
+      "command": "click",
+      "target": "id=tip",
+      "targets": [
+        ["id=tip", "id"],
+        ["name=tip", "name"],
+        ["css=#tip", "css:finder"],
+        ["xpath=//select[@id='tip']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d2a379a-a336-4fdb-853e-3c1f56b231bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Prijavi se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd084b8d-33fc-482e-b4e0-12c8edae9ea5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Unos pristiglih kolicina vakcina",
+      "targets": [
+        ["linkText=Unos pristiglih kolicina vakcina", "linkText"],
+        ["xpath=//a[contains(text(),'Unos pristiglih kolicina vakcina')]", "xpath:link"],
+        ["xpath=(//nav[@id='vertikalni-meni']/a)[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/index.php/Admin/unosNovihVakcina']", "xpath:href"],
+        ["xpath=//nav[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Unos pristiglih kolicina vakcina')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39b427d0-304f-41ab-a91f-1c00dd1ad1a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Unesi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "61eeb76e-da39-47ec-8f18-e5e7dc9eca94",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(1) > font",
+      "targets": [
+        ["css=.form-group:nth-child(1) > font", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div/font", "xpath:idRelative"],
+        ["xpath=//font", "xpath:position"],
+        ["xpath=//font[contains(.,' Ovo polje je obavezno')]", "xpath:innerText"]
+      ],
+      "value": " Ovo polje je obavezno"
+    }, {
+      "id": "97a9fcd6-c274-4e0b-80cf-6144e1e42974",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(2) > font",
+      "targets": [
+        ["css=.form-group:nth-child(2) > font", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[2]/font", "xpath:idRelative"],
+        ["xpath=//div[2]/font", "xpath:position"]
+      ],
+      "value": " Ovo polje je obavezno"
+    }, {
+      "id": "81d75a9c-232d-4c4a-b0bb-9e5b7bf638d9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(3) > font",
+      "targets": [
+        ["css=.form-group:nth-child(3) > font", "css:finder"],
+        ["xpath=//div[@id='glavni-sadrzaj']/form/div[3]/font", "xpath:idRelative"],
+        ["xpath=//div[3]/font", "xpath:position"]
+      ],
+      "value": " Ovo polje je obavezno"
+    }, {
+      "id": "70295c78-e115-46d8-82a5-45da4749067a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Odjava",
+      "targets": [
+        ["linkText=Odjava", "linkText"],
+        ["css=.nav-link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Odjava')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[2]/nav/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/index.php/Admin/odjava']", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Odjava')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7a4d7726-639c-49af-93a4-5aa9edcb7861",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8080/index.php/Gost/prijava"],
+  "plugins": []
+}
