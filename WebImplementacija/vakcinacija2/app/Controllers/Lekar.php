@@ -5,7 +5,7 @@ ini_set('memory_limit', '2000M');
 use App\Models\Entities;
 class Lekar extends BaseController
 {
-
+    private $indicator = false;
     public function index()
     {
         return $this->pocetnaStranica();
@@ -48,7 +48,7 @@ class Lekar extends BaseController
         }
         return $this->prikaz('izvestaji.php',$data);
     }
-
+    
     public function pocetniPrikazUnosenjaNezeljeneReakcijeBezGreske(){
         $data = ['tipovi'=> []];
         $tipoviVakcina = $this->doctrine->em->getRepository(Entities\Tipvakcine::class)->findAll();
@@ -56,7 +56,7 @@ class Lekar extends BaseController
         foreach ($tipoviVakcina as $tipovi){
             array_push($data['tipovi'],$tipovi->getNaziv());
         }
-        $data['uspeh'] = "Uspesno dodavanje izvestaja";
+        if($this->indicator == true) $data['uspeh'] = "Uspesno dodavanje izvestaja";
         return $this->prikaz("izvestaj_kreiranje.php",$data);
     }
 
@@ -153,7 +153,7 @@ class Lekar extends BaseController
 
         $tipvakc = $this->doctrine->em->getRepository(Entities\Tipvakcine::class)->findOneBy(['naziv' => $this->request->getVar('tipVakcine')]);
         $tipvakc->addIzvestaji($izvestaj);
-
+        $tipvakc->setBrojnezeljenih($tipvakc->getBrojnezeljenih() + 1);
         $gradjanin->addIzvestaji($izvestaj);
 
         $lekar = $this->doctrine->em->getRepository(Entities\Zdravstveniradnici::class)->find($this->session->get('id'));
@@ -162,7 +162,7 @@ class Lekar extends BaseController
         $this->doctrine->em->persist($izvestaj);
 
         $this->doctrine->em->flush();
-
+        $this->indicator = true;
         return $this->pocetniPrikazUnosenjaNezeljeneReakcijeBezGreske();
     }
     

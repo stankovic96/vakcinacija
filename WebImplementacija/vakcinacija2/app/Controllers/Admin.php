@@ -57,7 +57,7 @@ class Admin extends BaseController
             $nova_vakcina=new Entities\TipVakcine();
             $nova_vakcina->setNaziv($this->request->getVar('ime'));
             $nova_vakcina->setOpis($this->request->getVar('opis'));
-
+            $nova_vakcina->setBrojnezeljenih(0);
             $this->doctrine->em->persist($nova_vakcina);
             $this->doctrine->em->flush();
             $this->prikaz("nova_vakcina.php",["poruka"=>["Uspesno unet tip vakcine"]]);
