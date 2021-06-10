@@ -42,7 +42,7 @@
         <div class="col-12 col-md-8" id="glavni-sadrzaj">
             <form action="<?= site_url("Admin/unosenjePristiglihVakcina") ?>">
                 <div class="form-group">
-                    <label for="tip">Тип вакцина</label>
+                    <label for="tip">Tip vakcina</label>
                     <font color = "red"><?php
                         if(!empty($greske['tip']))
                             echo "&nbsp;".$greske['tip'];
@@ -78,6 +78,8 @@
                     <input id="broj" class="form-control" type="number" name="broj">
                 </div>
                 <button class="btn btn-success">Unesi</button>
+                <font color = "green"><?php if(!empty($uspeh))
+                        echo "$uspeh";?></font>
             </form>
         </div>
         <div class="col-12 col-md-2 remove-padding text-center" id="baneri">

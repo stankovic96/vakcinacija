@@ -5,6 +5,7 @@ use App\Models\Entities;
 ini_set('memory_limit', '2000M');
 class Admin extends BaseController
 {
+    private $indicator = false;
 	public function index()
 	{
             $this->prikaz('admin.php', []);
@@ -86,8 +87,10 @@ class Admin extends BaseController
 	        $this->prikaz_globalni("opisi.php",["tipoviVakcina"=>$tipoviVakcina]);
     }
     public function unosNovihVakcina(){
-
-        return $this->prikaz("vakcina_pristigla.php",[]);;
+        if($this->indicator == false)
+        return $this->prikaz("vakcina_pristigla.php",[]);
+        else
+        return $this->prikaz("vakcina_pristigla.php",['uspeh' => 'Uspesno dodavanje nove ture vakcina']);
     }
     public function unosenjePristiglihVakcina(){
 
@@ -99,7 +102,7 @@ class Admin extends BaseController
 
         $validation->setRules([
             'rok' => 'required',
-            'broj' => 'required'
+            'broj' => 'required|greater_than[0]'
         ],
             [   // Errors
                 'rok' => [
@@ -107,6 +110,7 @@ class Admin extends BaseController
                 ],
                 'broj' =>[
                     'required' => 'Ovo polje je obavezno',
+                    'greater_than' => 'Morate uneti broj veci od 0'
                 ]
             ]);
 
@@ -149,8 +153,8 @@ class Admin extends BaseController
         $this->doctrine->em->persist($pristigleKol);
 
         $this->doctrine->em->flush();
-
-        return $this->NovaVakcina();
+        $this->indicator = true;
+        return $this->unosNovihVakcina();
     }
     public function Statistika(){
         $tipoviVakcina=$this->doctrine->em->getRepository(Entities\Tipvakcine::class)->findAll();
