@@ -1,0 +1,24 @@
+Running 'Funkcionalnost 5.10 kao Gost'
+17:03:47
+1.
+open on /index.php OK
+17:03:47
+2.
+setWindowSize on 1156x824 OK
+17:03:48
+3.
+click on linkText=Statistika OK
+17:03:48
+4.
+click on linkText=Pocetna OK
+17:03:49
+5.
+mouseOver on css=#vertikalni-meni > .nav-link:nth-child(5) OK
+17:03:53
+6.
+click on css=#vertikalni-meni > .nav-link:nth-child(5) OK
+17:03:56
+7.
+click on linkText=Pocetna OK
+17:03:57
+'Funkcionalnost 5.10 kao Gost' completed successfully

@@ -23,8 +23,8 @@
                 <a href="#" class="nav-link active">Početna</a>
                 <?= anchor("Gost/registracija", "Registracija", 'class = "nav-link"') ?>
                 <?= anchor("Gost/prijava", "Prijava", 'class = "nav-link"') ?>
-                <?= anchor("Admin/Opisi", "O vakcinama", 'class = "nav-link"') ?>
-                <?= anchor("Admin/Statistika", "Statistika", 'class = "nav-link"') ?>
+                <?= anchor("Gost/Opisi", "O vakcinama", 'class = "nav-link"') ?>
+                <?= anchor("Gost/Statistika", "Statistika", 'class = "nav-link"') ?>
             </nav>
         </div>
     </div>
@@ -37,8 +37,8 @@
                 <a href="#" class="nav-link active">Početna</a>
                 <?= anchor("Gost/registracija", "Registracija", 'class = "nav-link"') ?>
                 <?= anchor("Gost/prijava", "Prijava", 'class = "nav-link"') ?>
-                <?= anchor("Admin/Opisi", "O vakcinama", 'class = "nav-link"') ?>
-                <?= anchor("Admin/Statistika", "Statistika", 'class = "nav-link"') ?>
+                <?= anchor("Gost/Opisi", "O vakcinama", 'class = "nav-link"') ?>
+                <?= anchor("Gost/Statistika", "Statistika", 'class = "nav-link"') ?>
             </nav>
             <img src="<?php echo base_url("assets/slike/logo.png")?>" id="logo2" alt="logo">
         </div>
@@ -71,7 +71,8 @@
             </div>
             <div style="padding: 2%; text-align: justify;">
                 <p>
-                    Овај сајт служи да олакша грађанима пријаву за вакцинацију и да грађанима на увид све релевантне информације у вези вакцинације.
+                    <!--Овај сајт служи да олакша грађанима пријаву за вакцинацију и да грађанима на увид све релевантне информације у вези вакцинације.-->
+                    Ovaj sajt služi da olakša građanima prijavu za vakcinaciju i da građanima na uvid pruži sve relevantne informacije u vezi vakcinacije.
                 </p>
             </div>
         </div>

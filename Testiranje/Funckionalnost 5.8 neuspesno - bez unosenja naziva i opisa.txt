@@ -1,0 +1,72 @@
+Running 'Funckionalnost 5.8 neuspesno - bez unosenja naziva i opisa'
+16:57:00
+1.
+open on / OK
+16:57:00
+2.
+setWindowSize on 1156x824 OK
+16:57:01
+3.
+click on linkText=Prijava OK
+16:57:01
+4.
+click on id=email OK
+16:57:02
+5.
+type on id=email with value marko@gmail.com OK
+16:57:03
+6.
+type on id=lozinka with value marko123 OK
+16:57:03
+7.
+select on id=tip with value label=Admin OK
+16:57:03
+8.
+click on id=tip OK
+16:57:04
+9.
+click on css=.btn OK
+16:57:04
+10.
+click on linkText=Unosenje novog tipa vakcine OK
+16:57:04
+11.
+click on id=ime OK
+16:57:06
+12.
+type on id=opis with value Ova vakcina je dobra protiv virusa. OK
+16:57:07
+13.
+click on css=.btn OK
+16:57:07
+14.
+assertText on css=.form-group:nth-child(1) > font with value Ovo polje je obavezno OK
+16:57:07
+15.
+click on id=ime OK
+16:57:08
+16.
+type on id=ime with value VakcinaSrbija OK
+16:57:08
+17.
+click on id=opis OK
+16:57:08
+18.
+click on id=opis OK
+16:57:09
+19.
+doubleClick on id=opis OK
+16:57:09
+20.
+type on id=opis OK
+16:57:09
+21.
+click on css=.btn OK
+16:57:09
+22.
+assertText on css=.form-group:nth-child(2) > font with value Ovo polje je obavezno OK
+16:57:09
+23.
+click on linkText=Odjava OK
+16:57:10
+'Funckionalnost 5.8 neuspesno - bez unosenja naziva i opisa' completed successfully

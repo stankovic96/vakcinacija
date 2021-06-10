@@ -20,40 +20,28 @@
         <div class="col-8">
             <nav class="nav">
                 <?= anchor("/", "Pocetna", 'class = "nav-link"') ?>
-                <?= anchor("Admin/odjava", "Odjava", 'class = "nav-link"') ?>
-                <?= anchor("Admin/Opisi", "Opisi Vakcina", 'class = "nav-link"') ?>
-                <?= anchor("Admin/Statistika", "Statistika Vakcina", 'class = "nav-link active"') ?>
+                <?= anchor("Gost/Opisi", "O vakcinama", 'class = "nav-link active"') ?>
+                <?= anchor("Gost/Statistika", "Statistika", 'class = "nav-link"') ?>
             </nav>
         </div>
     </div>
     <div class="row" id="main">
         <div class="col-12 col-md-2 remove-padding" id="levi-deo">
-         
+          
             <img src="<?php echo base_url("assets/slike/logo.png")?>" id="logo2" alt="logo">
         </div>
         <div class="col-12 col-md-8 remove-padding" id="glavni-sadrzaj">
             <table class="table">
                 <thead class="thead-dark">
-                    <th>Име вакцине</th>
-                    <th>Број примљених вакцина</th>
-                    <th>Број нежељених реакција</th>
-                    <th>Проценат нежељених реакција</th>
+                <th>Naziv vakcine</th>
+                <th>Opis</th>
+<!--                <th>Тренутна расположива количина</th>-->
                 </thead>
                 <tbody>
                 <?php
                 foreach ($tipoviVakcina as $tip){
                     echo "<tr></tr><td>".$tip->getNaziv()."</td>";
-                    echo "<td>".$tip->getKolicinavakcinisanih()."</td>";
-                    echo "<td>".$tip->getBrojnezeljenih()."</td>";
-                    if($tip->getKolicinavakcinisanih()&&$tip->getBrojnezeljenih()){
-                        $x=floatval($tip->getKolicinavakcinisanih());
-                        $y=floatval($tip->getBrojnezeljenih());
-                        $odnos=$y/$x;
-                        $odnos=$odnos*100;
-                        echo "<td>".$odnos."%</td></tr>";
-                    }else{
-                        echo "<td></td></tr>";
-                    }
+                    echo "<td>".$tip->getOpis()."</td></tr>";
 
                 }
                 ?>

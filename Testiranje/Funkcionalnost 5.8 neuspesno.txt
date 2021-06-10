@@ -1,0 +1,48 @@
+Running 'Funkcionalnost 5.8 neuspesno'
+17:02:38
+1.
+open on /index.php/ OK
+17:02:38
+2.
+setWindowSize on 1156x824 OK
+17:02:38
+3.
+click on linkText=Prijava OK
+17:02:39
+4.
+click on id=email OK
+17:02:50
+5.
+type on id=email with value marko@gmail.com OK
+17:02:51
+6.
+type on id=lozinka with value marko123 OK
+17:02:51
+7.
+select on id=tip with value label=Admin OK
+17:02:51
+8.
+click on id=tip OK
+17:02:51
+9.
+click on css=.btn OK
+17:02:51
+10.
+click on linkText=Unosenje novog tipa vakcine OK
+17:02:51
+11.
+click on id=glavni-sadrzaj OK
+17:02:53
+12.
+click on css=.btn OK
+17:02:54
+13.
+assertText on css=.form-group:nth-child(1) > font with value Ovo polje je obavezno OK
+17:02:54
+14.
+assertText on css=.form-group:nth-child(2) > font with value Ovo polje je obavezno OK
+17:02:55
+15.
+click on linkText=Odjava OK
+17:02:55
+'Funkcionalnost 5.8 neuspesno' completed successfully

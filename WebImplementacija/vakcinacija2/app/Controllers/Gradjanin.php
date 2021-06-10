@@ -3,7 +3,7 @@
 namespace App\Controllers;
 use App\Models\Entities;
 
-ini_set('memory_limit','2000M');
+//ini_set('memory_limit','2000M');
 class Gradjanin extends BaseController
 {
     public function index()

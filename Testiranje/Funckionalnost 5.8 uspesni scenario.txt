@@ -1,0 +1,57 @@
+Running 'Funckionalnost 5.8 uspesni scenario'
+16:59:34
+1.
+open on / OK
+16:59:34
+2.
+setWindowSize on 1156x824 OK
+16:59:34
+3.
+click on linkText=Prijava OK
+16:59:34
+4.
+click on id=email OK
+16:59:35
+5.
+type on id=email with value marko@gmail.com OK
+16:59:36
+6.
+type on id=lozinka with value marko123 OK
+16:59:36
+7.
+select on id=tip with value label=Admin OK
+16:59:36
+8.
+click on id=tip OK
+16:59:36
+9.
+click on css=.btn OK
+16:59:36
+10.
+click on linkText=Unosenje novog tipa vakcine OK
+16:59:37
+11.
+click on id=ime OK
+16:59:38
+12.
+type on id=ime with value NuggetsVakcina OK
+16:59:39
+13.
+type on id=opis with value Ova vakcina je namenjena za virus covid19. OK
+16:59:39
+14.
+click on css=.btn OK
+16:59:39
+15.
+verifyText on css=font:nth-child(4) with value Uspesno unet tip vakcine OK
+16:59:39
+16.
+click on linkText=O vakcinama OK
+16:59:40
+17.
+click on linkText=Odjava OK
+16:59:40
+18.
+close OK
+16:59:45
+'Funckionalnost 5.8 uspesni scenario' completed successfully

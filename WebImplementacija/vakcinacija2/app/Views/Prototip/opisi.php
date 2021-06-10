@@ -34,8 +34,8 @@
         <div class="col-12 col-md-8 remove-padding" id="glavni-sadrzaj">
             <table class="table">
                 <thead class="thead-dark">
-                <th>Име вакцине</th>
-                <th>Опис</th>
+                <th>Naziv vakcine</th>
+                <th>Opis</th>
 <!--                <th>Тренутна расположива количина</th>-->
                 </thead>
                 <tbody>
@@ -66,7 +66,7 @@
     </div>
     <div class="row text-center" id="footer">
         <div class="col-12">
-            Copyright 2020, Марко Станковић, Недим Јукић и Никола Милосављевић, Одсек за софтверско инжењерство Електротехничког факултета Универзитета у Београду
+                Copyright 2020, Marko Stanković, Nedim Jukić i Nikola Milosavljević, Odsek za softversko inžinjerstvo Elektrotehničkog fakulteta Univerziteta u Beogradu
         </div>
     </div>
 </div>
